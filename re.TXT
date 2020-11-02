@@ -1,0 +1,1218 @@
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági1 de 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    630601/09 CONHECI COMBUSTIVE ARAGUAIA      VALPARAISO    VALPARAISGOARAGUAIA DIS16.0001280.0 NVS58ROSSINEI42985,42987 
+    630601/09 CONHECI ETANOL     URUACU ACUCAR TDCR COMERCIALSENADOR  GOTDC DISTRIBU59.3823266.0 NVU93ODILIO  246059,429  
+    8   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        1 99   MARANHA             
+    630601/09 CONHECI OLEO       ARAGUAIA      AUTO POSTO    COCALZINHGOARAGUAIA DIS2.000,140.00 NWN72ROBERIO 43068       
+    9   /2020 MENTO   DIESEL B   DISTRIBUIDORA EDILANDIA LTDAO DE       TRIBUIDORA  00           50   DE                  
+    630701/09 CONHECI ETANOL     ARAGUAIA      SILVA  PAVEL  COCALZINHGOARAGUAIA DIS3.000,210.00 NWN72ROBERIO 43065       
+    630701/09 CONHECI COMBUSTIVE ARAGUAIAIDORA AUTO POSTO    AGUAS    GOARAGUAIA DIS10.000800.00 NWN72ROBERIO 43066,43067 
+    1   /2020 MENTO   IS         DISTRIBUIDORA JURACI JUNIOR LINDAS DE  TRIBUIDORA  ,00          50   DE                  
+    630701/09 CONHECI OLEO       FAN           FAN           SENADOR  GOFAN DISTRIBU61.69014188. QTP  BEGUEM  160923      
+    2   /2020 MENTO   DIESEL     DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00       70 4270                     
+    630701/09 CONHECI ETANOL     USINA         TDC           SENADOR  GOTDC DISTRIBU60.6163333.8 PQZ44FRANCISC48390       
+    3   /2020 MENTO   ANIDRO     GOIANESIA S/A DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 22   O                   
+    630701/09 CONHECI ETANOL     USINA         TDC           SENADOR  GOTDC DISTRIBU60.5853332.1 PWJ01VANDERLE48391       
+    630701/09 CONHECI BIODIESEL  LARCOESIA S/A LARCOIBUIDORA SENADOR  GOLARCO DE    57.4081148.1 OMI63REGINALD212973      
+    6   /2020 MENTO              COMERCIAL DE  COMERCIAL DE  CANEDO     COMERCIAL DE,00        6 97   O                   
+    630701/09 CONHECI ETANOL     CACU COMERCIO TDC           SENADOR  GOTDC DISTRIBU59.6102682.4 NWM72EDEZITO 80444,80443 
+    7   /2020 MENTO   HIDRATADO  E INDUSTRIA   DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 40   ALVES DE            
+    630701/09 CONHECI ETANOL     GOIASA        ARAGUAIA      SENADOR  GOARAGUAIA DIS44.6582009.6 NGI34OSIAS   228425      
+    630701/09 CONHECI ETANOLADO  URUACU ACUCAR TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU44.5102448.0 ARZ14ERNANDES24610       
+    9   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 42   DIAS                
+    630801/09 CONHECI BIODIESEL  Granol Ind,   LARCO         CANDEIAS BALARCO       57.4081148.1 OMI63REGINALD435184      
+    0   /2020 MENTO              Com. e Exp.   COMERCIAL DE             COMERCIAL DE,00        6 97   O                   
+    630801/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU59.3463264.0 PQY13ALESSAND24617       
+    1   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        3 15   RO                  
+    630801/09 CONHECI BIODIESEL  BINATURAL IND FAN           SENADOR  GOFAN DISTRIBU57.0633709.1 RBM5IERCIVAL 72216       
+    630801/09 CONHECI ETANOL     CENTROALCOOL  PetroballDORA SENADOR  GOPetroball Di29.6731038.5 KAY72HERNE FR76334       
+    3   /2020 MENTO   HIDRATADO  S/A           Distribuidora CANEDO     stribuidora ,00        6 65   ANCISCO             
+    630801/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU60.6163333.8 PQZ44FRANCISC492148      
+    4   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        8 22   O                   
+    630801/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU60.5853332.1 PWJ01VANDERLE492149      
+    630802/09 CONHECI BIODIESEL  BINATURAL IND FANTRIBUIDORA GUAMARE  RNFAN DISTRIBU57.06319401. PQT28ROGERIO 72218       
+    8   /2020 MENTO              E COM OLEOS   DISTRIBUIDORA            IDORA DE    ,00       42 60                       
+    630802/09 CONHECI ETANOL     ARAGUAIA      ARAUJO        LUZIANIA GOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI43238       
+    9   /2020 MENTO   HIDRATADO  DISTRIBUIDORA PORTELA LTDA             TRIBUIDORA  00           17   DE                  
+    630902/09 CONHECI ETANOL     ARAGUAIA      VALPARAISO    VALPARAISGOARAGUAIA DIS11.000880.00 NVS58ROSSINEI43237       
+    0   /2020 MENTO   HIDRATADO  DISTRIBUIDORA REPR COMERCIALO DE       TRIBUIDORA  ,00          17   DE                  
+    630902/09 CONHECI BIODIESEL  BINATURAL IND FAN           SAO LUIS MAFAN DISTRIBU54.58219103. PRD94EDSON   72222       
+    630902/09 CONHECI ETANOL     CERRADINHOS   PetroballDORA SENADOR  GOPetroball Di41.7773968.8 KEI81JOSENITO196385      
+    3   /2020 MENTO   HIDRATADO  BIOENERGIA    Distribuidora CANEDO     stribuidora ,00        2 10   BATISTA             
+    630902/09 CONHECI ETANOL     GOIASA        ARAGUAIA      SENADOR  GOARAGUAIA DIS43.7361968.1 NKY24MARCIONI228488,2284 
+    4   /2020 MENTO   HIDRATADO  GOIATUBA      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        2 89   L LUIZ  87          
+    630902/09 CONHECI ETANOL     CERRADINHO    Petroball     SENADOR  GOPetroball Di41.7773968.8 OQL1GJOHNATHA196384      
+    630902/09 CONHECI ETANOLADO  CERRADINHO    Petroballdora SENADOR  GOPetroball Di54.7695203.0 PUG7GVALDIR  196383      
+    6   /2020 MENTO   HIDRATADO  BIOENERGIA    Distribuidora CANEDO     stribuidora ,00        6 78   PEREIRA             
+    630902/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.3823266.0 NVU93ODILIO  492228      
+    7   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        1 99   MARANHA             
+    630902/09 CONHECI ETANOL     Sao Martinho  ARAGUAIA      SENADOR  GOARAGUAIA DIS61.7274012.2 PRT21JOAO    98353       
+    9   /2020 MENTO   HIDRATADO  S/A           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        6 50   HENRIQUE            
+    631002/09 CONHECI ETANOL     USINA         TDC           SENADOR  GOTDC DISTRIBU42.7292350.1 OEK86WALDIR  48395       
+    631002/09 CONHECI BIODIESEL  BINATURAL IND FANTRIBUIDORA IPOJUCA  PEFAN DISTRIBU58.21319210. PRX40DIONATHA72246       
+    2   /2020 MENTO              E COM OLEOS   DISTRIBUIDORA            IDORA DE    ,00       29 67   JOSE                
+    631002/09 CONHECI ETANOL     CERRADINHO    Petroball     SENADOR  GOPetroball Di55.4685269.4 OWP4FFERNANDO196430      
+    3   /2020 MENTO   HIDRATADO  BIOENERGIA    Distribuidora CANEDO     stribuidora ,00        6 89   MODES               
+    631002/09 CONHECI ETANOL     CERRADINHO    Petroball     SENADOR  GOPetroball Di42.5924046.2 AQT44ADEAN   196431      
+    631002/09 CONHECI ETANOLADO  CERRADINHO    Petroballdora SENADOR  GOPetroball Di56.5445371.6 HIV74MARCELLO196432      
+    5   /2020 MENTO   HIDRATADO  BIOENERGIA    Distribuidora CANEDO     stribuidora ,00        8 00                       
+    631002/09 CONHECI BIODIESEL  Granol Ind,   FEDERAL       IPOJUCA  PEFEDERAL DIST57.68713844. PRT78WEDER   435566      
+    6   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA            RIBUIDORA   ,00       88 20   ALVES DE            
+    631002/09 CONHECI ETANOL     CERRADINHO    Petroball     SENADOR  GOPetroball Di64.5526132.4 EQU7ENEURI RO196433      
+    8   /2020 MENTO   HIDRATADO  BIOENERGIA    Distribuidora CANEDO     stribuidora ,00        4 03   DRIGUES             
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági2 de 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    631003/09 CONHECI ETANOL     URUACU ACUCAR ARAGUAIA      SENADOR  GOARAGUAIA DIS59.3463560.7 FUN4DSUEDMAR 24662       
+    631103/09 CONHECI ETANOLADO  URUACU ACUCAR ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS57.3683442.0 OGY20MYCHELL 24663       
+    0   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        8 81   ALVES               
+    631103/09 CONHECI ETANOL     URUACU ACUCAR ARAGUAIA      SENADOR  GOARAGUAIA DIS60.2683616.0 OMI63REGINALD24665       
+    5   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        8 97   O                   
+    631103/09 CONHECI ETANOL     URUACU ACUCAR ARAGUAIA      SENADOR  GOARAGUAIA DIS59.2803556.8 GWI94WESLEY  24667       
+    631103/09 CONHECI ETANOLADO  ARAGUAIA      AUTO POSTO J JAGUASO   GOARAGUAIA DIS15.0001200.0 NWN72ROBERIOE43468       
+    8   /2020 MENTO   HIDRATADO  DISTRIBUIDORA JUNIOR LTDA   LINDAS DE  TRIBUIDORA  ,00        0 50   DE                  
+    631103/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU42.7292350.1 OEK86WALDIR  492407      
+    7   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        0 24   DIAS DE             
+    631203/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    CIDADE   GOARAGUAIA DIS6.000,480.00 NVS58ROSSINEI43471       
+    1   /2020 MENTO   HIDRATADO  DISTRIBUIDORA CIDADE        OCIDENTAL  TRIBUIDORA  00           17   DE                  
+    631203/09 CONHECI ETANOL     CACU COMERCIO TDC           SENADOR  GOTDC DISTRIBU61.5972956.6 RBM5IERCIVAL 80508       
+    631203/09 CONHECI ETANOLADO  CACU COMERCIO TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU44.7082145.9 GWI85JEANIRA 80509       
+    3   /2020 MENTO   HIDRATADO  E INDUSTRIA   DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 59   DAMAS DE            
+    631203/09 CONHECI ETANOL     USINA         TDC           SENADOR  GOTDC DISTRIBU59.6223279.2 OVX33EDEZITO 48415       
+    5   /2020 MENTO   ANIDRO     GOIANESIA S/A DISTRIBUIDORA CANEDO     IDORA DE    ,00        1 87   SILVA               
+    631203/09 CONHECI ETANOL     CACU COMERCIO TDC           SENADOR  GOTDC DISTRIBU59.5802859.8 NWM72EDEZITO 80512       
+    631203/09 CONHECI ETANOLADO  GOIASASTRIA   FANTRIBUIDORA SENADOR  GOFAN DISTRIBU44.6852234.2 NGT13HANSS DE228561      
+    8   /2020 MENTO   ANIDRO     GOIATUBA      DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 44   SCHUCHT             
+    631203/09 CONHECI ETANOL     GOIASA        FAN           SENADOR  GOFAN DISTRIBU43.7102185.5 NKY24MARCIONI228559      
+    9   /2020 MENTO   ANIDRO     GOIATUBA      DISTRIBUIDORA CANEDO     IDORA DE    ,00        0 89   L LUIZ              
+    631303/09 CONHECI ETANOL     GOIASA        FAN           SENADOR  GOFAN DISTRIBU44.6812234.0 NGI34OSIAS   228569      
+    0   /2020 MENTO   ANIDRO     GOIATUBA      DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 28   DIAS                
+    631303/09 CONHECI ETANOL     GOIASA        FAN           SENADOR  GOFAN DISTRIBU59.5802979.0 PRT79BRUNO   228567      
+    631303/09 CONHECI ETANOL     SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU58.3453500.7 PQY13ALESSAND309158      
+    2   /2020 MENTO   ANIDRO     Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        0 15   RO                  
+    631303/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    AGUAS    GOARAGUAIA DIS10.000800.00 NVS58ROSSINEI43469       
+    3   /2020 MENTO   HIDRATADO  DISTRIBUIDORA JURACI JUNIOR LINDAS DE  TRIBUIDORA  ,00          17   DE                  
+    631303/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU42.6392558.3 ARZ14ERNANDES309165      
+    631303/09 CONHECI ETANOL     TDCa          TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU44.7082458.9 GWI85JEAN    492488      
+    5   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        4 59   DAMAS DE            
+    631303/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.6223279.2 OVX33EDEZITO 492490      
+    6   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        1 87   SILVA               
+    631303/09 CONHECI ETANOL     GOIASA        FAN           SENADOR  GOFAN DISTRIBU61.4233071.1 QTO03RODRIGO 228578      
+    7   /2020 MENTO   ANIDRO     GOIATUBA      DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 70   MESSIAS             
+    631404/09 CONHECI COMBUSTIVE PETROGOIAS    AUTO POSTO    APARECIDAGOAUTO POSTO  15.000370.00 NWN72ROBERIO 124154,1241 
+    631404/09 CONHECI ETANOL     FANT. PETROLEOFANCHES       GUAMARE  RNFAN DISTRIBU59.58014895. PRT79BRUNO   231224158,  
+    2   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       00 40   DAINNER             
+    631404/09 CONHECI ETANOL     Sao Martinho  ARAGUAIA      SENADOR  GOARAGUAIA DIS61.7644014.6 PRT21JOAO    98377       
+    3   /2020 MENTO   HIDRATADO  S/A           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        6 50   HENRIQUE            
+    631404/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    AGUAS    GOARAGUAIA DIS11.000880.00 NVS58ROSSINEI43660,43661 
+    631404/09 CONHECI GASOLINA C ARAGUAIAIDORA AUTO POSTOIOR CIDADE DEGOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI43662       
+    5   /2020 MENTO              DISTRIBUIDORA CIDADE        OCIDENTAL  TRIBUIDORA  00           17   DE                  
+    631404/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    COCALZINHGOARAGUAIA DIS5.000,325.00 NWN72ROBERIO 43656,43657 
+    6   /2020 MENTO   IS         DISTRIBUIDORA EDILANDIA LTDAO DE       TRIBUIDORA  00           50   DE                  
+    631404/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    COCALZINHGOARAGUAIA DIS10.000700.00 NWN72ROBERIO 43658,43659 
+    7   /2020 MENTO   HIDRATADO  DISTRIBUIDORA EDILANDIA LTDAO DE       TRIBUIDORA  ,00          50   DE                  
+    631404/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU61.2933371.1 PQZ44FRANCISC24691       
+    631404/09 CONHECI ETANOLADO  TDCLCOOL      TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU58.3453208.9 PQY13ALESSAND492605      
+    9   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        8 15   RO                  
+    631504/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU42.6392345.1 ARZ14ERNANDES492611      
+    0   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        5 42   DIAS                
+    631504/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOURUACU      61.2563369.0 PWJ01VANDERLE24701       
+    631504/09 CONHECI ETANOLADO  SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.2743556.4 RBM5IERCIVAL 309282      
+    2   /2020 MENTO   ANIDRO     Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        4 21   PEREIRA             
+    631504/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU59.2503258.7 NWM72EDEZITO 24706       
+    3   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 40   ALVES DE            
+    631504/09 CONHECI ETANOL     FAN           FAN           GUAMARE  RNFAN DISTRIBU61.42315355. QTO03RODRIGO 2313        
+    4   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       75 70   MESSIAS             
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági3 de 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    631504/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS59.2742370.9 GIB30YGOR    435864      
+    631504/09 CONHECI OLEO       DISTRIBUIDORA POSTOIBUIDORA NEROPOLISGODISTRIBUIDOR24.000672.00 HBZ3EJOSEEIRO90385       
+    6   /2020 MENTO   DIESEL     TABOCAO       NEROPOLIS LTDA           A TABOCAO   ,00          84   NILTON              
+    631504/09 CONHECI OLEO       DISTRIBUIDORA POSTO         NEROPOLISGODISTRIBUIDOR22.000616.00 HBZ3EJOSE    90384       
+    7   /2020 MENTO   DIESEL B   TABOCAO       NEROPOLIS LTDA           A TABOCAO   ,00          84   NILTON              
+    631504/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU61.2933371.1 PQZ44FRANCISC492674      
+    631504/09 CONHECI ETANOLADO  GOIASABUIDORA FANTRIBUIDORA SENADOR  GOFAN DISTRIBU44.6812234.0 JHK99FRANCISC228625      
+    9   /2020 MENTO   ANIDRO     GOIATUBA      DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 97   O                   
+    631604/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU44.6722680.3 AQT44ADEAN   309344,3093 
+    0   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 57   DIAS DE 43          
+    631604/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU61.2563369.0 PWJ01VANDERLE492693      
+    1   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        8 44   Y NEIVA             
+    631604/09 CONHECI GASOLINA A TDC           TDC           BRASILIA DFTDC DISTRIBU61.17012234. PRR  LEOMARIO392581      
+    631604/09 CONHECI GASOLINA A TDCTRIBUIDORA TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU61.07012214. QTN77EDUARDO 392582      
+    3   /2020 MENTO              DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00       00 40                       
+    631604/09 CONHECI OLEO       TDC           TDC           BRASILIA DFTDC DISTRIBU59.41311882. PQT75JOSE    392584      
+    4   /2020 MENTO   DIESEL     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       60 68   JUNIOR              
+    631605/09 CONHECI GASOLINA A TDC           TDC           BRASILIA DFTDC DISTRIBU61.20712241. QTO03MIKCHAEL392623      
+    631605/09 CONHECI GASOLINA A TDCTRIBUIDORA TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU61.21812243. QTP  PAULOS  392613      
+    8   /2020 MENTO              DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       60 4170 CESAR               
+    631605/09 CONHECI ETANOL     ARAGUAIA      VALPARAISO    VALPARAISGOARAGUAIA DIS16.0001280.0 NVS58ROSSINEI43979       
+    9   /2020 MENTO   HIDRATADO  DISTRIBUIDORA REPR COMERCIALO DE       TRIBUIDORA  ,00        0 17   DE                  
+    631705/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS41.7141877.1 KEI81JOSENITO71628       
+    0   /2020 MENTO   HIDRATADO  ACUCAR E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        3 10   BATISTA             
+    631705/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.2743260.0 RBM5IERCIVAL 492766      
+    631705/09 CONHECI COMBUSTIVE MAXTRIBUIDORA AUTO POSTOORA GOIANIRA GOAUTO POSTO  45.0001575.0 NGT13HANSIRA 272813      
+    2   /2020 MENTO   IS         DISTRIBUIDORA MOREIRA COSTA            MOREIRA     ,00        0 44   SCHUCHT             
+    631705/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS43.2041944.1 OQL1GJOHNATHA71630       
+    3   /2020 MENTO   HIDRATADO  ACUCAR E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        8 02   N                   
+    631705/09 CONHECI ETANOL     GOIASA        FAN           SENADOR  GOGOIASA      44.6812234.0 JHK99FRANCISC228625      
+    631705/09 CONHECI COMBUSTIVE ARAGUAIA      VALPARAISOORA VALPARAISGOARAGUAIA DIS15.0001200.0 NWN72ROBERIO 44020,44019 
+    5   /2020 MENTO   IS         DISTRIBUIDORA REPR COMERCIALO DE       TRIBUIDORA  ,00        0 50   DE      ,44018      
+    631705/09 CONHECI BIODIESEL  Granol Ind,   LARCO         SENADOR  GOLARCO       54.3352173.4 PUG7GVALDIR  435976      
+    8   /2020 MENTO              Com. e Exp.   COMERCIAL DE  CANEDO     COMERCIAL DE,00        0 78   PEREIRA             
+    631805/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS59.5922681.6 PRT21JOAO    71634       
+    0   /2020 MENTO   HIDRATADO  ACUCAR E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        4 50   HENRIQUE            
+    631805/09 CONHECI GASOLINA C DISTRIBUIDORA POSTO         NEROPOLISGODISTRIBUIDOR22.000616.00 HBZ3EJOSE    49882       
+    631805/09 CONHECI OLEO       DISTRIBUIDORA POSTOOLIS LTDANEROPOLISGODISTRIBUIDOR24.000672.00 HBZ3EJOSEON  49881       
+    3   /2020 MENTO   DIESEL B   TABOCAO       NEROPOLIS LTDA           A TABOCAO   ,00          84   NILTON              
+    631805/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU44.6722456.9 AQT44ADEAN   492799      
+    4   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        6 57   DIAS DE             
+    631805/09 CONHECI OLEO       TDC           TDC           SENADOR  GOTDC DISTRIBU61.36512273. PVS9HSIDINEI 392649      
+    631805/09 CONHECI OLEOEL A   TDCTRIBUIDORA TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU61.32712265. PRT65DIVINORA392652      
+    6   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00       40 30                       
+    631805/09 CONHECI OLEO       FAN           FAN           SENADOR  GOFAN DISTRIBU61.51614148. PQT28ROGERIO 161254      
+    7   /2020 MENTO   DIESEL     DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00       68 60                       
+    631805/09 CONHECI OLEO       TDC           TDC           SENADOR  GOTDC DISTRIBU61.49212298. PQT28PAULO   392670      
+    8   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00       40 70                       
+    631807/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS43.7271967.7 NGI34OSIAS   71645       
+    631907/09 CONHECI ETANOLADO  FLORESTA SA   ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS43.7271967.7 NKY24MARCIONI71646       
+    0   /2020 MENTO   HIDRATADO  ACUCAR E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        2 89   L LUIZ              
+    631907/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS59.6282683.2 GIB30DIVINO  71648       
+    1   /2020 MENTO   HIDRATADO  ACUCAR E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        6 71   DE ASSIS            
+    631907/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS42.7331922.9 JHK99FRANCISC71649       
+    631907/09 CONHECI ETANOLADO  FANCAR E      FANTRIBUIDORA SENADOR  GOFAN DISTRIBU57.3628604.3 PRD94EDSON   7966        
+    3   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00        0 80   LUCIO DE            
+    631908/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS10.000800.00 NVS58ROSSINEI44198       
+    4   /2020 MENTO   HIDRATADO  DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  ,00          17   DE                  
+    631908/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    CIDADE   GOARAGUAIA DIS6.000,480.00 NVS58ROSSINEI44199       
+    5   /2020 MENTO   HIDRATADO  DISTRIBUIDORA CIDADE        OCIDENTAL  TRIBUIDORA  00           17   DE                  
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági4 de 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    631908/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    COCALZINHGOARAGUAIA DIS5.000,350.00 NWN72ROBERIO 44252,44253 
+    631908/09 CONHECI ETANOL     ARAGUAIAIDORA AUTO POSTO J JAGUAS    GOARAGUAIA DIS5.000,400.00 NWN72ROBERIO 44251       
+    7   /2020 MENTO   HIDRATADO  DISTRIBUIDORA JUNIOR LTDA   LINDAS DE  TRIBUIDORA  00           50   DE                  
+    631908/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    AGUAS    GOARAGUAIA DIS5.000,400.00 NWN72ROBERIO 44250       
+    8   /2020 MENTO   HIDRATADO  DISTRIBUIDORA JURACI JUNIOR LINDAS DE  TRIBUIDORA  00           50   DE                  
+    631908/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS43.6791965.5 NGT13HANS    71668       
+    632008/09 CONHECI ETANOLADO  FLORESTA SA   ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS44.6722010.2 HBZ3EJOSECHT 71669       
+    1   /2020 MENTO   HIDRATADO  ACUCAR E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        4 84   NILTON              
+    632008/09 CONHECI ETANOL     FEDERAL       FEDERAL       IPOJUCA  PEFEDERAL DIST61.40516579. QTP  BEGUEM  315203      
+    2   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            RIBUIDORA   ,00       35 4270                     
+    632008/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO J JAGUAS    GOARAGUAIA DIS15.0001200.0 NWN72ROBERIO 44434,44435 
+    3   /2020 MENTO   IS         DISTRIBUIDORA JUNIOR LTDA   LINDAS DE  TRIBUIDORA  ,00        0 50   DE                  
+    632008/09 CONHECI ETANOL     ARAGUAIA      POSTO PARQUE  BRASILIA DFARAGUAIA DIS6.000,540.00 NVS58ROSSINEI44438       
+    632008/09 CONHECI ETANOLADO  ARAGUAIAIDORA AUTO POSTO JPCBRASILIA DFARAGUAIA DIS5.000,450.00 NVS58ROSSINEI44440       
+    5   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DERIVADOS                TRIBUIDORA  00           17   DE                  
+    632008/09 CONHECI ETANOL     ARAGUAIA      POSTO CENTRAL BRASILIA DFARAGUAIA DIS5.000,450.00 NVS58ROSSINEI44439       
+    6   /2020 MENTO   HIDRATADO  DISTRIBUIDORA PARK                     TRIBUIDORA  00           17   DE                  
+    632008/09 CONHECI BIODIESEL  Granol Ind,   LARCO         SENADOR  GOLARCO       57.4082296.3 PRT21JOAO    436156      
+    632008/09 CONHECI BIODIESEL  Granol Ind,   LARCOCIAL DE  SENADOR  GOLARCOCIAL DE41.5721662.8 KEI81JOSENITO436149      
+    8   /2020 MENTO              Com. e Exp.   COMERCIAL DE  CANEDO     COMERCIAL DE,00        8 10   BATISTA             
+    632008/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.3563441.3 OEK86WALDIR  309642      
+    9   /2020 MENTO   ANIDRO     Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        6 24   DIAS DE             
+    632108/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS56.8502274.0 RCF  YGOR    436189      
+    0   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        0 8A60 PINHEIRO            
+    632109/09 CONHECI ETANOL     DENUSA -      LARCO         SENADOR  GOLARCO       43.7101748.4 NKY24MARCIONI66628       
+    632109/09 CONHECI ETANOL     SJC BioenergiaTDCERCIAL DE  SENADOR  GOTDC DISTRIBU58.5343512.0 PQY13ALESSAND309693      
+    2   /2020 MENTO   ANIDRO     Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        4 15   RO                  
+    632109/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU57.3563154.5 OEK86WALDIR  493045      
+    4   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        8 24   DIAS DE             
+    632109/09 CONHECI ETANOL     DENUSA -      LARCO         SENADOR  GOLARCO       64.5712582.8 EQU7ENEURI RO66635       
+    632109/09 CONHECI ETANOL     SJC BioenergiaTDCERCIAL DE  SENADOR  GOTDC DISTRIBU57.3973443.8 OVX33EDEZITO 309710      
+    6   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 87   SILVA               
+    632109/09 CONHECI COMBUSTIVE ARAGUAIA      ARAUJO        LUZIANIA GOARAGUAIA DIS16.0001280.0 NVS58ROSSINEI44562,44563 
+    7   /2020 MENTO   IS         DISTRIBUIDORA PORTELA LTDA             TRIBUIDORA  ,00        0 17   DE      ,44564      
+    632109/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    AGUAS    GOARAGUAIA DIS15.0001200.0 NWN72ROBERIO 44597,44598 
+    8   /2020 MENTO   IS         DISTRIBUIDORA JURACI JUNIOR LINDAS DE  TRIBUIDORA  ,00        0 50   DE      ,44599      
+    632109/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.3863503.1 NVU93ODILIO  309714      
+    632209/09 CONHECI ETANOLADO  FLORESTA SA   ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS43.6791528.7 NGI34OSIASHA 71710       
+    0   /2020 MENTO   HIDRATADO  ACUCAR E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        7 28   DIAS                
+    632209/09 CONHECI ETANOL     FEDERAL       FEDERAL       IPOJUCA  PEFEDERAL DIST61.36816569. QTO03MIKCHAEL315287      
+    2   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            RIBUIDORA   ,00       36 60   SANTOS              
+    632209/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU61.3243372.8 PQZ44FRANCISC24830       
+    632209/09 CONHECI ETANOLADO  SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU57.3973443.8 NWM72EDEZITO 309727      
+    3   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 40   ALVES DE            
+    632209/09 CONHECI ETANOL     CERRADINHO    Petroball     SENADOR  GOPetroball Di41.5003942.5 OQL1GJOHNATHA196947      
+    4   /2020 MENTO   HIDRATADO  BIOENERGIA    Distribuidora CANEDO     stribuidora ,00        0 02   N                   
+    632209/09 CONHECI ETANOL     RAIZEN        DISTRIBUIDORA SENADOR  GODISTRIBUIDOR44.7573356.7 HBZ3EJOSE    122904,1229 
+    5   /2020 MENTO   HIDRATADO  CENTROESTE    TABOCAO       CANEDO     A TABOCAO   ,00        8 84   NILTON  05          
+    632209/09 CONHECI ETANOL     FEDERAL       FEDERAL       IPOJUCA  PEFEDERAL DIST61.25016537. RCF  YGOR    315293      
+    632209/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIAIDORA SENADOR  GOARAGUAIA DIS59.83210769. QTN77EDUARDOO2675        
+    7   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       76 40                       
+    632209/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS57.3452293.8 FCF8DMARCELLO436211      
+    9   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        0 47                       
+    632309/09 CONHECI ETANOL     DENUSA -      LARCO         SENADOR  GOLARCO       44.6811787.2 JHK99FRANCISC66642       
+    632309/09 CONHECI ETANOL     DENUSA -IA    LARCOCIAL DE  SENADOR  GOLARCOCIAL DE43.6881747.5 NGT13HANS    66643       
+    1   /2020 MENTO   ANIDRO     DESTILARIA    COMERCIAL DE  CANEDO     COMERCIAL DE,00        2 44   SCHUCHT             
+    632309/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU44.5552450.5 ARZ14ERNANDES24841       
+    2   /2020 MENTO   ANIDRO     E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        3 42   DIAS                
+    632309/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU58.5343219.3 PQY13ALESSAND493103      
+    3   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        7 15   RO                  
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági5 de 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    632309/09 CONHECI BIODIESEL  BINATURAL IND FAN           SAO LUIS MAFAN DISTRIBU57.62920170. PWJ01VANDERLE72399       
+    632309/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS57.7752311.0 PRR  LEOMARIO436400      
+    5   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        0 9470 DE                  
+    632309/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.4903449.4 QTN39DIVINO  309793      
+    6   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        0 34   DE ASSIS            
+    632310/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU61.1883365.3 RBM5IERCIVAL 24858       
+    632410/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTOORA NOVO GAMAGOARAGUAIA DIS10.000800.00 NVS58ROSSINEI44815,44814 
+    0   /2020 MENTO   IS         DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  ,00          17   DE                  
+    632410/09 CONHECI GASOLINA C ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS6.000,480.00 NVS58ROSSINEI44816       
+    1   /2020 MENTO              DISTRIBUIDORA IRMAOS                   TRIBUIDORA  00           17   DE                  
+    632410/09 CONHECI COMBUSTIVE ARAGUAIA      ARAUJO        LUZIANIA GOARAGUAIA DIS10.000800.00 NWN72ROBERIO 44806,44807 
+    2   /2020 MENTO   IS         DISTRIBUIDORA PORTELA LTDA             TRIBUIDORA  ,00          50   DE                  
+    632410/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO M  LUZIANIA GOARAGUAIA DIS5.000,400.00 NWN72ROBERIO 44805       
+    632410/09 CONHECI ETANOLADO  FEDERALUIDORA FEDERALTDA    IPOJUCA  PEFEDERAL DIST61.36816569. PQT28ROGERIO 315333      
+    4   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            RIBUIDORA   ,00       36 60                       
+    632410/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU44.5552450.5 ARZ14ERNANDES493210      
+    5   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        3 42   DIAS                
+    632410/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU44.3882441.3 AQT44ADEAN   24862       
+    632410/09 CONHECI ETANOLADO  FEDERALL      FEDERALUIDORA IPOJUCA  PEFEDERAL DIST57.40815500. PRD94EDSONDE 315337      
+    7   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            RIBUIDORA   ,00       16 80   LUCIO DE            
+    632410/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS59.5022677.5 PRT21JOAO    71739       
+    8   /2020 MENTO   HIDRATADO  ACUCAR E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        9 50   HENRIQUE            
+    632410/09 CONHECI BIODIESEL  FEDERAL       FEDERAL       UBERLANDIMGFEDERAL DIST58.03810446. PRT78WEDER   415878      
+    9   /2020 MENTO              DISTRIBUIDORA DISTRIBUIDORA A          RIBUIDORA   ,00       84 20   ALVES DE            
+    632510/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU43.5422612.5 NGI34OSIAS   309877      
+    632510/09 CONHECI ETANOLADO  FEDERAL       FEDERALUIDORA IPOJUCA  PEFEDERAL DIST61.26816542. PQT28PAULO   315342      
+    1   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            RIBUIDORA   ,00       36 70                       
+    632510/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU41.5842495.0 NKY24MARCIONI309888      
+    2   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        4 89   L LUIZ              
+    632510/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU61.1883365.3 RBM5IERCIVAL 493296      
+    632510/09 CONHECI BIODIESEL  BINATURAL IND FANTRIBUIDORA SENADOR  GOFAN DISTRIBU56.5503675.7 PQT75JOSEIRA 72444       
+    4   /2020 MENTO              E COM OLEOS   DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 68   JUNIOR              
+    632510/09 CONHECI BIODIESEL  Granol Ind,   REDE SOL FUEL SENADOR  GOREDE SOL    59.2082368.3 OGY20MYCHELL 436592      
+    5   /2020 MENTO              Com. e Exp.                 CANEDO     FUEL        ,00        2 81   ALVES               
+    632510/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS29.6161184.6 KBP89PAULO   436588      
+    6   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        4 94   BENTO DE            
+    632510/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.4513507.0 PQY13ALESSAND309921      
+    632511/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTOORA COCALZINHGOARAGUAIA DIS15.0001050.0 NWN72ROBERIO 44991,44992 
+    9   /2020 MENTO   IS         DISTRIBUIDORA EDILANDIA LTDAO DE       TRIBUIDORA  ,00        0 50   DE      ,44993,449  
+    632611/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU59.5383274.5 PQZ44FRANCISC24884       
+    0   /2020 MENTO   ANIDRO     E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        9 22   O                   
+    632611/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.4263445.5 NWM72EDEZITO 309954      
+    632611/09 CONHECI ETANOLADO  ARAGUAIA      AUTO POSTOORA NOVO GAMAGOARAGUAIA DIS6.000,480.00 NVS58ROSSINEI45014       
+    2   /2020 MENTO   HIDRATADO  DISTRIBUIDORA IRMAOS                   TRIBUIDORA  00           17   DE                  
+    632611/09 CONHECI GASOLINA C ARAGUAIA      ARAUJO        LUZIANIA GOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI45015       
+    3   /2020 MENTO              DISTRIBUIDORA PORTELA LTDA             TRIBUIDORA  00           17   DE                  
+    632611/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.3973443.8 OVX33EDEZITO 309955      
+    4   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 87   SILVA               
+    632611/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI45013       
+    632611/09 CONHECI ETANOLADO  FLORESTA SARA DISTRIBUIDORA SENADOR  GODISTRIBUIDOR44.6722456.9 HBZ3EJOSE    71774       
+    6   /2020 MENTO   HIDRATADO  ACUCAR E      TABOCAO       CANEDO     A TABOCAO   ,00        6 84   NILTON              
+    632611/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU59.4423269.3 QTN39DIVINO  24890       
+    7   /2020 MENTO   ANIDRO     E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        1 34   DE ASSIS            
+    632611/09 CONHECI ETANOL     FEDERAL       FEDERAL       IPOJUCA  PEFEDERAL DIST61.11316500. PRR  LEOMARIO315387      
+    632611/09 CONHECI ETANOLADO  SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.3163558.9 PRT21JOAO    309984      
+    9   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        6 50   HENRIQUE            
+    632711/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.3683442.0 OEK86WALDIR  309986      
+    0   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 24   DIAS DE             
+    632711/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU61.1883365.3 QTP  PAULO   24893,24894 
+    1   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        4 4170 CESAR               
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági6 de 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    632711/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.2173433.0 FYM5FRAPHAEL 309992      
+    632711/09 CONHECI ETANOLADO  SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU42.5312551.8 ARZ14ERNANDES309997      
+    3   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        6 42   DIAS                
+    632711/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.5383274.5 PQZ44FRANCISC493487      
+    4   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        9 22   O                   
+    632711/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.4163504.9 GDG02OSVANIR 310029      
+    632711/09 CONHECI ETANOLADO  TDCa          TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU57.3973156.8 OVX33EDEZITOE493508      
+    7   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        4 87   SILVA               
+    632711/09 CONHECI ETANOL     CERRADINHO    Petroball     SENADOR  GOPetroball Di41.6433956.0 OQL1GJOHNATHA197296,1972 
+    8   /2020 MENTO   HIDRATADO  BIOENERGIA    Distribuidora CANEDO     stribuidora ,00        9 02   N       97          
+    632711/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.4423269.3 QTN39DIVINO  493510      
+    9   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        1 34   DE ASSIS            
+    632812/09 CONHECI OLEO       FEDERAL       FEDERAL       UBERLANDIMGFEDERAL DIST59.62810733. PRT79BRUNO   416009      
+    632812/09 CONHECI OLEOEL A   FEDERALUIDORA FEDERALUIDORA SENADOR  GOFEDERAL DIST61.59111086. QTO03RODRIGO 416011      
+    1   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA CANEDO     RIBUIDORA   ,00       38 70   MESSIAS             
+    632812/09 CONHECI OLEO       DISTRIBUIDORA POSTO         NEROPOLISGODISTRIBUIDOR22.000616.00 HBZ3EJOSE    49981       
+    2   /2020 MENTO   DIESEL B   TABOCAO       NEROPOLIS LTDA           A TABOCAO   ,00          84   NILTON              
+    632812/09 CONHECI OLEO       DISTRIBUIDORA POSTO         NEROPOLISGODISTRIBUIDOR24.000672.00 HBZ3EJOSE    49980       
+    632812/09 CONHECI ETANOL B   SJC BioenergiaTDCOPOLIS LTDASENADOR  GOTDC DISTRIBU57.3973443.8 NWM72EDEZITO 310084      
+    4   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 40   ALVES DE            
+    632812/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU61.4923382.0 RBM5IERCIVAL 24919       
+    5   /2020 MENTO   ANIDRO     E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        6 21   PEREIRA             
+    632812/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.3863503.1 PQY13ALESSAND310081      
+    6   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        6 15   RO                  
+    632812/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS13.0001040.0 NVS58ROSSINEI45342,45343 
+    632812/09 CONHECI COMBUSTIVE ARAGUAIAIDORA AUTO POSTO    NOVO GAMAGOARAGUAIA DIS15.0001200.0 NWN72ROBERIO 45297,45298 
+    9   /2020 MENTO   IS         DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  ,00        0 50   DE                  
+    632812/09 CONHECI GASOLINA   ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS3.000,240.00 NVS58ROSSINEI45341       
+    8   /2020 MENTO   ADITIVADA  DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  00           17   DE                  
+    632912/09 CONHECI GASOLINA A TDC           TDC           BRASILIA DFTDC DISTRIBU61.25712251. PWJ01VANDERLE393102      
+    632912/09 CONHECI ETANOL     SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU58.4513507.0 NVU93ODILIOA 310148      
+    2   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        6 99   MARANHA             
+    632914/09 CONHECI ETANOL     GOIASA        ARAGUAIA      SENADOR  GOARAGUAIA DIS44.3071993.8 JHK99FRANCISC229041,2290 
+    3   /2020 MENTO   HIDRATADO  GOIATUBA      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        2 97   O       42          
+    632914/09 CONHECI COMBUSTIVE ARAGUAIA      ARAUJO        LUZIANIA GOARAGUAIA DIS15.0001200.0 NWN72ROBERIO 45439,45440 
+    4   /2020 MENTO   IS         DISTRIBUIDORA PORTELA LTDA             TRIBUIDORA  ,00        0 50   DE      ,45441      
+    632914/09 CONHECI ETANOL     ARAGUAIA      ARAUJO        LUZIANIA GOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI45444       
+    632914/09 CONHECI GASOLINA C ARAGUAIAIDORA VALPARAISODA  VALPARAISGOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI45442       
+    6   /2020 MENTO              DISTRIBUIDORA REPR COMERCIALO DE       TRIBUIDORA  00           17   DE                  
+    632914/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS6.000,480.00 NVS58ROSSINEI45443       
+    7   /2020 MENTO   HIDRATADO  DISTRIBUIDORA IRMAOS                   TRIBUIDORA  00           17   DE                  
+    632914/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU58.4513214.8 NVU93ODILIO  493692      
+    632914/09 CONHECI ETANOLADO  GOIASABUIDORA ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS43.3221949.4 NGT13HANSNHA 229028      
+    9   /2020 MENTO   HIDRATADO  GOIATUBA      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        9 44   SCHUCHT             
+    633014/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS59.86410775. QTN77EDUARDO 2692        
+    0   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       52 40                       
+    633014/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU61.4923382.0 RBM5IERCIVAL 493699      
+    1   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        6 21   PEREIRA             
+    633014/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS43.6571964.5 NKY24MARCIONI71840       
+    633014/09 CONHECI ETANOLADO  ENERGETICA    TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.4964759.6 QTN39DIVINO  64943       
+    4   /2020 MENTO   ANIDRO     SERRANOPOLIS  DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 34   DE ASSIS            
+    633014/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.1823430.9 OVX33EDEZITO 310223      
+    5   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 87   SILVA               
+    633014/09 CONHECI ETANOL     ENERGETICA    TDC           SENADOR  GOTDC DISTRIBU61.4484915.8 PQZ44FRANCISC64951       
+    633014/09 CONHECI ETANOL     DENUSA -OLIS  LARCOIBUIDORA SENADOR  GOLARCO DE    44.6811787.2 GWI85JEAN    66747       
+    8   /2020 MENTO   ANIDRO     DESTILARIA    COMERCIAL DE  CANEDO     COMERCIAL DE,00        4 59   DAMAS DE            
+    633014/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS59.5022677.5 PRT21JOAO    71862       
+    9   /2020 MENTO   HIDRATADO  ACUCAR E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        9 50   HENRIQUE            
+    633114/09 CONHECI ETANOL     DENUSA -      LARCO         SENADOR  GOLARCO       59.5742382.9 OGY20MYCHELL 66745       
+    0   /2020 MENTO   ANIDRO     DESTILARIA    COMERCIAL DE  CANEDO     COMERCIAL DE,00        6 81   ALVES               
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági7 de 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    633114/09 CONHECI ETANOL     GOIASA        ARAGUAIA      SENADOR  GOARAGUAIA DIS43.3711951.7 OQL1GJOHNATHA229106,2291 
+    633115/09 CONHECI COMBUSTIVE FEDERALA      FEDERALUIDORA SENADOR  GOFEDERAL DIST61.54111077. QTO03MIKCHAEL416149      
+    4   /2020 MENTO   IS         DISTRIBUIDORA DISTRIBUIDORA CANEDO     RIBUIDORA   ,00       38 60   SANTOS              
+    633115/09 CONHECI OLEO       FEDERAL       FEDERAL       SENADOR  GOFEDERAL DIST61.56611081. PQT28PAULO   416152      
+    5   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA CANEDO     RIBUIDORA   ,00       88 70                       
+    633115/09 CONHECI OLEO       FEDERAL       FEDERAL       UBERLANDIMGFEDERAL DIST61.49211068. QTP  BEGUEM  416150      
+    633115/09 CONHECI ETANOL A   TDCTRIBUIDORA TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU61.4483379.6 PQZ44FRANCISC493863      
+    7   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        4 22   O                   
+    633115/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU57.1823145.0 OVX33EDEZITO 493865      
+    8   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        1 87   SILVA               
+    633115/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.4963272.2 QTN39DIVINO  493866      
+    9   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        8 34   DE ASSIS            
+    633215/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS43.6351963.5 NGI34OSIAS   71874       
+    633215/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIAIDORA SENADOR  GOARAGUAIA DIS57.84110411. PQT28JOSE    2694        
+    2   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       38 60   GABRIEL             
+    633215/09 CONHECI ETANOL     ANICUNS S A   TDC           SENADOR  GOTDC DISTRIBU44.7031788.1 ARZ14ERNANDES138696      
+    3   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 42   DIAS                
+    633215/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS59.82810769. PQT28JOSE    2696        
+    633215/09 CONHECI OLEO       TDC           ENERGETICAORA SERRANOPOGOTDC DISTRIBU45.0002700.0 NGT13HANSIEL 493862      
+    5   /2020 MENTO   DIESEL     DISTRIBUIDORA SERRANOPOLIS  LIS        IDORA DE    ,00        0 44   SCHUCHT             
+    633215/09 CONHECI BIODIESEL  BINATURAL IND FAN           GUAMARE  RNFAN DISTRIBU57.13219424. QTN77EDUARDO 72542       
+    6   /2020 MENTO              E COM OLEOS   DISTRIBUIDORA            IDORA DE    ,00       88 40                       
+    633215/09 CONHECI ETANOL     DENUSA -      LARCO         SENADOR  GOLARCO       59.5742382.9 GDG02OSVANIR 66771       
+    7   /2020 MENTO   ANIDRO     DESTILARIA    COMERCIAL DE  CANEDO     COMERCIAL DE,00        6 10   SILVA DE            
+    633215/09 CONHECI ETANOL     DENUSA -      Petroball     SENADOR  GODENUSA -    58.1961745.8 OGY20MYCHELL 66775       
+    633215/09 CONHECI ETANOLADO  DENUSA -IA    LARCOibuidora SENADOR  GOLARCOLARIA  43.6611746.4 KEI81JOSENITO66777       
+    9   /2020 MENTO   ANIDRO     DESTILARIA    COMERCIAL DE  CANEDO     COMERCIAL DE,00        4 10   BATISTA             
+    633315/09 CONHECI ETANOL     DENUSA -      Petroball     SENADOR  GODENUSA -    1.180, 35.40 OGY20MYCHELL 66776       
+    0   /2020 MENTO   HIDRATADO  DESTILARIA    Distribuidora CANEDO     DESTILARIA  00           81   ALVES               
+    633315/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.1093486.5 PQY13ALESSAND310352      
+    633315/09 CONHECI ETANOLADO  TDCa          TDCTRIBUIDORA SAO LUIS MATDC DISTRIBU59.35211870. PQT75JOSE    493927      
+    2   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       40 68   JUNIOR              
+    633315/09 CONHECI OLEO       FEDERAL       FEDERAL       UBERLANDIMGFEDERAL DIST61.43611058. RCF  YGOR    416221      
+    3   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA A          RIBUIDORA   ,00       48 8A60 PINHEIRO            
+    633315/09 CONHECI BIODIESEL  Granol Ind,   LARCO         SENADOR  GOLARCO       57.3452293.8 GWI94WESLEY  437074      
+    4   /2020 MENTO              Com. e Exp.   COMERCIAL DE  CANEDO     COMERCIAL DE,00        0 61   ALVES DE            
+    633316/09 CONHECI BIODIESEL  Granol Ind,   LARCO         SENADOR  GOLARCO       41.5091660.3 OQL1GJOHNATHA437141      
+    633316/09 CONHECI OLEO       FEDERALExp.   FEDERALAL DE  UBERLANDIMGFEDERAL DIST61.61611090. PRR  LEOMARIO416276      
+    6   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA A          RIBUIDORA   ,00       88 9470 DE                  
+    633316/09 CONHECI ETANOL     GOIASA        ARAGUAIA      SENADOR  GOARAGUAIA DIS44.9652023.4 HBZ3EJOSE    229213      
+    8   /2020 MENTO   HIDRATADO  GOIATUBA      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        3 84   NILTON              
+    633316/09 CONHECI ETANOL     DENUSA -      LARCO         SENADOR  GOLARCO       59.5742382.9 NWM72EDEZITO 66801,66802 
+    633416/09 CONHECI GASOLINA C ARAGUAIAIA    AUTO POSTODE  COCALZINHGOARAGUAIA DIS5.000,375.00 NVS58ROSSINEI45847       
+    0   /2020 MENTO              DISTRIBUIDORA EDILANDIA LTDAO DE       TRIBUIDORA  00           17   DE                  
+    633416/09 CONHECI ETANOL     TDC           TDC           SAO LUIS MATDC DISTRIBU61.39912279. QTP  PAULO   494055      
+    1   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       80 4170 CESAR               
+    633416/09 CONHECI COMBUSTIVE ARAGUAIA      ARAUJO        LUZIANIA GOARAGUAIA DIS11.000880.00 NVS58ROSSINEI45848,45849 
+    2   /2020 MENTO   IS         DISTRIBUIDORA PORTELA LTDA             TRIBUIDORA  ,00          17   DE                  
+    633416/09 CONHECI ETANOL     Sao Martinho  ARAGUAIA      SENADOR  GOARAGUAIA DIS61.5974003.8 PRT78WEDER   98584       
+    633416/09 CONHECI ETANOLADO  ENERGETICA    TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.4004752.0 NVU93ODILIODE64990       
+    4   /2020 MENTO   ANIDRO     SERRANOPOLIS  DISTRIBUIDORA CANEDO     IDORA DE    ,00        0 99   MARANHA             
+    633416/09 CONHECI ETANOL     DENUSA -      LARCO         SENADOR  GOLARCO       43.6611746.4 NKY24MARCIONI66816       
+    5   /2020 MENTO   ANIDRO     DESTILARIA    COMERCIAL DE  CANEDO     COMERCIAL DE,00        4 89   L LUIZ              
+    633416/09 CONHECI BIODIESEL  BINATURAL IND FAN           SENADOR  GOFAN DISTRIBU58.1023776.6 PRX40DIONATHA72595       
+    633416/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS29.7091188.3 KBP89PAULO   437236      
+    7   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        6 94   BENTO DE            
+    633416/09 CONHECI BIODIESEL  Granol Ind,   LARCO         SENADOR  GOLARCO       57.4082296.3 GWI94WESLEY  437240      
+    8   /2020 MENTO              Com. e Exp.   COMERCIAL DE  CANEDO     COMERCIAL DE,00        2 61   ALVES DE            
+    633416/09 CONHECI BIODIESEL  Granol Ind,   LARCO         SENADOR  GOLARCO       41.5091660.3 JJZ34THIAGO  437242      
+    9   /2020 MENTO              Com. e Exp.   COMERCIAL DE  CANEDO     COMERCIAL DE,00        6 92   MESSIAS             
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági8 de 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    633517/09 CONHECI ETANOL     URUACU ACUCAR DISTRIBUIDORA SENADOR  GODISTRIBUIDOR45.3972496.8 HBZ3EJOSE    25021       
+    633517/09 CONHECI OLEOATADO  ARAGUAIA      SOTTOVENTO    PORTEIRAOGOARAGUAIA DIS30.0001260.0 KBP89PAULON  45993       
+    3   /2020 MENTO   DIESEL     DISTRIBUIDORA AGRONEGOCIOS             TRIBUIDORA  ,00        0 94   BENTO DE            
+    633517/09 CONHECI ETANOL     ENERGETICA    TDC           SENADOR  GOTDC DISTRIBU61.4794918.3 PWJ01VANDERLE65007       
+    4   /2020 MENTO   ANIDRO     SERRANOPOLIS  DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 44   Y NEIVA             
+    633517/09 CONHECI COMBUSTIVE ARAGUAIA      ARAUJO        LUZIANIA GOARAGUAIA DIS16.0001280.0 NVS58ROSSINEI46020,46021 
+    633517/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIALTDA  SENADOR  GOARAGUAIA DIS57.85610414. PQT28ROGERIO 270822      
+    6   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       08 60                       
+    633517/09 CONHECI COMBUSTIVE CRV INDUSTRIALTDC           SENADOR  GOTDC DISTRIBU58.4512630.3 OVX33EDEZITO 112246,1122 
+    7   /2020 MENTO   IS         LTDA          DISTRIBUIDORA CANEDO     IDORA DE    ,00        0 87   SILVA   47          
+    633517/09 CONHECI COMBUSTIVE FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS43.5641960.3 NGI34OSIAS   71960,71961 
+    8   /2020 MENTO   IS         ACUCAR E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        8 28   DIAS                
+    633517/09 CONHECI ETANOL     ANICUNS S A   TDC           SENADOR  GOTDC DISTRIBU44.6811787.2 ARZ14ERNANDES138770      
+    633617/09 CONHECI ETANOL     FANOOL E      FANTRIBUIDORA SAO LUIS MAFAN DISTRIBU61.38617188. PVS9HSIDINEI 2590        
+    0   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       08 21   TEIXEIRA            
+    633617/09 CONHECI ETANOL     COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS59.83710770. PQT28JOSE    2710        
+    1   /2020 MENTO   HIDRATADO  DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       66 60   GABRIEL             
+    633617/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU44.6812457.4 ARZ14ERNANDES494296      
+    633617/09 CONHECI ETANOL     TDCTRIBUIDORA TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU58.4513214.8 OVX33EDEZITO 494298      
+    3   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        1 87   SILVA               
+    633617/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU61.4793381.3 PWJ01VANDERLE494297      
+    4   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        5 44   Y NEIVA             
+    633617/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.3573501.4 PQY13ALESSAND310692,3106 
+    5   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 15   RO      93          
+    633617/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.3973443.8 NWM72EDEZITO 310694      
+    633617/09 CONHECI ETANOLADO  SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.3463560.7 PQZ44FRANCISC310704      
+    7   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        6 22   O                   
+    633618/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU59.3763562.5 PRT21JOAO    310708      
+    8   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        6 50   HENRIQUE            
+    633618/09 CONHECI OLEO       TDC           ENERGETICA    SERRANOPOGOTDC DISTRIBU45.0002700.0 NGT13HANS    494308      
+    633718/09 CONHECI OLEOEL     FEDERALUIDORA FEDERALPOLIS  SENADOR  GOFEDERAL DIST61.60911089. PQT28ROGERIO 416459      
+    0   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA CANEDO     RIBUIDORA   ,00       62 60                       
+    633718/09 CONHECI OLEO       FEDERAL       FEDERAL       UBERLANDIMGFEDERAL DIST57.63510374. PRD94EDSON   416460      
+    2   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA A          RIBUIDORA   ,00       30 80   LUCIO DE            
+    633718/09 CONHECI ETANOL     URUACU ACUCAR DISTRIBUIDORA SENADOR  GODISTRIBUIDOR45.3972723.8 HBZ3EJOSE    25055       
+    3   /2020 MENTO   HIDRATADO  E ALCOOL      TABOCAO       CANEDO     A TABOCAO   ,00        2 84   NILTON              
+    633718/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU59.5383274.5 QTN39DIONATHA25053,25054 
+    633718/09 CONHECI ETANOL     VALE VERDE    FANTRIBUIDORA SAO LUIS MAFAN DISTRIBU59.54415481. PRT21PAULO   70956       
+    6   /2020 MENTO   HIDRATADO                DISTRIBUIDORA            IDORA DE    ,00       44 60   HENRIQUE            
+    633718/09 CONHECI ETANOL     ANICUNS S A   FEDERAL       SENADOR  GOFEDERAL DIST60.5971817.9 QTO03RODRIGO 138792      
+    7   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     RIBUIDORA   ,00        1 70   MESSIAS             
+    633718/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    AGUAS    GOARAGUAIA DIS11.000880.00 NVS58ROSSINEI46212,46213 
+    633718/09 CONHECI OLEO       ARAGUAIAIDORA AUTO POSTO J JAGUASS DEGOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI46214       
+    9   /2020 MENTO   DIESEL     DISTRIBUIDORA JUNIOR LTDA   LINDAS DE  TRIBUIDORA  00           17   DE                  
+    633818/09 CONHECI ETANOL     COOPERATIVA   ARAGUAIA      SENADOR  GOARAGUAIA DIS57.4902587.0 FDC41MIGUEL  87059,87060 
+    0   /2020 MENTO   HIDRATADO                DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        5 18                       
+    633818/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU56.4983389.8 PUG7GVALDIR  310773      
+    1   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 78   PEREIRA             
+    633818/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.5103510.6 GDG02OSVANIR 310776      
+    633818/09 CONHECI ETANOLADO  CACU COMERCIO ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS44.6852010.8 NGI34OSIAS DE3770,3769   
+    3   /2020 MENTO   HIDRATADO  E INDUSTRIA   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        3 28   DIAS                
+    633818/09 CONHECI ETANOL     FAN           FAN           SAO LUIS MAFAN DISTRIBU59.34016615. FUN4DMESSIAS 2602        
+    4   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       20 30                       
+    633818/09 CONHECI ETANOL     FLORESTA SA   ARAGUAIA      SENADOR  GOARAGUAIA DIS43.679436.79              71710       
+    633818/09 CONHECI ETANOLADO  TDCCAR E      TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU59.5383274.5 QTN39DIONATHA494486      
+    7   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        9 34   JOSE                
+    633818/09 CONHECI ETANOL     VALE VERDE    TDC           SENADOR  GOTDC DISTRIBU59.5382857.8 NVU93ODILIO  70959       
+    8   /2020 MENTO   ANIDRO                   DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 99   MARANHA             
+    633819/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS6.000,480.00 NVS58ROSSINEI46358       
+    9   /2020 MENTO   HIDRATADO  DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  00           17   DE                  
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági9 de 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    633919/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    CIDADE   GOARAGUAIA DIS5.000,450.00 NVS58ROSSINEI46359       
+    633919/09 CONHECI GASOLINA C ARAGUAIAIDORA AUTO POSTO    AGUASNTALGOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI46360       
+    1   /2020 MENTO              DISTRIBUIDORA JURACI JUNIOR LINDAS DE  TRIBUIDORA  00           17   DE                  
+    633919/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS15.0001200.0 NWN72ROBERIO 46317,46318 
+    2   /2020 MENTO   IS         DISTRIBUIDORA IRMAOS                   TRIBUIDORA  ,00        0 50   DE                  
+    633919/09 CONHECI ETANOL     RIO CLARO     FEDERAL       SENADOR  GOFEDERAL DIST59.3044447.8 PRT79BRUNO   92548,92547 
+    633919/09 CONHECI OLEORO     DISTRIBUIDORALPOSTOIBUIDORA NEROPOLISGODISTRIBUIDOR22.000616.00 HBZ3EJOSENER 91290       
+    4   /2020 MENTO   DIESEL B   TABOCAO       NEROPOLIS LTDA           A TABOCAO   ,00          84   NILTON              
+    633919/09 CONHECI OLEO       DISTRIBUIDORA POSTO         NEROPOLISGODISTRIBUIDOR24.000672.00 HBZ3EJOSE    91291       
+    5   /2020 MENTO   DIESEL     TABOCAO       NEROPOLIS LTDA           A TABOCAO   ,00          84   NILTON              
+    633919/09 CONHECI ETANOL     URUACU ACUCAR ARAGUAIA      SENADOR  GOARAGUAIA DIS61.1883365.3 PWJ01VANDERLE25085,25084 
+    6   /2020 MENTO   ETILICO    E ALCOOL      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        4 44   Y NEIVA             
+    633919/09 CONHECI ETANOL     ANICUNS S A   FAN           SENADOR  GOANICUNS S A 59.6042086.1 HIV74MARCELLO138821      
+    633919/09 CONHECI COMBUSTIVE TDCOOL E      ENERGETICAORA SERRANOPOGOTDC DISTRIBU45.0002700.0 AQT44ADEAN   494576      
+    8   /2020 MENTO   IS         DISTRIBUIDORA SERRANOPOLIS  LIS        IDORA DE    ,00        0 57   DIAS DE             
+    633919/09 CONHECI ETANOL     FAN           FAN           SAO LUIS MAFAN DISTRIBU61.35517179. PRT78WEDER   2621        
+    9   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       40 20   ALVES DE            
+    634019/09 CONHECI ETANOL     FAN           FAN           SAO LUIS MAFAN DISTRIBU61.31817169. QTO03MIKCHAEL2622        
+    634019/09 CONHECI ETANOL     ANICUNS S ARA TOTAL BRASILA SENADOR  GOANICUNS S A 43.6131526.4 NKY24MARCIONI138823      
+    1   /2020 MENTO   HIDRATADO  ALCOOL E      DISTRIBUIDORA CANEDO     ALCOOL E    ,00        6 89   L LUIZ              
+    634019/09 CONHECI ETANOL     ANICUNS S A   FAN           SENADOR  GOANICUNS S A 43.6611528.1 JJZ34THIAGO  138824      
+    3   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     ALCOOL E    ,00        4 92   MESSIAS             
+    634019/09 CONHECI ETANOL     ANICUNS S A   FEDERAL       SENADOR  GOFEDERAL DIST61.5231845.6 PQT28PAULO   138829      
+    4   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     RIBUIDORA   ,00        9 70                       
+    634019/09 CONHECI OLEO       FAN           FAN           SENADOR  GOFAN DISTRIBU61.44214131. QTN77EDUARDO 161903      
+    634019/09 CONHECI ETANOL     URUACU ACUCAR TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.1843255.1 NWM72EDEZITO 25099       
+    6   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 40   ALVES DE            
+    634019/09 CONHECI ETANOL     URUACU ACUCAR TDC           SENADOR  GOTDC DISTRIBU59.1843255.1 PQY13ALESSAND25097       
+    7   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 15   RO                  
+    634019/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU41.6052496.3 KEI81JOSENITO310959      
+    634019/09 CONHECI ETANOLADO  SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.5023570.1 RBM5IERCIVAL 310994      
+    9   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 21   PEREIRA             
+    634119/09 CONHECI OLEO       TDC           TDC           BRASILIA DFTDC DISTRIBU61.85312370. QTP  PAULO   393654      
+    0   /2020 MENTO   DIESEL     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       60 4170 CESAR               
+    634119/09 CONHECI GASOLINA A TDC           TDC           SENADOR  GOTDC DISTRIBU59.28711857. PQT75JOSE    393657      
+    1   /2020 MENTO              DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00       40 68   JUNIOR              
+    634121/09 CONHECI ETANOL     FEDERAL       FEDERAL       IPOJUCA  PEFEDERAL DIST61.52314765. PQT28PAULO   316567      
+    634121/09 CONHECI ETANOL     TDCTRIBUIDORA TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU59.5023272.6 RBM5IERCIVAL 494720      
+    5   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        1 21   PEREIRA             
+    634121/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS6.000,480.00 NVS58ROSSINEI46556       
+    6   /2020 MENTO   HIDRATADO  DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  00           17   DE                  
+    634121/09 CONHECI COMBUSTIVE ARAGUAIA      ARAUJO        LUZIANIA GOARAGUAIA DIS10.000800.00 NVS58ROSSINEI46558,46560 
+    634121/09 CONHECI ETANOL     URUACU ACUCAR TDCTELA LTDA  SENADOR  GOTDC DISTRIBU59.2143256.7 QTN39JEAN    25132       
+    8   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        7 34   DAMAS DE            
+    634221/09 CONHECI ETANOL     Sao Martinho  DISTRIBUIDORA SENADOR  GODISTRIBUIDOR57.6234033.6 FDC41MIGUEL  98655,98656 
+    0   /2020 MENTO   HIDRATADO  S/A           TABOCAO       CANEDO     A TABOCAO   ,00        1 18                       
+    634221/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS59.91210784. PRD94JOSE    2725        
+    1   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       16 80   GABRIEL             
+    634221/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS57.90410422. PRD94JOSE    2727        
+    634221/09 CONHECI ETANOL     Sao Martinho  DISTRIBUIDORA SENADOR  GODISTRIBUIDOR61.5664309.6 PRT21JOAOIEL 98660       
+    3   /2020 MENTO   HIDRATADO  S/A           TABOCAO       CANEDO     A TABOCAO   ,00        2 50   HENRIQUE            
+    634221/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS29.6161184.6 KBP89PAULO   437896      
+    6   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        4 94   BENTO DE            
+    634221/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU42.5532553.1 ARZ14ERNANDES310117      
+    634321/09 CONHECI ETANOLADO  ANICUNS S A   FEDERALUIDORA SENADOR  GOFEDERAL DIST61.4921844.7 QTO03RODRIGO 138848      
+    0   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     RIBUIDORA   ,00        6 70   MESSIAS             
+    634321/09 CONHECI ETANOL     Sao Martinho  DISTRIBUIDORA SENADOR  GODISTRIBUIDOR59.5804170.6 GDG02OSVANIR 98662       
+    1   /2020 MENTO   HIDRATADO  S/A           TABOCAO       CANEDO     A TABOCAO   ,00        0 10   SILVA DE            
+    634321/09 CONHECI ETANOL     VALE VERDE    ARAGUAIA      SENADOR  GOARAGUAIA DIS59.5742680.8 OVX33EDEZITO 71000,71001 
+    4   /2020 MENTO   ANIDRO                   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        3 87   SILVA               
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági  10 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    634321/09 CONHECI ETANOL     ANICUNS S A   FAN           SENADOR  GOANICUNS S A 44.6311562.0 JHK99FRANCISC138858      
+    634322/09 CONHECI ETANOL     FEDERALE      FEDERALUIDORA IPOJUCA  PEFEDERAL DIST61.49214758. QTO03RODRIGO 316664      
+    5   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            RIBUIDORA   ,00       08 70   MESSIAS             
+    634322/09 CONHECI ETANOL     ANICUNS S A   TOTAL BRASIL  SENADOR  GOANICUNS S A 43.5911525.6 NKY24MARCIONI138847      
+    7   /2020 MENTO   HIDRATADO  ALCOOL E      DISTRIBUIDORA CANEDO     ALCOOL E    ,00        9 89   L LUIZ              
+    634322/09 CONHECI ETANOL     ANICUNS S A   TOTAL BRASIL  SENADOR  GOANICUNS S A 44.5821560.3 NGT13HANS    138857      
+    634322/09 CONHECI ETANOLADO  TDCOOL E      TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU59.2143256.7 QTN39JEANCHT 494792      
+    9   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        7 34   DAMAS DE            
+    634422/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO J JAGUAS    GOARAGUAIA DIS11.000880.00 NVS58ROSSINEI46812,46813 
+    0   /2020 MENTO   IS         DISTRIBUIDORA JUNIOR LTDA   LINDAS DE  TRIBUIDORA  ,00          17   DE                  
+    634422/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    AGUAS    GOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI46811       
+    1   /2020 MENTO   HIDRATADO  DISTRIBUIDORA JURACI JUNIOR LINDAS DE  TRIBUIDORA  00           17   DE                  
+    634422/09 CONHECI GASOLINA A FAN           FAN           SENADOR  GOFAN DISTRIBU61.44212288. PVS9HSIDINEI 8100        
+    634422/09 CONHECI GASOLINA A FANTRIBUIDORA FANTRIBUIDORA SENADOR  GOFAN DISTRIBU59.26211852. FUN4DMESSIASA8101        
+    3   /2020 MENTO              DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00       40 30                       
+    634422/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS59.90910783. QTN77EDUARDO 2732        
+    4   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       62 40                       
+    634422/09 CONHECI ETANOL     ANICUNS S A   FAN           SENADOR  GOANICUNS S A 44.6541562.8 NGI34OSIAS   138863      
+    634422/09 CONHECI ETANOL     URUACU ACUCAR TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU61.2563369.0 RBM5IERCIVAL 25164       
+    6   /2020 MENTO   ETILICO    E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 21   PEREIRA             
+    634422/09 CONHECI ETANOL     Sao Martinho  DISTRIBUIDORA SENADOR  GODISTRIBUIDOR45.7013199.0 HBZ3EJOSE    98679       
+    7   /2020 MENTO   HIDRATADO  S/A           TABOCAO       CANEDO     A TABOCAO   ,00        7 84   NILTON              
+    634422/09 CONHECI ETANOL     Sao Martinho  ARAGUAIA      SENADOR  GOARAGUAIA DIS61.5974003.8 QTP  BEGUEM  98683       
+    8   /2020 MENTO   HIDRATADO  S/A           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        1 4270                     
+    634422/09 CONHECI ETANOL     ANICUNS S A   TOTAL BRASIL  SENADOR  GOANICUNS S A 43.6131526.4 JJZ34THIAGO  138876      
+    634522/09 CONHECI ETANOLADO  VALE VERDE    TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.5742859.5 PQZ44FRANCISC71018       
+    0   /2020 MENTO   ANIDRO                   DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 22   O                   
+    634522/09 CONHECI ETANOL     VALE VERDE    TDC           SENADOR  GOTDC DISTRIBU59.5382857.8 NWM72EDEZITO 71019       
+    1   /2020 MENTO   ANIDRO                   DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 40   ALVES DE            
+    634522/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.5103510.6 PQY13ALESSAND311265      
+    634522/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS29.5921183.6 KBP89PAULO   438073      
+    4   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        8 94   BENTO DE            
+    634523/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.5743276.5 PQZ44FRANCISC495045      
+    5   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        7 22   O                   
+    634523/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.5383274.5 NWM72EDEZITO 495053      
+    6   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        9 40   ALVES DE            
+    634523/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU61.2563369.0 RBM5IERCIVAL 495068      
+    634523/09 CONHECI COMBUSTIVE ARAGUAIAIDORA ARAUJOBUIDORA LUZIANIA GOARAGUAIA DIS10.000800.00 NWN72ROBERIO 47001,47000 
+    8   /2020 MENTO   IS         DISTRIBUIDORA PORTELA LTDA             TRIBUIDORA  ,00          50   DE                  
+    634523/09 CONHECI ETANOL     ARAGUAIA      ARAUJO        LUZIANIA GOARAGUAIA DIS5.000,375.00 NWN72ROBERIO 47002       
+    9   /2020 MENTO   HIDRATADO  DISTRIBUIDORA PORTELA LTDA             TRIBUIDORA  00           50   DE                  
+    634623/09 CONHECI ETANOL     ANICUNS S A   ARAGUAIA      SENADOR  GOARAGUAIA DIS59.6042086.1 PRT21JOAO    138890      
+    634623/09 CONHECI ETANOL     URUACU ACUCAR TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.3163262.3 QTN39JEANIQUE25186       
+    2   /2020 MENTO   HIDRATADO  E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 34   DAMAS DE            
+    634623/09 CONHECI OLEO       ARAGUAIA      SILVA  PAVEL  COCALZINHGOARAGUAIA DIS3.000,210.00 NVS58ROSSINEI47010       
+    3   /2020 MENTO   DIESEL     DISTRIBUIDORA LTDA          O DE       TRIBUIDORA  00           17   DE                  
+    634623/09 CONHECI OLEO       ARAGUAIA      AUTO POSTO    AGUAS    GOARAGUAIA DIS5.000,375.00 NVS58ROSSINEI47011       
+    4   /2020 MENTO   DIESEL B   DISTRIBUIDORA JURACI JUNIOR LINDAS DE  TRIBUIDORA  00           17   DE                  
+    634623/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO J JAGUAS    GOARAGUAIA DIS5.000,375.00 NVS58ROSSINEI47012       
+    634623/09 CONHECI OLEOATADO  ARAGUAIAIDORA AUTO POSTOA   COCALZINHGOARAGUAIA DIS3.000,210.00 NVS58ROSSINEI47013       
+    6   /2020 MENTO   DIESEL     DISTRIBUIDORA EDILANDIA LTDAO DE       TRIBUIDORA  00           17   DE                  
+    634623/09 CONHECI ETANOL     ANICUNS S A   ARAGUAIA      SENADOR  GOARAGUAIA DIS57.5882015.5 FDC41MIGUEL  138893      
+    7   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        8 18                       
+    634623/09 CONHECI ETANOL     ANICUNS S A   TOTAL BRASIL  SENADOR  GOANICUNS S A 45.5721595.0 AQT44ADEAN   138894,1388 
+    634623/09 CONHECI ETANOLADO  ANICUNS S A   ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS43.6881529.0 NKY24MARCIONI138896      
+    9   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        8 89   L LUIZ              
+    634723/09 CONHECI ETANOL     CAMBUI ACUCAR TDC           SENADOR  GOTDC DISTRIBU61.4612888.6 PRX40DIONATHA49578       
+    0   /2020 MENTO   ANIDRO     E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        7 67   JOSE                
+    634723/09 CONHECI ETANOL     CAMBUI ACUCAR TDC           SENADOR  GOTDC DISTRIBU59.4782795.4 OVX33EDEZITO 49585       
+    1   /2020 MENTO   ANIDRO     E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        7 87   SILVA               
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági  11 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    634723/09 CONHECI ETANOL     Sao Martinho  ARAGUAIA      SENADOR  GOARAGUAIA DIS61.5293999.3 RCF  YGOR    98703       
+    634723/09 CONHECI ETANOLADO  CAMBUI ACUCAR TDCTRIBUIDORA SENADOR  GOTDC DISTRIBU61.4612888.6 PWJ01VANDERLE49589       
+    3   /2020 MENTO   ANIDRO     E ALCOOL      DISTRIBUIDORA CANEDO     IDORA DE    ,00        7 44   Y NEIVA             
+    634723/09 CONHECI ETANOL     ANICUNS S A   ARAGUAIA      SENADOR  GOARAGUAIA DIS44.6811563.8 NGT13HANS    138909      
+    4   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        4 44   SCHUCHT             
+    634723/09 CONHECI BIODIESEL  BINATURAL IND ARAGUAIA      SENADOR  GOARAGUAIA DIS56.9143983.9 QTP  PAULO   72768       
+    634723/09 CONHECI ETANOL     ANICUNS S A   ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS44.6811563.8 JHK99FRANCISC138919      
+    6   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        4 97   O                   
+    634723/09 CONHECI GASOLINA A FAN           FAN           SENADOR  GOFAN DISTRIBU59.50811901. PRT21PAULO   8134        
+    7   /2020 MENTO              DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00       60 60   HENRIQUE            
+    634723/09 CONHECI BIODIESEL  Granol Ind,   FEDERAL       IPOJUCA  PEFEDERAL DIST56.76415326. PQT28ROGERIO 438262      
+    8   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA            RIBUIDORA   ,00       28 60                       
+    634723/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS29.6161184.6 KBP89PAULO   438246      
+    634823/09 CONHECI ETANOL     TDC. e Exp.   TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU61.4613380.3 PRX40DIONATHA495158      
+    0   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        6 67   JOSE                
+    634823/09 CONHECI ETANOL     GOIASA        ARAGUAIA      SENADOR  GOARAGUAIA DIS59.2742667.3 OGY20MYCHELL 229589,2295 
+    1   /2020 MENTO   HIDRATADO  GOIATUBA      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        3 81   ALVES   90          
+    634823/09 CONHECI ETANOL     ANICUNS S A   FAN           SENADOR  GOANICUNS S A 57.4902012.1 FYM5FRAPHAEL 138935      
+    634823/09 CONHECI ETANOL     ANICUNS S A   FANTRIBUIDORA SENADOR  GOANICUNS S A 59.5382083.8 OEK86WALDIR  138936      
+    4   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     ALCOOL E    ,00        3 24   DIAS DE             
+    634823/09 CONHECI ETANOL     ANICUNS S A   ARAGUAIA      SENADOR  GOARAGUAIA DIS59.5382083.8 GWI94WESLEY  138937      
+    5   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        3 61   ALVES DE            
+    634823/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS59.91910785. PRD94JOSE    2742        
+    6   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       42 80   GABRIEL             
+    634823/09 CONHECI ETANOL     ANICUNS S A   ARAGUAIA      SENADOR  GOARAGUAIA DIS59.5382083.8 GDG02OSVANIR 138938      
+    634824/09 CONHECI GASOLINA A FANOOL E      FANTRIBUIDORA SENADOR  GOFAN DISTRIBU61.21912243. PRT78WEDER DE8136        
+    8   /2020 MENTO              DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00       80 20   ALVES DE            
+    634824/09 CONHECI GASOLINA A FAN           FAN           SENADOR  GOFAN DISTRIBU61.21912243. QTO03MIKCHAEL8137        
+    9   /2020 MENTO              DISTRIBUIDORA DISTRIBUIDORA CANEDO     IDORA DE    ,00       80 60   SANTOS              
+    634924/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.6113687.1 PRT79BRUNO   311484      
+    634924/09 CONHECI ETANOLADO  TDCa          TDCTRIBUIDORA BRASILIA DFTDC DISTRIBU61.4613380.3 PWJ01VANDERLE495254      
+    1   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        6 44   Y NEIVA             
+    634924/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.4783271.2 OVX33EDEZITO 495256      
+    2   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        9 87   SILVA               
+    634924/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.5403746.5 PQY13ALESSAND311487      
+    3   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        6 15   RO                  
+    634924/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU59.5023808.1 PRR  LEOMARIO311490      
+    634924/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTOORA AGUASO   GOARAGUAIA DIS10.000 80.00 NWN72ROBERIO 47185       
+    6   /2020 MENTO   IS         DISTRIBUIDORA JURACI JUNIOR LINDAS DE  TRIBUIDORA  ,00          50   DE                  
+    634924/09 CONHECI ETANOL     VALE VERDE    TDC           SENADOR  GOTDC DISTRIBU59.5082856.3 PQZ44FRANCISC71048       
+    7   /2020 MENTO   ANIDRO                   DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 22   O                   
+    634924/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    AGUAS    GOARAGUAIA DIS15.0001200.0 NWN72ROBERIO 47185,47186 
+    634924/09 CONHECI ETANOL     ARAGUAIAIDORA AUTO POSTOIOR NOVO GAMAGOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI47200       
+    9   /2020 MENTO   HIDRATADO  DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  00           17   DE                  
+    635024/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO J JAGUAS    GOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI47201       
+    0   /2020 MENTO   HIDRATADO  DISTRIBUIDORA JUNIOR LTDA   LINDAS DE  TRIBUIDORA  00           17   DE                  
+    635024/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    CIDADE   GOARAGUAIA DIS6.000,480.00 NVS58ROSSINEI47202       
+    1   /2020 MENTO   HIDRATADO  DISTRIBUIDORA CIDADE        OCIDENTAL  TRIBUIDORA  00           17   DE                  
+    635024/09 CONHECI ETANOL     DISTRIBUIDORA DISTRIBUIDORA PORTO    TODISTRIBUIDOR61.4549218.1 QTP  BEGUEM  91536       
+    635024/09 CONHECI ETANOLADO  SJC BioenergiaTDCOCAO       SENADORL GOTDC DISTRIBU41.6302664.3 KEI81JOSENITO311498      
+    3   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 10   BATISTA             
+    635024/09 CONHECI ETANOL     ENERGETICA    TDC           SENADOR  GOTDC DISTRIBU59.5264762.0 QTN39JEAN    65171,65172 
+    4   /2020 MENTO   ANIDRO     SERRANOPOLIS  DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 34   DAMAS DE            
+    635024/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS59.91110783. QTN77EDUARDO 2744        
+    635024/09 CONHECI ETANOL     SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU41.6052662.7 JJZ34THIAGO  311507      
+    6   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 92   MESSIAS             
+    635024/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS57.90810423. PRD94JOSE    2746        
+    7   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       44 80   GABRIEL             
+    635024/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.5193681.2 NWM72EDEZITO 311506      
+    9   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 40   ALVES DE            
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági  12 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    635124/09 CONHECI ETANOL     CAMBUI ACUCAR DISTRIBUIDORA SENADOR  GODISTRIBUIDOR45.6552511.0 HBZ3EJOSE    49624       
+    635124/09 CONHECI ETANOLADO  DISTRIBUIDORA DISTRIBUIDORA PORTOO   TODISTRIBUIDOR61.4239213.4 QTP  PAULON  91537       
+    1   /2020 MENTO   HIDRATADO  TABOCAO       TABOCAO       NACIONAL   A TABOCAO   ,00        5 4170 CESAR               
+    635124/09 CONHECI ETANOL     CAMBUI ACUCAR DISTRIBUIDORA SENADOR  GODISTRIBUIDOR57.5653166.0 PUG7GVALDIR  49625       
+    2   /2020 MENTO   HIDRATADO  E ALCOOL      TABOCAO       CANEDO     A TABOCAO   ,00        8 78   PEREIRA             
+    635124/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS57.91710425. PRD94JOSE    2748        
+    635124/09 CONHECI ETANOL     CAMBUI ACUCAR DISTRIBUIDORA SENADOR  GODISTRIBUIDOR61.5353384.4 PRT21JOAOIEL 49626       
+    4   /2020 MENTO   HIDRATADO  E ALCOOL      TABOCAO       CANEDO     A TABOCAO   ,00        3 50   HENRIQUE            
+    635124/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.5083272.9 PQZ44FRANCISC495326      
+    5   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        4 22   O                   
+    635124/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.3573734.8 HIV74MARCELLO311526      
+    6   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 00                       
+    635124/09 CONHECI BIODIESEL  Granol Ind,   FEDERAL       IPOJUCA  PEFEDERAL DIST56.89115360. RCF  YGOR    438430      
+    635225/09 CONHECI OLEO       TDC. e Exp.   ENERGETICAORA SERRANOPOGOTDC DISTRIBU45.0002700.0 AQT44ADEANIRO495377      
+    0   /2020 MENTO   DIESEL     DISTRIBUIDORA SERRANOPOLIS  LIS        IDORA DE    ,00        0 57   DIAS DE             
+    635225/09 CONHECI OLEO       FEDERAL       FEDERAL       SENADOR  GOFEDERAL DIST61.60911089. PQT28PAULO   417059      
+    1   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA CANEDO     RIBUIDORA   ,00       62 70                       
+    635225/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    COCALZINHGOARAGUAIA DIS10.000700.00 NWN72ROBERIO 47325,47326 
+    635225/09 CONHECI GASOLINA C ARAGUAIAIDORA AUTO POSTOLTDACOCALZINHGOARAGUAIA DIS2.000,130.00 NWN72ROBERIO 47327       
+    3   /2020 MENTO              DISTRIBUIDORA EDILANDIA LTDAO DE       TRIBUIDORA  00           50   DE                  
+    635225/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU58.6343752.5 PQY13ALESSAND311592      
+    4   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 15   RO                  
+    635225/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.5263273.9 QTN39JEAN    495441      
+    5   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        3 34   DAMAS DE            
+    635225/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    AGUAS    GOARAGUAIA DIS10.000800.00 NVS58ROSSINEI47444,47445 
+    635225/09 CONHECI ETANOL     ARAGUAIAIDORA ARAUJO JUNIOR LUZIANIAEGOARAGUAIA DIS6.000,420.00 NVS58ROSSINEI47446       
+    7   /2020 MENTO   HIDRATADO  DISTRIBUIDORA PORTELA LTDA             TRIBUIDORA  00           17   DE                  
+    635225/09 CONHECI ETANOL     ENERGETICA    TDC           SENADOR  GOTDC DISTRIBU59.5264762.0 PQT75JOSE    65208       
+    8   /2020 MENTO   ANIDRO     SERRANOPOLIS  DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 68   JUNIOR              
+    635225/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU56.5273617.7 OWP4FERONILDO311601      
+    635325/09 CONHECI ETANOLADO  SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU57.5483683.0 OVX33EDEZITO 311602      
+    0   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        7 87   SILVA               
+    635325/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU57.5193163.5 NWM72EDEZITO 495451      
+    1   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        5 40   ALVES DE            
+    635325/09 CONHECI ETANOL     ENERGETICA    TDC           SENADOR  GOTDC DISTRIBU61.5104920.8 PRX40DIONATHA65211       
+    2   /2020 MENTO   ANIDRO     SERRANOPOLIS  DISTRIBUIDORA CANEDO     IDORA DE    ,00        0 67   JOSE                
+    635325/09 CONHECI GASOLINA C ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS10.000750.00 NWN72ROBERIO 47526       
+    635325/09 CONHECI GASOLINA C ARAGUAIAIDORA ARAUJO        LUZIANIA GOARAGUAIA DIS5.000,400.00 NWN72ROBERIO 47527       
+    4   /2020 MENTO              DISTRIBUIDORA PORTELA LTDA             TRIBUIDORA  00           50   DE                  
+    635325/09 CONHECI ETANOL     ENERGETICA    TDC           SENADOR  GOTDC DISTRIBU57.5134601.0 PRD94EDSON   65220       
+    5   /2020 MENTO   ANIDRO     SERRANOPOLIS  DISTRIBUIDORA CANEDO     IDORA DE    ,00        4 80   LUCIO DE            
+    635325/09 CONHECI BIODIESEL  Granol Ind,   FEDERAL       IPOJUCA  PEFEDERAL DIST56.87315355. QTN77EDUARDO 438630      
+    635326/09 CONHECI ETANOL     TDC. e Exp.   TDCTRIBUIDORA TERESINA PITDC DISTRIBU59.52611309. PQT75JOSE    495557      
+    7   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       94 68   JUNIOR              
+    635326/09 CONHECI GASOLINA C ARAGUAIA      SR OCIDENTAL  CIDADE   GOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI47568       
+    8   /2020 MENTO              DISTRIBUIDORA COMERCIO      OCIDENTAL  TRIBUIDORA  00           17   DE                  
+    635326/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS11.000880.00 NVS58ROSSINEI47570,47569 
+    9   /2020 MENTO   IS         DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  ,00          17   DE                  
+    635426/09 CONHECI GASOLINA C ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS8.000,600.00 NWN72ROBERIO 47578       
+    635426/09 CONHECI COMBUSTIVE ARAGUAIAIDORA AUTO POSTO    NOVO GAMAGOARAGUAIA DIS7.000,560.00 NWN72ROBERIO 47580,47579 
+    1   /2020 MENTO   IS         DISTRIBUIDORA IRMAOS                   TRIBUIDORA  00           50   DE                  
+    635426/09 CONHECI ETANOL     TDC           TDC           TERESINA PITDC DISTRIBU57.51310927. PRD94EDSON   495598      
+    2   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       47 80   LUCIO DE            
+    635426/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU61.5103383.0 PRX40DIONATHA495607      
+    635426/09 CONHECI OLEORO     DISTRIBUIDORA POSTOIBUIDORA NEROPOLISGODISTRIBUIDOR24.000672.00 HBZ3EJOSE    91701       
+    5   /2020 MENTO   DIESEL B   TABOCAO       NEROPOLIS LTDA           A TABOCAO   ,00          84   NILTON              
+    635426/09 CONHECI OLEO       DISTRIBUIDORA POSTO         NEROPOLISGODISTRIBUIDOR22.000616.00 HBZ3EJOSE    91702       
+    6   /2020 MENTO   DIESEL     TABOCAO       NEROPOLIS LTDA           A TABOCAO   ,00          84   NILTON              
+    635426/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU60.5243873.5 PWJ01VANDERLE311746      
+    8   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        4 44   Y NEIVA             
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági  13 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    635426/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU59.5323810.0 PQZ44FRANCISC311751      
+    635528/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO J JAGUASO   GOARAGUAIA DIS15.0001200.0 NWN72ROBERIO 47856,47855 
+    0   /2020 MENTO   IS         DISTRIBUIDORA JUNIOR LTDA   LINDAS DE  TRIBUIDORA  ,00        0 50   DE                  
+    635528/09 CONHECI COMBUSTIVE ARAGUAIA      SR OCIDENTAL  CIDADE   GOARAGUAIA DIS11.000880.00 NVS58ROSSINEI47858,47857 
+    1   /2020 MENTO   IS         DISTRIBUIDORA COMERCIO      OCIDENTAL  TRIBUIDORA  ,00          17   DE                  
+    635528/09 CONHECI ETANOL     ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI47859       
+    635528/09 CONHECI COMBUSTIVE ARAGUAIAIDORA AUTO POSTO    NOVO GAMAGOARAGUAIA DIS16.0001280.0 17   DE      42683,42682 
+    3   /2020 MENTO   IS         DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  ,00        0                          
+    635528/09 CONHECI ETANOL     ANICUNS S A   TDC           SENADOR  GOTDC DISTRIBU26.0781043.1 OVX33EDEZITO 139021      
+    4   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 87   SILVA               
+    635528/09 CONHECI ETANOL     ANICUNS S A   TDC           SENADOR  GOTDC DISTRIBU33.4601338.4 OVX33EDEZITO 139022      
+    5   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     IDORA DE    ,00        0 87   SILVA               
+    635528/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS59.90710783. PRD94JOSE    2762        
+    635528/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIAIDORA SENADOR  GOARAGUAIA DIS57.91510424. PRD94JOSEIEL 2766        
+    7   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       70 80   GABRIEL             
+    635528/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS57.92010425. PRD94JOSE    2770        
+    8   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00       60 80   GABRIEL             
+    635528/09 CONHECI ETANOL     ENERGETICA    TDC           SENADOR  GOTDC DISTRIBU61.4484915.8 QTP  BEGUEM  65272       
+    635628/09 CONHECI ETANOL     SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU58.2333726.9 NVU93ODILIO  311802      
+    0   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        1 99   MARANHA             
+    635628/09 CONHECI OLEO       FEDERAL       FEDERAL       SENADOR  GOFEDERAL DIST61.56011080. PQT28ROGERIO 417312      
+    1   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA CANEDO     RIBUIDORA   ,00       80 60                       
+    635628/09 CONHECI ETANOL     ENERGETICA    TDC           SENADOR  GOTDC DISTRIBU61.4114912.8 QTP  PAULO   65281       
+    2   /2020 MENTO   ANIDRO     SERRANOPOLIS  DISTRIBUIDORA CANEDO     IDORA DE    ,00        8 4170 CESAR               
+    635628/09 CONHECI ETANOL     ANICUNS S A   ARAGUAIA      SENADOR  GOARAGUAIA DIS59.4062079.2 OWP4FERONILDO139038      
+    635628/09 CONHECI ETANOL     ANICUNS S A   ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS29.7031039.6 KBP89PAULO   139040      
+    4   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        1 94   BENTO DE            
+    635628/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS57.3852295.4 FYM5FRAPHAEL 438768      
+    5   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        0 77   MAYER               
+    635628/09 CONHECI BIODIESEL  Granol Ind,   LARCO         SENADOR  GOLARCO       64.3112572.4 EQU7ENEURI RO438789      
+    635628/09 CONHECI BIODIESEL  ARAGUAIAxp.   BIOPETROLEO DOPAULINIA SPBIOPETROLEOE60.0006600.0 FWO7BRAFAELS 47961       
+    7   /2020 MENTO              DISTRIBUIDORA BRASIL                   DO BRASIL   ,00        0 14   ROBERTO             
+    635628/09 CONHECI BIODIESEL  ARAGUAIA      BIOPETROLEO DOPAULINIA SPBIOPETROLEO 58.0006380.0 DUF5DJURANDIR47962       
+    8   /2020 MENTO              DISTRIBUIDORA BRASIL                   DO BRASIL   ,00        0 59                       
+    635628/09 CONHECI BIODIESEL  ARAGUAIA      BIOPETROLEO DOPAULINIA SPBIOPETROLEO 50.0005500.0 GDD2GLUIZ    47960       
+    9   /2020 MENTO              DISTRIBUIDORA BRASIL                   DO BRASIL   ,00        0 37   GUSTAVO             
+    635728/09 CONHECI ETANOL     TDC           TDC           BRASILIA DFTDC DISTRIBU59.5383274.5 OVX33EDEZITO 495759      
+    635729/09 CONHECI OLEORO     FEDERALUIDORA FEDERALUIDORA SENADOR  GOFEDERAL DIST61.60911089. RCF  YGORA   417374      
+    1   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA CANEDO     RIBUIDORA   ,00       62 8A60 PINHEIRO            
+    635729/09 CONHECI OLEO       FEDERAL       FEDERAL       UBERLANDIMGFEDERAL DIST61.56011080. QTO03RODRIGO 417364      
+    2   /2020 MENTO   DIESEL A   DISTRIBUIDORA DISTRIBUIDORA A          RIBUIDORA   ,00       80 70   MESSIAS             
+    635729/09 CONHECI OLEO       FEDERAL       FEDERAL       SENADOR  GOFEDERAL DIST61.58511085. QTN77EDUARDO 417375      
+    635729/09 CONHECI BIODIESEL  Granol Ind,RA ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS59.3882375.5 OGY20MYCHELL 438825      
+    4   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        2 81   ALVES               
+    635729/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS54.9122196.4 RCF  FRANCISC438823      
+    5   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        8 8E40 O                   
+    635729/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    COCALZINHGOARAGUAIA DIS7.000,490.00 NWN72ROBERIO 48051,48052 
+    6   /2020 MENTO   IS         DISTRIBUIDORA EDILANDIA LTDAO DE       TRIBUIDORA  00           50   DE                  
+    635729/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    COCALZINHGOARAGUAIA DIS8.000,520.00 NWN72ROBERIO 48053,48054 
+    635729/09 CONHECI ETANOL     TDCTRIBUIDORA TDCLANDIA LTDABRASILIA DFTDC DISTRIBU58.2333202.8 NVU93ODILIO  495867      
+    8   /2020 MENTO   HIDRATADO  DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        2 99   MARANHA             
+    635829/09 CONHECI ETANOL     RAIZEN        DISTRIBUIDORA SENADOR  GODISTRIBUIDOR59.6584176.0 PWJ01VANDERLE123636      
+    0   /2020 MENTO   HIDRATADO  CENTROESTE    TABOCAO       CANEDO     A TABOCAO   ,00        6 44   Y NEIVA             
+    635829/09 CONHECI ETANOL     TDC           TDC           TERESINA PITDC DISTRIBU61.41111668. QTP  PAULO   495880      
+    635829/09 CONHECI ETANOL     TDCTRIBUIDORA TDCTRIBUIDORA TERESINA PITDC DISTRIBU61.44811675. QTP0 BEGUEM  495887      
+    2   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       12 4270                     
+    635829/09 CONHECI ETANOL     ANICUNS S A   ARAGUAIA      SENADOR  GOARAGUAIA DIS43.7101529.8 KEI81JOSENITO139057,1390 
+    3   /2020 MENTO   ANIDRO     ALCOOL E      DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        5 10   BATISTA 58          
+    635829/09 CONHECI ETANOL     Sao Martinho  DISTRIBUIDORA SENADOR  GODISTRIBUIDOR45.6783197.4 AQT44ADEAN   98786       
+    4   /2020 MENTO   HIDRATADO  S/A           TABOCAO       CANEDO     A TABOCAO   ,00        6 57   DIAS DE             
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                 EmpreTRANSPORTADORA THOOR S.A                                                               Pági  14 14  
+                                                                                      BaiDistrito Industrial Data06/10/20 
+                 EnderAvenida Tropical                                                                                    
+                 CidadSENADOR CANEDO - GO                                             CEP75251722            Hora13:28:56 
+                                                                                                             UsuáLUCAS    
+                 Fone:6235329554                                                      Fax                                 
+                 CNPJ:14068957000265IE10508497                                                                            
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+                                                     Listagem de Conhecimentos Emitidos                                   
+                                                                                                                          
+    Filtros: Dt. Emissão entre 01/09/2020 e 30/09/2020, Situação contido em Autorizado,Emitido, Status contido em Ativo,  
+    Chave contido em ,false, Remetenteui-btnui-btn contido em ,false,false, Destinatárioui-btnui-btn contido em           
+                                                                                                                          
+    CT-eDt.   Tipo    Mercadoria Remetente     Destinatári   Cidade   UFTomador     Volume Valor PlacaMotorist Nota       
+              Serviço                          o             Destino                       Frete      a        Fiscal     
+    635829/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO    AGUAS    GOARAGUAIA DIS11.000880.00 NVS58ROSSINEI48152,48153 
+    635829/09 CONHECI GASOLINA C ARAGUAIAIDORA AUTO POSTOIOR CIDADE DEGOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI48154       
+    6   /2020 MENTO              DISTRIBUIDORA CIDADE        OCIDENTAL  TRIBUIDORA  00           17   DE                  
+    635829/09 CONHECI ETANOL     RAIZEN        DISTRIBUIDORA SENADOR  GODISTRIBUIDOR59.6584176.0 OMI63REGINALD123639      
+    7   /2020 MENTO   HIDRATADO  CENTROESTE    TABOCAO       CANEDO     A TABOCAO   ,00        6 97   O                   
+    635829/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS29.9195385.4 PRD94JOSE    2787        
+    635829/09 CONHECI ETANOL     SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.1123783.1 RBM5IERCIVAL 311935      
+    9   /2020 MENTO   ANIDRO     Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        7 21   PEREIRA             
+    635929/09 CONHECI BIODIESEL  COOP AGROINDUSARAGUAIA      SENADOR  GOARAGUAIA DIS44.9118083.9 PRD94JOSE    2789        
+    0   /2020 MENTO              DOS           DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        8 80   GABRIEL             
+    635929/09 CONHECI BIODIESEL  ADM DO BRASIL DISTRIBUIDORA SENADOR  GODISTRIBUIDOR58.0599289.4 PRR  LEOMARIO129090      
+    1   /2020 MENTO              LTDA          RIO BRANCO    CANEDO     A RIO       ,00        4 9470 DE                  
+    635929/09 CONHECI COMBUSTIVE ARAGUAIA      AUTO POSTO J JAGUAS    GOARAGUAIA DIS15.0001200.0 NWN72ROBERIO 48168,48169 
+    635929/09 CONHECI ETANOL     Sao MartinhoA DISTRIBUIDORA SENADORDEGODISTRIBUIDOR45.6503195.5 HBZ3EJOSE    988040      
+    3   /2020 MENTO   HIDRATADO  S/A           TABOCAO       CANEDO     A TABOCAO   ,00        0 84   NILTON              
+    635929/09 CONHECI ETANOL     FAN           FAN           GUAMARE  RNFAN DISTRIBU61.31815329. PQT28PAULO   2813        
+    4   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00       50 70                       
+    635929/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU57.4903679.3 NWM72EDEZITO 311973      
+    635929/09 CONHECI ETANOLADO  SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU58.5103744.6 PQY13ALESSAND311977      
+    6   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        4 15   RO                  
+    635929/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS57.2582290.3 FYM5FRAPHAEL 438993      
+    7   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        2 77   MAYER               
+    635929/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU56.4643613.7 PUG7GVALDIR  311985      
+    8   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        0 78   PEREIRA             
+    635929/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU55.0393522.5 PRT21ANTONIO 311987      
+    636029/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIAIDORA SENADOR  GOARAGUAIA DIS55.7772231.0 PRT79BRUNOS  439009      
+    0   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        8 40   DAINNER             
+    636029/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS54.7902191.6 RCF  FRANCISC439020      
+    1   /2020 MENTO              Com. e Exp.   DISTRIBUIDORA CANEDO     TRIBUIDORA  ,00        0 8E40 O                   
+    636029/09 CONHECI BIODIESEL  BINATURAL IND FAN           SENADOR  GOFAN DISTRIBU57.9273765.2 PRX40DIONATHA72909       
+    636030/09 CONHECI COMBUSTIVE ARAGUAIAEOS   AUTO POSTOORA NOVO GAMAGOARAGUAIA DIS15.0001200.0 NWN72ROBERIO 48188,48187 
+    3   /2020 MENTO   IS         DISTRIBUIDORA IRMAOS                   TRIBUIDORA  ,00        0 50   DE                  
+    636030/09 CONHECI OLEO       ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS6.000,420.00 NVS58ROSSINEI48186       
+    4   /2020 MENTO   DIESEL B   DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  00           17   DE                  
+    636030/09 CONHECI GASOLINA C ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS5.000,400.00 NVS58ROSSINEI48185       
+    5   /2020 MENTO              DISTRIBUIDORA VIVENDAS                 TRIBUIDORA  00           17   DE                  
+    636030/09 CONHECI OLEO       ARAGUAIA      AUTO POSTO    NOVO GAMAGOARAGUAIA DIS5.000,375.00 NVS58ROSSINEI48184       
+    636030/09 CONHECI ETANOL     TDCTRIBUIDORA TDCENDAS      BRASILIA DFTDC DISTRIBU59.1123251.1 RBM5IERCIVAL 496025      
+    7   /2020 MENTO   ANIDRO     DISTRIBUIDORA DISTRIBUIDORA            IDORA DE    ,00        6 21   PEREIRA             
+    636030/09 CONHECI ETANOL     DISTRIBUIDORA POSTO TABOCAO PORTELANDGODISTRIBUIDOR10.000960.00 QTO3AMURILLO 91918       
+    8   /2020 MENTO   HIDRATADO  TABOCAO       VI LTDA       IA         A TABOCAO   ,00          99   MENDES              
+    636030/09 CONHECI BIODIESEL  BINATURAL IND ARAGUAIA      SENADOR  GOARAGUAIA DIS57.4494021.4 OWP4FERONILDO72912       
+    636130/09 CONHECI OLEO       GRANEL QUIMICATDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.48111896. PQT75JOSE    91366       
+    0   /2020 MENTO   DIESEL A   LTDA          DISTRIBUIDORA CANEDO     IDORA DE    ,00       20 68   JUNIOR              
+    636130/09 CONHECI ETANOL     VALE VERDE    FAN           SENADOR  GOVALE VERDE  44.6042007.1 NGI34OSIAS   71154       
+    1   /2020 MENTO   HIDRATADO                DISTRIBUIDORA CANEDO                 ,00        8 28   DIAS                
+    636130/09 CONHECI BIODIESEL  GRANEL QUIMICATDC           SENADOR  GOTDC DISTRIBU57.44911489. PRD94EDSON   91396       
+    2   /2020 MENTO              LTDA          DISTRIBUIDORA CANEDO     IDORA DE    ,00       80 80   LUCIO DE            
+    636130/09 CONHECI BIODIESEL  Granol Ind,   ARAGUAIA      SENADOR  GOARAGUAIA DIS57.2112288.4 EJW98WALLACE 439183      
+    636130/09 CONHECI ETANOL     SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU57.5193681.2 FDC41MIGUEL  312106      
+    5   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        2 18                       
+    636130/09 CONHECI ETANOL     SJC BioenergiaTDC           SENADOR  GOTDC DISTRIBU59.5023808.1 OGY20MYCHELL 312114      
+    6   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        3 81   ALVES               
+    636130/09 CONHECI BIODIESEL  BINATURAL IND ARAGUAIA      SENADOR  GOARAGUAIA DIS55.9243914.6 OVX33EDEZITO 72935       
+    636130/09 CONHECI ETANOL     SJC BioenergiaTDCTRIBUIDORA SENADOR  GOTDC DISTRIBU59.5323810.0 PWJ01VANDERLE312127      
+    8   /2020 MENTO   HIDRATADO  Ltda          DISTRIBUIDORA CANEDO     IDORA DE    ,00        5 44   Y NEIVA             
+                                                                                                                          
+                                                                              Total 22.2882.085.0                         
+                                                                            Geral :  .606  81,2                           
+                                                                                                                          
+                              CFAWEB - www.a2o.com.br - comercial@a2o.com.br - (62) 3587-3147                             
+                                                                                                                          
+                                                                                                                          
+                                                                                                                          
+
+
