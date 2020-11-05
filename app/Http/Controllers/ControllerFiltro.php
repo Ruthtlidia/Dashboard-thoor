@@ -54,34 +54,58 @@ class ControllerFiltro extends Controller
              * Monta array com os momes motoristas
              */
             $arrayMotoristas = array();
+            $arrayFrota = array();
             $cont = 0;
+            $contFrota = 0;
             for($i = 0; $i <= count($arrayPlacasResult) -1; $i++){
                 $motoristas = Conhecimentos::select('motorista', 'placa')->distinct()->where('placa', '=', $arrayPlacasResult[$i])->whereDate('data_emissao', '>=' ,$dataInicial)->whereDate('data_emissao', '<=' ,$dataFinal)->get('motorista', 'placa');
 
-                    if(count($motoristas) > 1){
-                        for($a = 0; $a <= count($motoristas)-1; $a++){
-                            $arrayMotoristas[$cont][0] = $arrayPlacasResult[$i];
-                            $nome = explode(' ', $motoristas[$a]['motorista']);
-                            $arrayMotoristas[$cont][$a +1] = $nome[0] . ' ' . $nome[1];
-                            $arrayMotoristas[$cont][$a +2] = 'R$ ' .  number_format($arrayMotora[$i], 2, ',', '.');
-                        }
-                        $cont++;
-                    }else{
-                        $l = 0;
+                $tabelaFrota = Conhecimentos::select('motorista', 'placa')->distinct()->where('placa', '=', $arrayPlacasResult[$i])->whereDate('data_emissao', '>=' ,$dataInicial)->whereDate('data_emissao', '<=' ,$dataFinal)->get('motorista', 'placa');
+
+                for($f = 0; $f < count($tabelaFrota); $f++){
+                    $total = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))->where('placa', '=', $arrayPlacasResult[$i])->where('motorista', '=', $tabelaFrota[$f]['motorista'])->whereDate('data_emissao', '>=' ,$dataInicial )->whereDate('data_emissao', '<=' ,$dataFinal)->get();
+                    $arrayFrota[$i]['motorista'][$f] = $tabelaFrota[$f]['motorista'];
+                    $arrayFrota[$i]['faturamento'][$f] = number_format($total[0]['total'], 2, ',', '.');
+                    $arrayFrota[$i]['placa'] = $arrayPlacasResult[$i];
+                    $contFrota++;
+                }
+
+                if(count($motoristas) > 1){
+                    for($a = 0; $a <= count($motoristas)-1; $a++){
                         $arrayMotoristas[$cont][0] = $arrayPlacasResult[$i];
-                        $nome = explode(' ', $motoristas[0]['motorista']);
-                        $arrayMotoristas[$cont][$l+1] = $nome[0] . ' ' . $nome[1];
-                        $arrayMotoristas[$cont][$l+2] = 'R$ ' . number_format($arrayMotora[$i], 2, ',', '.');
-                        $cont++;
+                        $nome = explode(' ', $motoristas[$a]['motorista']);
+                        $arrayMotoristas[$cont][$a +1] = $nome[0] . ' ' . $nome[1];
+                        $arrayMotoristas[$cont][$a +2] = 'R$ ' .  number_format($arrayMotora[$i], 2, ',', '.');
                     }
-
-
+                    $cont++;
+                }else{
+                    $l = 0;
+                    $arrayMotoristas[$cont][0] = $arrayPlacasResult[$i];
+                    $nome = explode(' ', $motoristas[0]['motorista']);
+                    $arrayMotoristas[$cont][$l+1] = $nome[0] . ' ' . $nome[1];
+                    $arrayMotoristas[$cont][$l+2] = 'R$ ' . number_format($arrayMotora[$i], 2, ',', '.');
+                    $cont++;
+                }
             }
             /***
              * Seta na sessão os valores do filtro para o ajax do grafico acessar pela function teste ps mudar noma da function
              */
             Session::put('motoristas', $arrayMotoristas);
             Session::put('total', $arrayMotora);
+
+
+            Session::put('faturamento_frota', $arrayFrota);
+
+
+            // foreach($arrayFrota as $value){
+            //     print_rpre($value['placa']);
+
+            //     // foreach($value['faturamento'] as $faturamento){
+            //     //     print_rpre($faturamento);
+            //     // }
+            // }
+            // exit;
+
 
 
             /**

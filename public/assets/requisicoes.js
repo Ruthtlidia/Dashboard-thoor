@@ -9,6 +9,13 @@ function importarArquivo(){
 
     form_data.append('arquivo', file_data);
 
+    Swal.fire({
+        title: 'Aguarde que estamos importando seu arquivo...',
+        willOpen: () => {
+            Swal.showLoading()
+          },
+      })
+
 
     jQuery.ajax({
         url: "xml",
@@ -19,7 +26,7 @@ function importarArquivo(){
         success: function( data )
         {
             if(data.situacao == 'success'){
-                console.log(data.msg);
+                console.log(data.result);
                 $('#frmImportar input').val("");
                     Swal.fire({
                         position: 'top-end',

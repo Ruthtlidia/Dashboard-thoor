@@ -67,7 +67,7 @@ class ControllerXml extends Controller
 
         $retorno = [
             'situacao' => 'success',
-            'msg' => 'Importação bem sucedida!'
+            'msg' => 'Importação bem sucedida!',
         ];
 
         return $retorno;

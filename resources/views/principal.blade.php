@@ -155,7 +155,10 @@
                 </div>
               </div>
             </div>
-            <?php $motoristas = Session::get('motoristas'); ?>
+           @if(Session::get('motoristas') != NULL)
+           <?php $motoristas = Session::get('motoristas');?>
+            @endif
+
             <div class="row ">
               <div class="col-12 grid-margin">
                 <div class="card">
@@ -178,27 +181,55 @@
                         </thead>
                         <tbody>
 
-
-                            @foreach ($motoristas as $motorista)
+                            <?php $faturamento_frota = Session::get('faturamento_frota');
+                                $i = 0;
+                            ?>
+                            @if(isset($faturamento_frota))
+                            @foreach ($faturamento_frota as $faturamento)
+                            <?php $i++; ?>
                           <tr>
                             <td>
                               <div class="form-check form-check-muted m-0">
-                                <i class="mdi mdi-truck" ></i>
+                                @if($i == 1)
+                                    <img src="assets/images/faces/ouro.png" alt="">
+                                @endif
+                                @if($i == 2)
+                                    <img src="assets/images/faces/prata.png" alt="">
+                                @endif
+                                @if($i == 3)
+                                    <img src="assets/images/faces/bronze.png" alt="">
+                                @endif
                               </div>
                             </td>
                             <td>
-                              <span class="pl-2">{{ $motorista[1] }}</span>
+                                <span class="pl-2">
+                                    @foreach ($faturamento['motorista'] as $motorista)
+                                        <p>
+                                            {{ trim($motorista) }}
+                                        </p>
+                                    @endforeach
+                                </span>
                             </td>
                             <?php
-                                $resultado = str_replace(' ', '', $motorista[0]);
+                                $resultado = str_replace(' ', '', $faturamento['placa']);
                                 $resultado = substr_replace($resultado, '-', 3, 0);
                             ?>
-                            <td> {{ $resultado }} </td>
-                            <td> {{ $motorista[2] }} </td>
+                                <td>
+                                    {{ $resultado }}
+                                </td>
+
+                                <td>
+                                    @foreach ($faturamento['faturamento'] as $faturamento)
+                                        <p>
+                                            R$: {{ trim($faturamento) }}
+                                        </p>
+                                    @endforeach
+                                </td>
                             <td>
                             </td>
                           </tr>
                           @endforeach
+                          @endif
 
 
                         </tbody>
