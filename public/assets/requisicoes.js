@@ -47,3 +47,43 @@ function importarArquivo(){
         }
     });
 }
+
+
+
+
+function filtrar(){
+    event.preventDefault();
+
+    //console.log($('#frmFiltrar').serialize());
+
+    jQuery.ajax({
+        url: "filtrar_graficos",
+        type: "POST",
+        data: $('#frmFiltrar').serialize(),
+        success: function( data )
+        {
+            if(data.situacao == 'success'){
+                console.log(data.motorista);
+                //location.reload();
+                // $('#frmImportar input').val("");
+                //     Swal.fire({
+                //         position: 'top-end',
+                //         icon: 'success',
+                //         title: data.msg,
+                //         showConfirmButton: false,
+                //         timer: 1500
+                //     })
+            }
+            if(data.situacao == 'warning'){
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Oops...  Nenhum resultado foi encontrado nesse período de tempo!',
+                  })
+            }
+            if(data.situacao == 'errorUsuario'){
+                $('#errorUsuario').show();
+                $('#errorUsuario').fadeOut(6000);
+            }
+        }
+    });
+}

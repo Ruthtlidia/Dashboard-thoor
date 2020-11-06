@@ -111,7 +111,7 @@
                       </button>
                     </div>
                     <div class="modal-body" >
-                      <form action="/filtrar" method="post" id="form">
+                      <form enctype="multipart/form-data" action="javascript:void(0)" method="post" id="frmFiltrar">
                         @csrf
                         <div class="form-group hover" onfocus="ocultaPlaca()" id="blocoMotorista"  onblur="mostrarPlaca();" >
                             <label>Motorista</label>
@@ -146,7 +146,7 @@
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                            <button type="submit" class="btn btn-primary">Aplicar filtros</button>
+                            <button type="button" class="btn btn-primary" onclick="filtrar();">Aplicar filtros</button>
                           </div>
                       </form>
                     </div>
@@ -199,6 +199,10 @@
                                 @if($i == 3)
                                     <img src="assets/images/faces/bronze.png" alt="">
                                 @endif
+                                @if($i != 1 && $i != 2 && $i != 3)
+                                    <span>{{$i}}º</span>
+                                @endif
+
                               </div>
                             </td>
                             <td>

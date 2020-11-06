@@ -30,6 +30,7 @@ class ControllerFiltro extends Controller
              */
             $cont = 0;
             $contador = 0;
+            $arrayPlacasResult = array();
             for($p = 0; $p <= count($placas) - 1; $p++){
                 $total = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))->where('placa', '=', $placas[$p])->whereDate('data_emissao', '>=' ,$dataInicial )->whereDate('data_emissao', '<=' ,$dataFinal)->get();
 
@@ -43,6 +44,13 @@ class ControllerFiltro extends Controller
 
             }
 
+            if(empty($arrayPlacasResult)){
+                $resposta = [
+                    'situacao' => 'warning',
+                ];
+                return $resposta;
+                exit;
+            }
             //$quries = DB::getQueryLog();
 
             // Your Eloquent query executed by using get()
@@ -140,76 +148,124 @@ class ControllerFiltro extends Controller
             // $uteis->print_rpre(Session::get('total'));
             // $uteis->print_rpre($dataInicial);
 
-            $motoristas = $conhecimento->buscaMotoristas();
-            $arrayMotoristas = $conhecimento->montaArrayMotoristas($motoristas);
+            // $motoristas = $conhecimento->buscaMotoristas();
+            // $arrayMotoristas = $conhecimento->montaArrayMotoristas($motoristas);
 
-            $placas = $conhecimento->buscaPlacas();
-            $arrayPlacas = $conhecimento->montaArrayPlacas($placas);
+            // $placas = $conhecimento->buscaPlacas();
+            // $arrayPlacas = $conhecimento->montaArrayPlacas($placas);
 
 
-            return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
+            //return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
+
+            $resposta = [
+                'situacao' => 'success',
+            ];
+            return $resposta;
+            exit;
         }
-        // if($motoristas){
+         if($motoristas){
 
-        //     $cont = 0;
-        //     $contador = 0;
-        //     for($p = 0; $p <= count($motoristas) - 1; $p++){
-        //         $total = Conhecimentos::select(DB::raw("SUM(nota_valor) as total"))->where('motorista', '=', $motoristas[$p])->whereDate('data_emissao', '>=' ,$dataInicial )->whereDate('data_emissao', '<=' ,$dataFinal)->get();
+            $placasMotorista = array();
+            $cont = 0;
+            for($p = 0; $p <= count($motoristas) - 1; $p++){
+                $placasDosMotoristas = Conhecimentos::select('placa')
+                                            ->distinct()
+                                            ->where('motorista', '=', $motoristas[$p])
+                                            ->whereDate('data_emissao', '>=' ,$dataInicial)
+                                            ->whereDate('data_emissao', '<=' ,$dataFinal)
+                                            ->get('placa');
 
-        //         if($total[0]['total'] <> NULL){
-        //             $arrayMotora[$cont] = $total[0]['total'];
-        //             $cont++;
+                if(count($placasDosMotoristas) > 1){
+                    for($i = 0; $i < count($placasDosMotoristas) - 1; $i++){
+                        $placasMotorista[$cont]['motorista'] = $motoristas[$p];
+                        $placasMotorista[$cont]['placa'] = $placasDosMotoristas[$i]->placa;
+                        $cont++;
+                    }
 
-        //             $arrayMotoristaResult[$contador] = $motoristas[$p];
-        //             $contador++;
-        //         }
-
-        //     }
-
-
-
+                }
+                // $placasMotorista[$i]['motorista'] = $motoristas[$p];
+                // $placasMotorista[$i]['placa'] = $placasDosMotoristas[$p]->placa;
 
 
-
-
-
-
-        //     $arrayMotoristas = array();
-        //     $cont = 0;
-        //     for($i = 0; $i <= count($arrayMotoristaResult) -1; $i++){
-        //         $motoristas = Conhecimentos::select('placa')->distinct()->where('motorista', '=', $arrayMotoristaResult[$i])->whereDate('data_emissao', '>=' ,$dataInicial)->whereDate('data_emissao', '<=' ,$dataFinal)->get('placa');
+            }
 
 
 
+            $resposta = [
+                'situacao' => 'success',
+                'motorista' => $placasMotorista,
+            ];
+            return $resposta;
+            exit;
 
 
 
-        //             if(count($motoristas) >= 1){
-        //                 for($a = 0; $a <= count($motoristas)-1; $a++){
-        //                     $arrayMotoristas[$cont][0] = $arrayMotoristaResult[$i];
-        //                     //print_rpre($motoristas[$a]['placa']);exit;
-        //                     $nome = $motoristas[$a]['placa'];
-        //                     $arrayMotoristas[$cont][$a +1] = $nome;
-        //                     $arrayMotoristas[$cont][$a +2] = 'R$ ' .  number_format($arrayMotora[$i], 2, ',', '.');
-        //                 }
-        //                 $cont++;
-        //             }else{
-        //                 $l = 0;
-        //                 $arrayMotoristas[$cont][0] = $arrayMotoristaResult[$i];
-
-        //                 $nome = explode(' ', $motoristas[0]['motorista']);
-        //                 $arrayMotoristas[$cont][$l+1] = $nome[0] . ' ' . $nome[1];
-        //                 $arrayMotoristas[$cont][$l+2] = 'R$ ' . number_format($arrayMotora[$i], 2, ',', '.');
-        //                 $cont++;
-        //             }
-
-
-        //     }
 
 
 
-        //     Session::put('motoristas', $arrayMotoristas);
-        //     Session::put('total', $arrayMotora);
+
+
+            $cont = 0;
+            $contador = 0;
+            for($p = 0; $p <= count($motoristas) - 1; $p++){
+                $total = Conhecimentos::select(DB::raw("SUM(nota_valor) as total"))->where('motorista', '=', $motoristas[$p])->whereDate('data_emissao', '>=' ,$dataInicial )->whereDate('data_emissao', '<=' ,$dataFinal)->get();
+
+                if($total[0]['total'] <> NULL){
+                    $arrayMotora[$cont] = $total[0]['total'];
+                    $cont++;
+
+                    $arrayMotoristaResult[$contador] = $motoristas[$p];
+                    $contador++;
+                }
+
+            }
+
+
+
+
+            $arrayMotoristas = array();
+            $cont = 0;
+            for($i = 0; $i <= count($arrayMotoristaResult) -1; $i++){
+                $motoristas = Conhecimentos::select('placa')->distinct()->where('motorista', '=', $arrayMotoristaResult[$i])->whereDate('data_emissao', '>=' ,$dataInicial)->whereDate('data_emissao', '<=' ,$dataFinal)->get('placa');
+
+
+
+
+
+
+                    if(count($motoristas) >= 1){
+                        for($a = 0; $a <= count($motoristas)-1; $a++){
+                            $arrayMotoristas[$cont][0] = $arrayMotoristaResult[$i];
+                            //print_rpre($motoristas[$a]['placa']);exit;
+                            $nome = $motoristas[$a]['placa'];
+                            $arrayMotoristas[$cont][$a +1] = $nome;
+                            $arrayMotoristas[$cont][$a +2] = 'R$ ' .  number_format($arrayMotora[$i], 2, ',', '.');
+                        }
+                        $cont++;
+                    }else{
+                        $l = 0;
+                        $arrayMotoristas[$cont][0] = $arrayMotoristaResult[$i];
+
+                        $nome = explode(' ', $motoristas[0]['motorista']);
+                        $arrayMotoristas[$cont][$l+1] = $nome[0] . ' ' . $nome[1];
+                        $arrayMotoristas[$cont][$l+2] = 'R$ ' . number_format($arrayMotora[$i], 2, ',', '.');
+                        $cont++;
+                    }
+
+
+            }
+
+
+
+            Session::put('motoristas', $arrayMotoristas);
+            Session::put('total', $arrayMotora);
+
+            $resposta = [
+                'situacao' => 'success',
+                'motorista' => $arrayMotoristas,
+            ];
+            return $resposta;
+            exit;
 
 
         //     $motoristas = $conhecimento->buscaMotoristas();
@@ -221,7 +277,7 @@ class ControllerFiltro extends Controller
 
         //     return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
 
-        // }
+         }
 
 
     }
