@@ -113,7 +113,7 @@
                     <div class="modal-body" >
                       <form enctype="multipart/form-data" action="javascript:void(0)" method="post" id="frmFiltrar">
                         @csrf
-                        <div class="form-group hover" onfocus="ocultaPlaca()" id="blocoMotorista"  onblur="mostrarPlaca();" >
+                        <div class="form-group hover"  id="blocoMotorista"  onblur="mostrarPlaca();" >
                             <label>Motorista</label>
                             <select class="js-example-basic-multiple" multiple="multiple" id="motorista[]" name="motorista[]" style="width:100%">
                                 @foreach ($arrayMotoristas as $arrayMotorista)

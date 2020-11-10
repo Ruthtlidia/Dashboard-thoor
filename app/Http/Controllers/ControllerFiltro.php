@@ -44,13 +44,13 @@ class ControllerFiltro extends Controller
 
             }
 
-            if(empty($arrayPlacasResult)){
-                $resposta = [
-                    'situacao' => 'warning',
-                ];
-                return $resposta;
-                exit;
-            }
+            // if(empty($arrayPlacasResult)){
+            //     $resposta = [
+            //         'situacao' => 'warning',
+            //     ];
+            //     return $resposta;
+            //     exit;
+            // }
             //$quries = DB::getQueryLog();
 
             // Your Eloquent query executed by using get()
@@ -159,6 +159,7 @@ class ControllerFiltro extends Controller
 
             $resposta = [
                 'situacao' => 'success',
+                'motorista' => $arrayMotoristas,
             ];
             return $resposta;
             exit;
@@ -166,6 +167,7 @@ class ControllerFiltro extends Controller
          if($motoristas){
 
             $placasMotorista = array();
+            $totalParaGrafico = array();
             $cont = 0;
             for($p = 0; $p <= count($motoristas) - 1; $p++){
                 $placasDosMotoristas = Conhecimentos::select('placa')
@@ -175,21 +177,44 @@ class ControllerFiltro extends Controller
                                             ->whereDate('data_emissao', '<=' ,$dataFinal)
                                             ->get('placa');
 
+
                 if(count($placasDosMotoristas) > 1){
-                    for($i = 0; $i < count($placasDosMotoristas) - 1; $i++){
-                        $placasMotorista[$cont]['motorista'] = $motoristas[$p];
-                        $placasMotorista[$cont]['placa'] = $placasDosMotoristas[$i]->placa;
+                    for($i = 0; $i < count($placasDosMotoristas); $i++){
+
+                        $totalFaturamentoPlaca = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))
+                                                            ->where('placa', '=', $placasDosMotoristas[$i]->placa)
+                                                            ->where('motorista', '=', $motoristas[$p])
+                                                            ->whereDate('data_emissao', '>=' ,$dataInicial )
+                                                            ->whereDate('data_emissao', '<=' ,$dataFinal)
+                                                            ->get();
+
+                        $placasMotorista[$cont][0] = $placasDosMotoristas[$i]->placa;
+                        $placasMotorista[$cont][1] = $motoristas[$p];
+                        $placasMotorista[$cont][2] = 'R$ ' . number_format($totalFaturamentoPlaca[0]->total, 2, ',', '.');
+                        $totalParaGrafico[$cont] = $totalFaturamentoPlaca[0]->total;
                         $cont++;
                     }
 
-                }
-                // $placasMotorista[$i]['motorista'] = $motoristas[$p];
-                // $placasMotorista[$i]['placa'] = $placasDosMotoristas[$p]->placa;
+                }else{
+                    $totalFaturamentoPlaca = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))
+                                                    ->where('placa', '=', $placasDosMotoristas[$p]->placa)
+                                                    ->where('motorista', '=', $motoristas[$p])
+                                                    ->whereDate('data_emissao', '>=' ,$dataInicial)
+                                                    ->whereDate('data_emissao', '<=' ,$dataFinal)
+                                                    ->get();
 
+                    $placasMotorista[$cont][0] = $placasDosMotoristas[$p]->placa;
+                    $placasMotorista[$cont][1] = $motoristas[$p];
+                    $placasMotorista[$cont][2] = 'R$ ' . number_format($totalFaturamentoPlaca[0]->total, 2, ',', '.');
+                    $totalParaGrafico[$cont] = $totalFaturamentoPlaca[0]->total;
+                    $cont++;
+                }
 
             }
 
-
+            Session::put('motoristas', $placasMotorista);
+            Session::put('total', $totalParaGrafico);
+            //Session::put('faturamento_frota', $arrayFrota);
 
             $resposta = [
                 'situacao' => 'success',
@@ -198,74 +223,6 @@ class ControllerFiltro extends Controller
             return $resposta;
             exit;
 
-
-
-
-
-
-
-
-            $cont = 0;
-            $contador = 0;
-            for($p = 0; $p <= count($motoristas) - 1; $p++){
-                $total = Conhecimentos::select(DB::raw("SUM(nota_valor) as total"))->where('motorista', '=', $motoristas[$p])->whereDate('data_emissao', '>=' ,$dataInicial )->whereDate('data_emissao', '<=' ,$dataFinal)->get();
-
-                if($total[0]['total'] <> NULL){
-                    $arrayMotora[$cont] = $total[0]['total'];
-                    $cont++;
-
-                    $arrayMotoristaResult[$contador] = $motoristas[$p];
-                    $contador++;
-                }
-
-            }
-
-
-
-
-            $arrayMotoristas = array();
-            $cont = 0;
-            for($i = 0; $i <= count($arrayMotoristaResult) -1; $i++){
-                $motoristas = Conhecimentos::select('placa')->distinct()->where('motorista', '=', $arrayMotoristaResult[$i])->whereDate('data_emissao', '>=' ,$dataInicial)->whereDate('data_emissao', '<=' ,$dataFinal)->get('placa');
-
-
-
-
-
-
-                    if(count($motoristas) >= 1){
-                        for($a = 0; $a <= count($motoristas)-1; $a++){
-                            $arrayMotoristas[$cont][0] = $arrayMotoristaResult[$i];
-                            //print_rpre($motoristas[$a]['placa']);exit;
-                            $nome = $motoristas[$a]['placa'];
-                            $arrayMotoristas[$cont][$a +1] = $nome;
-                            $arrayMotoristas[$cont][$a +2] = 'R$ ' .  number_format($arrayMotora[$i], 2, ',', '.');
-                        }
-                        $cont++;
-                    }else{
-                        $l = 0;
-                        $arrayMotoristas[$cont][0] = $arrayMotoristaResult[$i];
-
-                        $nome = explode(' ', $motoristas[0]['motorista']);
-                        $arrayMotoristas[$cont][$l+1] = $nome[0] . ' ' . $nome[1];
-                        $arrayMotoristas[$cont][$l+2] = 'R$ ' . number_format($arrayMotora[$i], 2, ',', '.');
-                        $cont++;
-                    }
-
-
-            }
-
-
-
-            Session::put('motoristas', $arrayMotoristas);
-            Session::put('total', $arrayMotora);
-
-            $resposta = [
-                'situacao' => 'success',
-                'motorista' => $arrayMotoristas,
-            ];
-            return $resposta;
-            exit;
 
 
         //     $motoristas = $conhecimento->buscaMotoristas();
