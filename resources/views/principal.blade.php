@@ -156,7 +156,11 @@
               </div>
             </div>
            @if(Session::get('motoristas') != NULL)
-           <?php $motoristas = Session::get('motoristas');?>
+           <?php $motoristas = Session::get('motoristas');
+           echo"<pre>";
+            print_r($motoristas);
+            echo"</pre>";
+           ?>
             @endif
 
             <div class="row ">

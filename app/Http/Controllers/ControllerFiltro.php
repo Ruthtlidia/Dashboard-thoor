@@ -44,13 +44,13 @@ class ControllerFiltro extends Controller
 
             }
 
-            // if(empty($arrayPlacasResult)){
-            //     $resposta = [
-            //         'situacao' => 'warning',
-            //     ];
-            //     return $resposta;
-            //     exit;
-            // }
+            if(empty($arrayPlacasResult)){
+                $resposta = [
+                    'situacao' => 'warning',
+                ];
+                return $resposta;
+                exit;
+            }
             //$quries = DB::getQueryLog();
 
             // Your Eloquent query executed by using get()
@@ -95,6 +95,8 @@ class ControllerFiltro extends Controller
                     $cont++;
                 }
             }
+
+
             /***
              * Seta na sessão os valores do filtro para o ajax do grafico acessar pela function teste ps mudar noma da function
              */
@@ -177,6 +179,13 @@ class ControllerFiltro extends Controller
                                             ->whereDate('data_emissao', '<=' ,$dataFinal)
                                             ->get('placa');
 
+                if(count($placasDosMotoristas) == 0){
+                    $resposta = [
+                        'situacao' => 'warning',
+                    ];
+                    return $resposta;
+                    exit;
+                }
 
                 if(count($placasDosMotoristas) > 1){
                     for($i = 0; $i < count($placasDosMotoristas); $i++){
@@ -211,6 +220,8 @@ class ControllerFiltro extends Controller
                 }
 
             }
+
+
 
             Session::put('motoristas', $placasMotorista);
             Session::put('total', $totalParaGrafico);
