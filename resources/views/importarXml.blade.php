@@ -6,7 +6,7 @@
             <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Importar XML</h4>
+                    <h4 class="card-title">Importar XML <a class="nav-link btn btn-danger create-new-button" id="createbuttonDropdown" style='width: 100px;'  aria-expanded="false" href="/deletar">- Deletar</a></h4>
                     <form class="forms-sample" enctype="multipart/form-data" id="frmImportar" action="javascript:void(0)" >
                         @csrf
                       <div class="form-group">

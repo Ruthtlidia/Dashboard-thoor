@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Thoor</title>
+    <title>THOOR</title>
     <!-- plugins:css -->
     <script src="{{asset('assets/js/alert/package/dist/sweetalert2.min.js')}}"></script>
 <link rel="stylesheet" href="{{asset('assets/js/alert/package/dist/sweetalert2.min.css')}}">
@@ -23,7 +23,7 @@
     <link href="{{asset('assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css')}}" rel="stylesheet" type="text/css">
     <script src="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')}}"></script>
 
-
+    <link rel="shortcut icon" href="{{asset('assets/images/icon.png')}}" >
 
     <!-- End plugin css for this page -->
 
@@ -35,14 +35,15 @@
     <link href="{{asset('assets/images/favicon.png')}}" rel="stylesheet" type="text/css">
 
 
+
   </head>
   <body>
-    <div class="container-scroller">
+    <div class="container-scroller" >
       <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          {{-- <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> --}}
+      <nav class="sidebar sidebar-offcanvas dasds" id="sidebar" >
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top  "  >
+           <!-- <a class="sidebar-brand brand-logo " href="index.html" ><img src="assets/images/logo.png" alt="logo" style="width: 100%;" /></a> -->
+          <!-- <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> -->
           <a style="text-decoration: none; " href="/"><h1>THOOR</h1></a>
 
         </div>

@@ -27,3 +27,4 @@ Route::get('/', 'Controller@showHome');
 Route::post('/filtrar', 'ControllerFiltro@filtrar');
 Route::post('/filtrar_graficos', 'ControllerFiltro@filtrar');
 Route::post('/filtrar_ajax', 'ControllerFiltro@teste');
+Route::get('/deletar', 'ControllerXml@deletarTudo');
