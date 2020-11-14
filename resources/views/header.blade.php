@@ -43,7 +43,7 @@
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
           {{-- <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
           <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> --}}
-          <a style="text-decoration: none; " href="http://127.0.0.1:8000/"><h1>THOOR</h1></a>
+          <a style="text-decoration: none; " href="/"><h1>THOOR</h1></a>
 
         </div>
         <ul class="nav">

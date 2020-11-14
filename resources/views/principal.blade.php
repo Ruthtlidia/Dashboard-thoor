@@ -156,11 +156,7 @@
               </div>
             </div>
            @if(Session::get('motoristas') != NULL)
-           <?php $motoristas = Session::get('motoristas');
-           echo"<pre>";
-            print_r($motoristas);
-            echo"</pre>";
-           ?>
+           <?php $motoristas = Session::get('motoristas'); ?>
             @endif
 
             <div class="row ">
@@ -170,6 +166,10 @@
                     <h4 class="card-title">Faturamento Frota</h4>
                     <div class="table-responsive">
                       <table class="table">
+                      <?php $faturamento_frota = Session::get('faturamento_frota');
+                                  $faturamento_frota_motorista = Session::get('faturamento_frota_motorista');
+                                $i = 0;
+                            ?>
                         <thead>
                           <tr>
                             <th>
@@ -181,62 +181,124 @@
                             <th> Motorista </th>
                             <th> Placa </th>
                             <th> Soma da receita </th>
+                            @if(isset($faturamento_frota_motorista))
+                                <th> Soma total da receita </th>
+                            @endif
                           </tr>
                         </thead>
                         <tbody>
 
-                            <?php $faturamento_frota = Session::get('faturamento_frota');
-                                $i = 0;
-                            ?>
+                            <!-- Se vier filtro das placas -->
                             @if(isset($faturamento_frota))
-                            @foreach ($faturamento_frota as $faturamento)
-                            <?php $i++; ?>
-                          <tr>
-                            <td>
-                              <div class="form-check form-check-muted m-0">
-                                @if($i == 1)
-                                    <img src="assets/images/faces/ouro.png" alt="">
-                                @endif
-                                @if($i == 2)
-                                    <img src="assets/images/faces/prata.png" alt="">
-                                @endif
-                                @if($i == 3)
-                                    <img src="assets/images/faces/bronze.png" alt="">
-                                @endif
-                                @if($i != 1 && $i != 2 && $i != 3)
-                                    <span>{{$i}}º</span>
-                                @endif
-
-                              </div>
-                            </td>
-                            <td>
-                                <span class="pl-2">
-                                    @foreach ($faturamento['motorista'] as $motorista)
-                                        <p>
-                                            {{ trim($motorista) }}
-                                        </p>
-                                    @endforeach
-                                </span>
-                            </td>
-                            <?php
-                                $resultado = str_replace(' ', '', $faturamento['placa']);
-                                $resultado = substr_replace($resultado, '-', 3, 0);
-                            ?>
+                                @foreach ($faturamento_frota as $faturamento)
+                                <?php $i++; ?>
+                            <tr>
                                 <td>
-                                    {{ $resultado }}
+                                <div class="form-check form-check-muted m-0">
+                                    @if($i == 1)
+                                        <img src="assets/images/faces/ouro.png" alt="">
+                                    @endif
+                                    @if($i == 2)
+                                        <img src="assets/images/faces/prata.png" alt="">
+                                    @endif
+                                    @if($i == 3)
+                                        <img src="assets/images/faces/bronze.png" alt="">
+                                    @endif
+                                    @if($i != 1 && $i != 2 && $i != 3)
+                                        <span>{{$i}}º</span>
+                                    @endif
+
+                                </div>
+                                </td>
+                                <td>
+                                    <span class="pl-2">
+                                        @foreach ($faturamento['motorista'] as $motorista)
+                                            <p>
+                                                {{ trim($motorista) }}
+                                            </p>
+                                        @endforeach
+                                    </span>
+                                </td>
+                                <?php
+                                    $resultado = '';
+                                    $resultado = str_replace(' ', '', $faturamento['placa']);
+                                    $resultado = substr_replace($resultado, '-', 3, 0);
+                                ?>
+                                    <td>
+                                        {{ $resultado }}
+                                    </td>
+
+                                    <td>
+                                        @foreach ($faturamento['faturamento'] as $faturamento)
+                                            <p>
+                                                R$: {{ trim($faturamento) }}
+                                            </p>
+                                        @endforeach
+                                    </td>
+                                <td>
+                                </td>
+                            </tr>
+                            @endforeach
+                          @endif
+
+                          <!-- Se vier filtro das motorista -->
+                          @if(isset($faturamento_frota_motorista))
+                                @foreach ($faturamento_frota_motorista as $faturamento_motorista)
+                                <?php $i++; ?>
+                            <tr>
+                                <td>
+                                <div class="form-check form-check-muted m-0">
+                                    @if($i == 1)
+                                        <img src="assets/images/faces/ouro.png" alt="">
+                                    @endif
+                                    @if($i == 2)
+                                        <img src="assets/images/faces/prata.png" alt="">
+                                    @endif
+                                    @if($i == 3)
+                                        <img src="assets/images/faces/bronze.png" alt="">
+                                    @endif
+                                    @if($i != 1 && $i != 2 && $i != 3)
+                                        <span>{{$i}}º</span>
+                                    @endif
+
+                                </div>
+                                </td>
+                                <td>
+                                    <span class="pl-2">
+                                        <p>
+                                            {{ trim($faturamento_motorista['motorista'][0]) }}
+                                        </p>
+                                    </span>
+                                </td>
+                                <td>
+                                    <?php
+                                        foreach($faturamento_motorista['placa'] as $placas){
+                                            $resultado = str_replace(' ', '', $placas);
+                                            $resultado = substr_replace($resultado, '-', 3, 0);?>
+
+                                            {{ $resultado }} <br><br>
+
+                                        <?php }
+                                    ?>
                                 </td>
 
-                                <td>
-                                    @foreach ($faturamento['faturamento'] as $faturamento)
+                                    <td>
+                                        @foreach ($faturamento_motorista['valor_placas'] as $valor_placa)
+                                            <p>
+                                                R$: {{ trim($valor_placa) }}
+                                            </p>
+                                        @endforeach
+                                    </td>
+
+                                    <td>
                                         <p>
-                                            R$: {{ trim($faturamento) }}
+                                            R$: {{ trim($faturamento_motorista['valor_total'][0]) }}
                                         </p>
-                                    @endforeach
+                                    </td>
+                                <td>
                                 </td>
-                            <td>
-                            </td>
-                          </tr>
-                          @endforeach
+                            </tr>
+                            @endforeach
                           @endif
 
 

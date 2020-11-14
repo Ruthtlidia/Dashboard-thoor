@@ -107,57 +107,6 @@ class ControllerFiltro extends Controller
             Session::put('faturamento_frota', $arrayFrota);
 
 
-            // foreach($arrayFrota as $value){
-            //     print_rpre($value['placa']);
-
-            //     // foreach($value['faturamento'] as $faturamento){
-            //     //     print_rpre($faturamento);
-            //     // }
-            // }
-            // exit;
-
-
-
-            /**
-             * Código referente a pesqueisa pelo motora
-             *
-             */
-            // $motoristasPlacas = Conhecimento::select('F_PLACA_VEICULO')->distinct()->where('F_RAZAOSOCIAL_PESSOAM', '=', $motoristas[0])->get('F_PLACA_VEICULO');
-
-            // $arrayPlacas = array();
-            // $cont = 0;
-            // foreach($motoristasPlacas as $motoristaPlaca){
-            //     $arrayPlacas[$cont]['placa'] = $motoristaPlaca->F_PLACA_VEICULO;
-            //     $cont++;
-            // }
-            // $array = array();
-            // $cont = 0;
-            // for($i = 0; $i <= count($arrayPlacas)-1; $i++){
-            //     $resultes = Conhecimento::select(DB::raw("SUM(F_VLR_NF) as total, F_PLACA_VEICULO"))->where([['F_RAZAOSOCIAL_PESSOAM', '=', $motoristas[0]], ['F_PLACA_VEICULO', '=', $arrayPlacas[$i]['placa']]])->groupBy('F_PLACA_VEICULO')->get();
-
-            //      $array[$cont]['total'] = $resultes[0]['total'];
-            //      $array[$cont]['placa'] = $resultes[0]['F_PLACA_VEICULO'];
-            //      $array[$cont]['motorista'] = $motoristas[0];
-            //      $cont++;
-            // }
-            // $uteis->print_rpre($array);
-
-            //$session = 0;
-            //$uteis->print_rpre($arrayPlacas[0]['placa']);
-            //$uteis->print_rpre($placas);
-            //$uteis->print_rpre($total);
-            // $uteis->print_rpre(Session::get('motoristas'));
-            // $uteis->print_rpre(Session::get('total'));
-            // $uteis->print_rpre($dataInicial);
-
-            // $motoristas = $conhecimento->buscaMotoristas();
-            // $arrayMotoristas = $conhecimento->montaArrayMotoristas($motoristas);
-
-            // $placas = $conhecimento->buscaPlacas();
-            // $arrayPlacas = $conhecimento->montaArrayPlacas($placas);
-
-
-            //return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
 
             $resposta = [
                 'situacao' => 'success',
@@ -170,6 +119,9 @@ class ControllerFiltro extends Controller
 
             $placasMotorista = array();
             $totalParaGrafico = array();
+            $arrayMotoristaFrota = array();
+            $contadorFrota = 0;
+            $somatorio = 0;
             $cont = 0;
             for($p = 0; $p <= count($motoristas) - 1; $p++){
                 $placasDosMotoristas = Conhecimentos::select('placa')
@@ -178,6 +130,7 @@ class ControllerFiltro extends Controller
                                             ->whereDate('data_emissao', '>=' ,$dataInicial)
                                             ->whereDate('data_emissao', '<=' ,$dataFinal)
                                             ->get('placa');
+
 
                 if(count($placasDosMotoristas) == 0){
                     $resposta = [
@@ -197,35 +150,63 @@ class ControllerFiltro extends Controller
                                                             ->whereDate('data_emissao', '<=' ,$dataFinal)
                                                             ->get();
 
+                        /** array onde monta para o grafico (qunado ouver mais de uma placa pro mesmo motorista) */
                         $placasMotorista[$cont][0] = $placasDosMotoristas[$i]->placa;
                         $placasMotorista[$cont][1] = $motoristas[$p];
                         $placasMotorista[$cont][2] = 'R$ ' . number_format($totalFaturamentoPlaca[0]->total, 2, ',', '.');
                         $totalParaGrafico[$cont] = $totalFaturamentoPlaca[0]->total;
                         $cont++;
+
+
+                        /** arrray que monta pra tabela do grafico (qunado ouver mais de uma placa pro mesmo motorista)*/
+                        $arrayMotoristaFrota[$p]['motorista'][0] = $motoristas[$p] ;
+                        $arrayMotoristaFrota[$p]['placa'][$i] = $placasDosMotoristas[$i]->placa;
+                        $arrayMotoristaFrota[$p]['valor_placas'][$i] = 'R$ ' . number_format($totalFaturamentoPlaca[0]->total, 2, ',', '.');
+                        $somatorio = $somatorio + $totalFaturamentoPlaca[0]->total;
+                        $arrayMotoristaFrota[$p]['valor_total'][0] = 'R$ ' . number_format($somatorio, 2, ',', '.') ;
+
+
                     }
 
-                }else{
-                    $totalFaturamentoPlaca = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))
-                                                    ->where('placa', '=', $placasDosMotoristas[$p]->placa)
-                                                    ->where('motorista', '=', $motoristas[$p])
-                                                    ->whereDate('data_emissao', '>=' ,$dataInicial)
-                                                    ->whereDate('data_emissao', '<=' ,$dataFinal)
-                                                    ->get();
 
-                    $placasMotorista[$cont][0] = $placasDosMotoristas[$p]->placa;
+                }else{
+
+                    $totalFaturamentoPlaca = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))
+                                                ->where('placa', '=', $placasDosMotoristas[0]->placa)
+                                                ->where('motorista', '=', $motoristas[$p])
+                                                ->whereDate('data_emissao', '>=' ,$dataInicial)
+                                                ->whereDate('data_emissao', '<=' ,$dataFinal)
+                                                ->get();
+
+
+                    /** array onde monta para o grafico (quando ouver somente 1 placa) */
+                    $placasMotorista[$cont][0] = $placasDosMotoristas[0]->placa;
                     $placasMotorista[$cont][1] = $motoristas[$p];
                     $placasMotorista[$cont][2] = 'R$ ' . number_format($totalFaturamentoPlaca[0]->total, 2, ',', '.');
                     $totalParaGrafico[$cont] = $totalFaturamentoPlaca[0]->total;
                     $cont++;
+
+
+                    /** arrray que monta pra tabela do grafico (quando ouver somente 1 placa) */
+                    $arrayMotoristaFrota[$p]['motorista'][0] = $motoristas[$p] ;
+                    $arrayMotoristaFrota[$p]['placa'][0] = $placasDosMotoristas[0]->placa;
+                    $arrayMotoristaFrota[$p]['valor_placas'][0] = 'R$ ' . number_format($totalFaturamentoPlaca[0]->total, 2, ',', '.');
+                    $somatorio = $somatorio + $totalFaturamentoPlaca[0]->total;
+                    $arrayMotoristaFrota[$p]['valor_total'][0] = 'R$ ' . number_format($somatorio, 2, ',', '.') ;
                 }
+
+
 
             }
 
 
 
+
+
             Session::put('motoristas', $placasMotorista);
             Session::put('total', $totalParaGrafico);
-            //Session::put('faturamento_frota', $arrayFrota);
+            Session::put('faturamento_frota_motorista', $arrayMotoristaFrota);
+
 
             $resposta = [
                 'situacao' => 'success',
@@ -233,7 +214,6 @@ class ControllerFiltro extends Controller
             ];
             return $resposta;
             exit;
-
 
 
         //     $motoristas = $conhecimento->buscaMotoristas();

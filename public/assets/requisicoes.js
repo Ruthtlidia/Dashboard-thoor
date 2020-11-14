@@ -63,7 +63,7 @@ function filtrar(){
         success: function( data )
         {
             if(data.situacao == 'success'){
-                //console.log(data.motorista);
+                console.log(data.motorista);
                 location.reload();
                 // $('#frmImportar input').val("");
                 //     Swal.fire({
