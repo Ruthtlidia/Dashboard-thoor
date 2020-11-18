@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Conhecimentos;
+use App\Filtro;
 use App\Uteis;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
@@ -79,6 +80,24 @@ class Controller extends BaseController
 
         $placas = $conhecimento->buscaPlacas();
         $arrayPlacas = $conhecimento->montaArrayPlacas($placas);
+
+
+        /** Quando abrir busca filtro salvo no banco e mostra */
+        $filtros = new Filtro();
+        $filtros = Filtro::find(1);
+
+        if($filtros['tipo_filtro'] == 2){
+            Session::put('motoristas', unserialize($filtros['motorista']));
+            Session::put('total', unserialize($filtros['total']));
+            Session::put('faturamento_frota_motorista', unserialize($filtros['faturamento_frota']));
+            Session::put('total_receita_faturamento', unserialize($filtros['total_receita']));
+        }
+        if($filtros['tipo_filtro'] == 1){
+            Session::put('motoristas', unserialize($filtros['motorista']));
+            Session::put('total', unserialize($filtros['total']));
+            Session::put('total_receita_faturamento', unserialize($filtros['faturamento_frota']));
+            Session::put('faturamento_frota', unserialize($filtros['total_receita']));
+        }
 
 
 

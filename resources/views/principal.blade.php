@@ -31,8 +31,10 @@
                     <div class="row">
                       <div class="col-10">
                         <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">$17.34</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p>
+                        <?php $receita_total_grafico = Session::get('total_receita_faturamento');
+                              $receita_total_grafico = 'R$ ' . number_format($receita_total_grafico, 2, ',', '.')
+                        ?>
+                          <h3 class="mb-0">{{ $receita_total_grafico }}</h3>
                         </div>
                       </div>
                       <div class="col-2">
@@ -41,7 +43,7 @@
                         </div>
                       </div>
                     </div>
-                    <h6 class="text-muted font-weight-normal">Revenue current</h6>
+                    <h6 class="text-muted font-weight-normal">Receita Total Gráfico</h6>
                   </div>
                 </div>
               </div>
@@ -53,7 +55,6 @@
                         <div class="d-flex align-items-center align-self-start">
                         <?php $faturamento_anual = Session::get('faturamento_anual'); ?>
                           <h3 class="mb-0">{{ $faturamento_anual }}</h3>
-                          <p class="text-danger ml-0 mb-0 font-weight-medium">-2.4%</p>
                         </div>
                       </div>
                       <div class="col-2">
@@ -74,7 +75,6 @@
                         <div class="d-flex align-items-center align-self-start">
                         <?php $carregamento_anual = Session::get('carregamento_mensal'); ?>
                           <h3 class="mb-0">{{ $carregamento_anual }}</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
                         </div>
                       </div>
                       <div class="col-3">
@@ -83,7 +83,7 @@
                         </div>
                       </div>
                     </div>
-                    <h6 class="text-muted font-weight-normal">Volume carregado mensal</h6>
+                    <h6 class="text-muted font-weight-normal">Volume Carregado Mensal</h6>
                   </div>
                 </div>
               </div>
@@ -134,6 +134,7 @@
                             </select>
                           </div>
 
+
                           <div class="form-group row">
 
                             <label for="example-date-input" class="col-2 col-form-label" >Data Inicial</label>
@@ -144,6 +145,10 @@
                             <label for="example-date-input" class="col-2 col-form-label">Data Final (opicional)</label>
                             <div class="col-3" >
                                 <input class="form-control" type="date" id="dataFinal" name="dataFinal" value="{{date('Y-m-d')}}" id="example-date-input">
+                            </div>
+                            <div class="form-check form-check-flat form-check-primary">
+                                <label class="form-check-label">
+                                <input type="checkbox" id="salvar_filtro" name="salvar_filtro" class="form-check-input"> Salvar filtro </label>
                             </div>
 
                           </div>
@@ -244,7 +249,7 @@
                             @endforeach
                           @endif
 
-                          <!-- Se vier filtro das motorista -->
+                          <!-- Se vier filtro dos motorista -->
                           @if(isset($faturamento_frota_motorista))
                                 @foreach ($faturamento_frota_motorista as $faturamento_motorista)
                                 <?php $i++; ?>
@@ -288,14 +293,14 @@
                                     <td>
                                         @foreach ($faturamento_motorista['valor_placas'] as $valor_placa)
                                             <p>
-                                                R$: {{ trim($valor_placa) }}
+                                                {{ trim($valor_placa) }}
                                             </p>
                                         @endforeach
                                     </td>
 
                                     <td>
                                         <p>
-                                            R$: {{ trim($faturamento_motorista['valor_total'][0]) }}
+                                             {{ trim($faturamento_motorista['valor_total'][0]) }}
                                         </p>
                                     </td>
                                 <td>
@@ -311,6 +316,213 @@
                   </div>
                 </div>
               </div>
+            </div>
+
+            <!-- Mês-->
+            <div class="row ">
+              <div class="col-3 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title" >
+                    &emsp;&emsp; DESEMPENHO THOOR 2019
+                    </h4>
+                    <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th> </th>
+                                <th></th>
+                                <th>  </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            </td>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            <td style="color: white;" > TOTAL</td>
+                            <td style="color: white;"> R$:</td>
+                            <td style="color: white;"> 1.859.042,69 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Segunda -->
+              <div class="col-3 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title" >
+                    &emsp;&emsp;DESEMPENHO THOOR  2020
+                    </h4>
+                    <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th> </th>
+                                <th></th>
+                                <th>  </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            </td>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            <td style="color: white;" > TOTAL</td>
+                            <td style="color: white;"> R$:</td>
+                            <td style="color: white;"> 1.859.042,69 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fim Segunda -->
+              <!-- terçeira -->
+              <div class="col-6 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title" style="margin-left: 246px;">
+                    DECLÍNIO/CRESCIMENTO
+                    </h4>
+                    <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr style="color: red">
+                            <td >R$:</td>
+                            <td><span class="mdi mdi-arrow-bottom-left icon-item" ></span></td>
+                            <td >R$: 1.859.042,69 </td>
+                            <td >-6,52% </td>
+                          </tr>
+                          <tr style="color: green">
+                            <td>R$:</td>
+                            <td><span class="mdi mdi-arrow-top-right icon-item" ></span></td>
+                            <td>R$: 1.859.042,69 </td>
+                            <td >6,52% </td>
+                          </tr>
+                          <tr style="color: green">
+                            <td>R$:</td>
+                            <td><span class="mdi mdi-arrow-top-right icon-item" ></span></td>
+                            <td >R$: 1.859.042,69 </td>
+                            <td >6,52% </td>
+                          </tr>
+                          <tr style="color: red">
+                            <td>R$:</td>
+                            <td><span class="mdi mdi-arrow-bottom-left icon-item" ></span></td>
+                            <td >R$: 1.859.042,69 </td>
+                            <td >-6,52% </td>
+                          </tr>
+                          <tr>
+                            <td style="color: white;" > TOTAL</td>
+                            <td style="color: white;"> </td>
+                            <td style="color: white;"> R$: 1.859.042,69 </td>
+                            <td style="color: white;">9,90% </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fim terceira -->
+               <!-- Porcentagem -->
+               <!-- <div class="col-3 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title" >
+                    &emsp;&emsp;Percentual De Crescimento
+                    </h4>
+                    <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th> </th>
+                                <th></th>
+                                <th>  </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr style="color: red">
+                            <td></td>
+                            <td>-6,52%</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            </td>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            <td> FEVEREIRO</td>
+                            <td> R$:</td>
+                            <td> 1.859.042,69 </td>
+                          </tr>
+                          <tr>
+                            <td style="color: white;" > TOTAL</td>
+                            <td style="color: white;"> R$:</td>
+                            <td style="color: white;"> 1.859.042,69 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- Fim Porcentagem -->
             </div>
             <div class="row">
               <div class="col-md-6 col-xl-4 grid-margin stretch-card">

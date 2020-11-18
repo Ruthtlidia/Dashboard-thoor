@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Conhecimentos;
+use App\Filtro;
 use App\Uteis;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -22,6 +23,7 @@ class ControllerFiltro extends Controller
         $placas = $request->placa;
         $dataInicial = $request->dataInicial;
         $dataFinal = $request->dataFinal;
+        $salvarFiltro = $request->salvar_filtro;
 
         if($placas){
             //DB::enableQueryLog(); // Enable query log
@@ -64,6 +66,7 @@ class ControllerFiltro extends Controller
             $arrayMotoristas = array();
             $arrayFrota = array();
             $cont = 0;
+            $totalReceitaFiltro = 0;
             $contFrota = 0;
             for($i = 0; $i <= count($arrayPlacasResult) -1; $i++){
                 $motoristas = Conhecimentos::select('motorista', 'placa')->distinct()->where('placa', '=', $arrayPlacasResult[$i])->whereDate('data_emissao', '>=' ,$dataInicial)->whereDate('data_emissao', '<=' ,$dataFinal)->get('motorista', 'placa');
@@ -94,17 +97,29 @@ class ControllerFiltro extends Controller
                     $arrayMotoristas[$cont][$l+2] = 'R$ ' . number_format($arrayMotora[$i], 2, ',', '.');
                     $cont++;
                 }
+                $totalReceitaFiltro = $totalReceitaFiltro + $arrayMotora[$i];
             }
 
 
             /***
              * Seta na sessão os valores do filtro para o ajax do grafico acessar pela function teste ps mudar noma da function
              */
+            $request->session()->flush();
             Session::put('motoristas', $arrayMotoristas);
             Session::put('total', $arrayMotora);
-
-
+            Session::put('total_receita_faturamento', $totalReceitaFiltro);
             Session::put('faturamento_frota', $arrayFrota);
+
+            if($salvarFiltro){
+                $filtros = new Filtro();
+                $filtros = Filtro::find(1);
+                $filtros->tipo_filtro = 1;
+                $filtros->motorista = serialize(Session::get('motoristas'));
+                $filtros->total = serialize(Session::get('total'));
+                $filtros->faturamento_frota = serialize(Session::get('total_receita_faturamento'));
+                $filtros->total_receita = serialize(Session::get('faturamento_frota'));
+                $filtros->save();
+            }
 
 
 
@@ -122,6 +137,7 @@ class ControllerFiltro extends Controller
             $arrayMotoristaFrota = array();
             $contadorFrota = 0;
             $somatorio = 0;
+            $totalReceitaFiltro = 0;
             $cont = 0;
             for($p = 0; $p <= count($motoristas) - 1; $p++){
                 $placasDosMotoristas = Conhecimentos::select('placa')
@@ -141,6 +157,7 @@ class ControllerFiltro extends Controller
                 }
 
                 if(count($placasDosMotoristas) > 1){
+                    $somatorio = 0;
                     for($i = 0; $i < count($placasDosMotoristas); $i++){
 
                         $totalFaturamentoPlaca = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))
@@ -163,6 +180,7 @@ class ControllerFiltro extends Controller
                         $arrayMotoristaFrota[$p]['placa'][$i] = $placasDosMotoristas[$i]->placa;
                         $arrayMotoristaFrota[$p]['valor_placas'][$i] = 'R$ ' . number_format($totalFaturamentoPlaca[0]->total, 2, ',', '.');
                         $somatorio = $somatorio + $totalFaturamentoPlaca[0]->total;
+                        $totalReceitaFiltro = $totalReceitaFiltro + $totalFaturamentoPlaca[0]->total;
                         $arrayMotoristaFrota[$p]['valor_total'][0] = 'R$ ' . number_format($somatorio, 2, ',', '.') ;
 
 
@@ -170,7 +188,7 @@ class ControllerFiltro extends Controller
 
 
                 }else{
-
+                    $somatorio = 0;
                     $totalFaturamentoPlaca = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))
                                                 ->where('placa', '=', $placasDosMotoristas[0]->placa)
                                                 ->where('motorista', '=', $motoristas[$p])
@@ -192,6 +210,7 @@ class ControllerFiltro extends Controller
                     $arrayMotoristaFrota[$p]['placa'][0] = $placasDosMotoristas[0]->placa;
                     $arrayMotoristaFrota[$p]['valor_placas'][0] = 'R$ ' . number_format($totalFaturamentoPlaca[0]->total, 2, ',', '.');
                     $somatorio = $somatorio + $totalFaturamentoPlaca[0]->total;
+                    $totalReceitaFiltro = $totalReceitaFiltro + $totalFaturamentoPlaca[0]->total;
                     $arrayMotoristaFrota[$p]['valor_total'][0] = 'R$ ' . number_format($somatorio, 2, ',', '.') ;
                 }
 
@@ -200,13 +219,23 @@ class ControllerFiltro extends Controller
             }
 
 
-
-
+            $request->session()->flush();
 
             Session::put('motoristas', $placasMotorista);
             Session::put('total', $totalParaGrafico);
             Session::put('faturamento_frota_motorista', $arrayMotoristaFrota);
+            Session::put('total_receita_faturamento', $totalReceitaFiltro);
 
+            if($salvarFiltro){
+                $filtros = new Filtro();
+                $filtros = Filtro::find(1);
+                $filtros->tipo_filtro = 2;
+                $filtros->motorista = serialize(Session::get('motoristas'));
+                $filtros->total = serialize(Session::get('total'));
+                $filtros->faturamento_frota = serialize(Session::get('faturamento_frota_motorista'));
+                $filtros->total_receita = serialize(Session::get('total_receita_faturamento'));
+                $filtros->save();
+            }
 
             $resposta = [
                 'situacao' => 'success',
