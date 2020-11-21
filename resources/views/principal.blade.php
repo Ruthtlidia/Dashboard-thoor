@@ -8,16 +8,11 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-12">
                         <div class="d-flex align-items-center align-self-start">
                         <?php $faturamento_mensal = Session::get('faturamento_mensal'); ?>
                           <h3 class="mb-0">{{ $faturamento_mensal }}</h3>
                           <!-- <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p> -->
-                        </div>
-                      </div>
-                      <div class="col-2">
-                        <div class="icon icon-box-success ">
-                          <span class="mdi mdi-arrow-top-right icon-item"></span>
                         </div>
                       </div>
                     </div>
@@ -29,17 +24,12 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-12">
                         <div class="d-flex align-items-center align-self-start">
                         <?php $receita_total_grafico = Session::get('total_receita_faturamento');
                               $receita_total_grafico = 'R$ ' . number_format($receita_total_grafico, 2, ',', '.')
                         ?>
                           <h3 class="mb-0">{{ $receita_total_grafico }}</h3>
-                        </div>
-                      </div>
-                      <div class="col-2">
-                        <div class="icon icon-box-success">
-                          <span class="mdi mdi-arrow-top-right icon-item"></span>
                         </div>
                       </div>
                     </div>
@@ -51,15 +41,10 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-12">
                         <div class="d-flex align-items-center align-self-start">
                         <?php $faturamento_anual = Session::get('faturamento_anual'); ?>
-                          <h3 class="mb-0">{{ $faturamento_anual }}</h3>
-                        </div>
-                      </div>
-                      <div class="col-2">
-                        <div class="icon icon-box-danger">
-                          <span class="mdi mdi-arrow-bottom-left icon-item"></span>
+                          <h3 class="mb-0">{{ ltrim($faturamento_anual) }}</h3>
                         </div>
                       </div>
                     </div>
@@ -71,15 +56,10 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-9">
+                      <div class="col-12">
                         <div class="d-flex align-items-center align-self-start">
                         <?php $carregamento_anual = Session::get('carregamento_mensal'); ?>
                           <h3 class="mb-0">{{ $carregamento_anual }}</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="icon icon-box-success ">
-                          <span class="mdi mdi-arrow-top-right icon-item"></span>
                         </div>
                       </div>
                     </div>
@@ -125,11 +105,24 @@
                             </select>
                           </div>
 
+                          <?php $placasFiltro = Session::get('placas_filtro');?>
                           <div class="form-group" id="blocoPlaca">
                             <label>Placa</label>
                             <select class="js-example-basic-multiple" multiple="multiple" id="placa[]" name="placa[]" style="width:100%">
                                 @foreach ($arrayPlacas as $arrayPlaca)
-                                    <option value="{{$arrayPlaca['placa']}}">{{$arrayPlaca['placa']}}</option>
+                                    @if(isset($placasFiltro))
+                                        @foreach($placasFiltro as $placaFiltrada)
+
+                                            @if($placaFiltrada == $arrayPlaca['placa'])
+                                                <option selected value="{{$arrayPlaca['placa']}}">{{$arrayPlaca['placa']}}</option>
+                                            @endif
+
+                                            @if($placaFiltrada <> $arrayPlaca['placa'])
+                                                <option value="{{$arrayPlaca['placa']}}">{{$arrayPlaca['placa']}}</option>
+                                            @endif
+
+                                        @endforeach
+                                    @endif
                                 @endforeach
                             </select>
                           </div>
@@ -320,11 +313,11 @@
 
             <!-- Mês-->
             <div class="row ">
-              <div class="col-3 grid-margin">
+              <div class="col-4 grid-margin" >
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title" >
-                    &emsp;&emsp; DESEMPENHO THOOR 2019
+                    DESEMPENHO THOOR 2019
                     </h4>
                     <div class="table-responsive">
                     <table class="table">
@@ -369,11 +362,11 @@
                 </div>
               </div>
               <!-- Segunda -->
-              <div class="col-3 grid-margin">
+              <div class="col-4 grid-margin" >
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title" >
-                    &emsp;&emsp;DESEMPENHO THOOR  2020
+                    DESEMPENHO THOOR  2020
                     </h4>
                     <div class="table-responsive">
                     <table class="table">
@@ -381,14 +374,14 @@
                             <tr>
                                 <th> </th>
                                 <th></th>
-                                <th>  </th>
+                                <th> </th>
                             </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td> FEVEREIRO</td>
-                            <td> R$:</td>
-                            <td> 1.859.042,69 </td>
+                            <td>FEVEREIRO</td>
+                            <td>R$:</td>
+                            <td>1.859.042,69</td>
                           </tr>
                           <tr>
                             </td>
@@ -419,10 +412,10 @@
               </div>
               <!-- Fim Segunda -->
               <!-- terçeira -->
-              <div class="col-6 grid-margin">
+              <div class="col-4 grid-margin" >
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" style="margin-left: 246px;">
+                    <h4 class="card-title">
                     DECLÍNIO/CRESCIMENTO
                     </h4>
                     <div class="table-responsive">
@@ -437,32 +430,27 @@
                         </thead>
                         <tbody>
                           <tr style="color: red">
-                            <td >R$:</td>
                             <td><span class="mdi mdi-arrow-bottom-left icon-item" ></span></td>
                             <td >R$: 1.859.042,69 </td>
                             <td >-6,52% </td>
                           </tr>
                           <tr style="color: green">
-                            <td>R$:</td>
                             <td><span class="mdi mdi-arrow-top-right icon-item" ></span></td>
                             <td>R$: 1.859.042,69 </td>
                             <td >6,52% </td>
                           </tr>
                           <tr style="color: green">
-                            <td>R$:</td>
                             <td><span class="mdi mdi-arrow-top-right icon-item" ></span></td>
                             <td >R$: 1.859.042,69 </td>
                             <td >6,52% </td>
                           </tr>
                           <tr style="color: red">
-                            <td>R$:</td>
                             <td><span class="mdi mdi-arrow-bottom-left icon-item" ></span></td>
                             <td >R$: 1.859.042,69 </td>
                             <td >-6,52% </td>
                           </tr>
                           <tr>
                             <td style="color: white;" > TOTAL</td>
-                            <td style="color: white;"> </td>
                             <td style="color: white;"> R$: 1.859.042,69 </td>
                             <td style="color: white;">9,90% </td>
                           </tr>

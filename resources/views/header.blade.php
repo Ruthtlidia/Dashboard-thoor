@@ -34,10 +34,14 @@
     <!-- End layout styles -->
     <link href="{{asset('assets/images/favicon.png')}}" rel="stylesheet" type="text/css">
 
-
+    <style>
+    .select2-search__field{
+        color: white;
+    }
+    </style>
 
   </head>
-  <body>
+  <body >
     <div class="container-scroller" >
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas dasds" id="sidebar" >
@@ -72,7 +76,7 @@
       </div>
       <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-          {{-- <span class="mdi mdi-menu"></span> --}}
+           <span class="mdi mdi-menu"></span>
         </button>
         <ul class="navbar-nav w-100">
           <li class="nav-item w-100">

@@ -111,6 +111,7 @@ class ControllerFiltro extends Controller
             Session::put('faturamento_frota', $arrayFrota);
 
             if($salvarFiltro){
+                Session::put('placas_filtro', $request->placa);
                 $filtros = new Filtro();
                 $filtros = Filtro::find(1);
                 $filtros->tipo_filtro = 1;
@@ -227,6 +228,7 @@ class ControllerFiltro extends Controller
             Session::put('total_receita_faturamento', $totalReceitaFiltro);
 
             if($salvarFiltro){
+                Session::put('placas_filtro', $request->placa);
                 $filtros = new Filtro();
                 $filtros = Filtro::find(1);
                 $filtros->tipo_filtro = 2;
