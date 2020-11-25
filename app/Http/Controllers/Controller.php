@@ -99,9 +99,106 @@ class Controller extends BaseController
             Session::put('faturamento_frota', unserialize($filtros['total_receita']));
         }
 
-
+        //print_rpre($this->desempenhoAnoAnteriorAtual());exit;
 
         return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
+    }
+
+
+    public function desempenhoAnoAnteriorAtual(){
+
+        $anoAtual = date('Y');
+        $anoPassado = $anoAtual - 1;
+
+        $inicialDia = '01';
+        $finalDia = '02';
+
+        $mes = '01';
+        $mes += 1;
+
+        for($i = 1; $i <= 9; $i++){
+
+            $dataAtualInicio = '"' . $anoAtual . '-' . ($i > 9 ? '' : '0') . $i . '-' .'01' . '"' ;
+            $dataAtualFinal = '"' . $anoAtual . '-' . ($i > 9 ? '' : '0') . ($i + 1) . '-' . '01' . '"' ;
+
+
+            $dataAnteriorInicio = '"' . $anoPassado . '-' . ($i > 9 ? '' : '0') . $i . '-' .'01' . '"' ;
+            $dataAnteriorFinal = '"' . $anoPassado . '-' . ($i > 9 ? '' : '0') . ($i + 1) . '-' . '01' . '"' ;
+
+            //$dataPassada = '"' . $anoPassado . '-' . '0' . $i . '-' . $inicialDia . '"' ;
+
+            $totalCarregamentoMesAnoAtual = Conhecimentos::select(DB::raw("SUM(valor_frete) as carregamento_mensal"))
+                                                            ->whereDate('data_emissao', '>=' ,json_decode($dataAtualInicio))
+                                                            ->whereDate('data_emissao', '<=' ,json_decode($dataAtualFinal))
+                                                            ->get();
+
+            $totalCarregamentoMesAnoPassado = Conhecimentos::select(DB::raw("SUM(valor_frete) as carregamento_mensal"))
+                                                            ->whereDate('data_emissao', '>=' ,json_decode($dataAnteriorInicio))
+                                                            ->whereDate('data_emissao', '<=' ,json_decode($dataAnteriorFinal))
+                                                            ->get();
+
+            // print_rpre($i);
+            // print_rpre($totalCarregamentoMesAnoPassado[0]->carregamento_mensal);
+
+            $desempenho[$i]['mes_anterior'] = $this->retornoMesAno($i);
+            $desempenho[$i]['valor_mes_anterior'] = $totalCarregamentoMesAnoPassado[0]->carregamento_mensal;
+
+
+            $desempenho[$i]['mes_atual'] = $this->retornoMesAno($i);
+            $desempenho[$i]['valor_mes_atual'] = $totalCarregamentoMesAnoAtual[0]->carregamento_mensal;
+
+            $desempenho[$i]['total_meses'] = $totalCarregamentoMesAnoPassado[0]->carregamento_mensal - $totalCarregamentoMesAnoAtual[0]->carregamento_mensal;
+
+            $desempenho[$i]['percentual'] =  ($totalCarregamentoMesAnoPassado[0]->carregamento_mensal - $totalCarregamentoMesAnoAtual[0]->carregamento_mensal) / $totalCarregamentoMesAnoPassado[0]->carregamento_mensal;
+        }
+
+
+
+
+
+        return $desempenho;
+    }
+
+    public function retornoMesAno($i){
+        switch($i){
+            case 1:
+                return 'Janeiro';
+            break;
+            case 2:
+                return 'Fevereiro';
+            break;
+            case 3:
+                return 'Março';
+            break;
+            case 4:
+                return 'Abril';
+            break;
+            case 5:
+                return 'Maio';
+            break;
+            case 6:
+                return 'Junho';
+            break;
+            case 7:
+                return 'Julho';
+            break;
+            case 8:
+                return 'Agosto';
+            break;
+            case 9:
+                return 'Setembro';
+            break;
+            case 10:
+                return 'Outubro';
+            break;
+            case 11:
+                return 'Novembro';
+            break;
+            case 12:
+                return 'Dezembro';
+            break;
+
+        }
     }
 
 
