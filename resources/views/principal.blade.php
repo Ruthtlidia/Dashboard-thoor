@@ -329,31 +329,18 @@
                             </tr>
                         </thead>
                         <tbody>
+                        <?php $declinio = Session::get('declinio'); ?>
+                        @foreach($declinio as $anoAnterior)
                           <tr>
-                            <td> FEVEREIRO</td>
+                            <td>{{ $anoAnterior['mes_anterior'] }}</td>
                             <td> R$:</td>
-                            <td> 1.859.042,69 </td>
+                            <td> {{ number_format($anoAnterior['valor_mes_anterior'], 2, ',', '.') }} </td>
                           </tr>
-                          <tr>
-                            </td>
-                            <td> FEVEREIRO</td>
-                            <td> R$:</td>
-                            <td> 1.859.042,69 </td>
-                          </tr>
-                          <tr>
-                            <td> FEVEREIRO</td>
-                            <td> R$:</td>
-                            <td> 1.859.042,69 </td>
-                          </tr>
-                          <tr>
-                            <td> FEVEREIRO</td>
-                            <td> R$:</td>
-                            <td> 1.859.042,69 </td>
-                          </tr>
+                        @endforeach
                           <tr>
                             <td style="color: white;" > TOTAL</td>
                             <td style="color: white;"> R$:</td>
-                            <td style="color: white;"> 1.859.042,69 </td>
+                            <td style="color: white;"> {{ number_format(Session::get('totalMesAnoPassado'), 2, ',', '.') }} </td>
                           </tr>
                         </tbody>
                       </table>
@@ -378,31 +365,16 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($declinio as $anoAtual)
                           <tr>
-                            <td>FEVEREIRO</td>
-                            <td>R$:</td>
-                            <td>1.859.042,69</td>
-                          </tr>
-                          <tr>
-                            </td>
-                            <td> FEVEREIRO</td>
+                            <td>{{ $anoAtual['mes_atual'] }}</td>
                             <td> R$:</td>
-                            <td> 1.859.042,69 </td>
+                            <td> {{ number_format($anoAtual['valor_mes_atual'], 2, ',', '.') }} </td>
                           </tr>
-                          <tr>
-                            <td> FEVEREIRO</td>
-                            <td> R$:</td>
-                            <td> 1.859.042,69 </td>
-                          </tr>
-                          <tr>
-                            <td> FEVEREIRO</td>
-                            <td> R$:</td>
-                            <td> 1.859.042,69 </td>
-                          </tr>
-                          <tr>
+                        @endforeach
                             <td style="color: white;" > TOTAL</td>
                             <td style="color: white;"> R$:</td>
-                            <td style="color: white;"> 1.859.042,69 </td>
+                            <td style="color: white;"> {{ number_format(Session::get('totalMesAnoAtual'), 2, ',', '.') }} </td>
                           </tr>
                         </tbody>
                       </table>
@@ -428,31 +400,27 @@
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                          <tr style="color: red">
-                            <td><span class="mdi mdi-arrow-bottom-left icon-item" ></span></td>
-                            <td >R$: 1.859.042,69 </td>
-                            <td >-6,52% </td>
-                          </tr>
-                          <tr style="color: green">
-                            <td><span class="mdi mdi-arrow-top-right icon-item" ></span></td>
-                            <td>R$: 1.859.042,69 </td>
-                            <td >6,52% </td>
-                          </tr>
-                          <tr style="color: green">
-                            <td><span class="mdi mdi-arrow-top-right icon-item" ></span></td>
-                            <td >R$: 1.859.042,69 </td>
-                            <td >6,52% </td>
-                          </tr>
-                          <tr style="color: red">
-                            <td><span class="mdi mdi-arrow-bottom-left icon-item" ></span></td>
-                            <td >R$: 1.859.042,69 </td>
-                            <td >-6,52% </td>
-                          </tr>
+                        <tbody >
+                        @foreach($declinio as $anoAnterior)
+                            @if($anoAnterior['total_meses'] < 0)
+                                <tr style="color: red">
+                                    <td style="padding: 5px" ><span class="mdi mdi-arrow-bottom-left icon-item" ></span></td>
+                                    <td style="padding: 5px" >R$: {{ number_format($anoAnterior['total_meses'], 2, ',', '.') }} </td>
+                                    <td  >{{ number_format($anoAnterior['percentual'], 2, ',', '.') }}% </td>
+                                </tr>
+                            @endif
+                            @if($anoAnterior['total_meses'] > 0)
+                                <tr style="color: green">
+                                    <td style="padding: 5px"><span class="mdi mdi-arrow-top-right icon-item" ></span></td>
+                                    <td style="padding: 5px" >R$: {{ number_format($anoAnterior['total_meses'], 2, ',', '.') }} </td>
+                                    <td  >{{ number_format($anoAnterior['percentual'], 2, ',', '.') }}% </td>
+                                </tr>
+                            @endif
+                        @endforeach
                           <tr>
-                            <td style="color: white;" > TOTAL</td>
-                            <td style="color: white;"> R$: 1.859.042,69 </td>
-                            <td style="color: white;">9,90% </td>
+                            <td style="color: white;" style="padding: 5px"> TOTAL</td>
+                            <td style="color: white;" style="padding: 5px"> R$: {{ number_format(Session::get('totalGeralCrescimentoDeclinio'), 2, ',', '.') }} </td>
+                            <td style="color: white;" >{{ number_format(Session::get('totalMediaPercentual'), 2, ',', '.') }}% </td>
                           </tr>
                         </tbody>
                       </table>
@@ -460,57 +428,81 @@
                   </div>
                 </div>
               </div>
-              <!-- Fim terceira -->
-               <!-- Porcentagem -->
-               <!-- <div class="col-3 grid-margin">
+
+              <!-- Fim Porcentagem -->
+
+            </div>
+
+
+            <div class="row ">
+              <div class="col-12 grid-margin">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" >
-                    &emsp;&emsp;Percentual De Crescimento
-                    </h4>
+                    <h4 class="card-title">Order Status</h4>
                     <div class="table-responsive">
-                    <table class="table">
+                      <table class="table">
                         <thead>
-                            <tr>
-                                <th> </th>
-                                <th></th>
-                                <th>  </th>
-                            </tr>
+                          <tr>
+                            <th>
+
+                            </th>
+                            <th> CLIENTE / TOMADOR </th>
+                            <th> VALOR FRETE </th>
+                            <th> VALOR % </th>
+                          </tr>
                         </thead>
                         <tbody>
-                          <tr style="color: red">
-                            <td></td>
-                            <td>-6,52%</td>
-                            <td></td>
-                          </tr>
                           <tr>
+                            <td>
+                              <div class="form-check form-check-muted m-0">
+                                <label class="form-check-label">
+                                <img src="assets/images/faces/araguaia.jpeg" alt="image" />
+                                </label>
+                              </div>
                             </td>
-                            <td> FEVEREIRO</td>
-                            <td> R$:</td>
-                            <td> 1.859.042,69 </td>
+                            <td>
+                              <img src="assets/images/faces/face1.jpg" alt="image" />
+                              <span class="pl-2">ARAGUAIA DISTRIB. DE COMBUSTIVEIS S/A</span>
+                            </td>
+                            <td> R$: 23.520,30 </td>
+                            <td> 2,69 % </td>
                           </tr>
                           <tr>
-                            <td> FEVEREIRO</td>
-                            <td> R$:</td>
-                            <td> 1.859.042,69 </td>
+                            <td>
+                              <div class="form-check form-check-muted m-0">
+                                <label class="form-check-label">
+                                <img src="assets/images/faces/prata.png" alt="image" />
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <img src="assets/images/faces/face2.jpg" alt="image" />
+                              <span class="pl-2">ARAGUAIA DISTRIBUIDORA DE COMBUSTIVEIS S/A</span>
+                            </td>
+                            <td> R$: 682.354,54 </td>
+                            <td> 78,03 % </td>
                           </tr>
                           <tr>
-                            <td> FEVEREIRO</td>
-                            <td> R$:</td>
-                            <td> 1.859.042,69 </td>
-                          </tr>
-                          <tr>
-                            <td style="color: white;" > TOTAL</td>
-                            <td style="color: white;"> R$:</td>
-                            <td style="color: white;"> 1.859.042,69 </td>
+                            <td>
+                              <div class="form-check form-check-muted m-0">
+                                <label class="form-check-label">
+                                <img src="assets/images/faces/bronze.png" alt="image" />
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                            <img src="assets/images/faces/face3.jpg" alt="image" />
+                              <span class="pl-2">DENUSA - DESTILARIA NOVA UNIAO S/A</span>
+                            </td>
+                            <td> R$: 168.548,70 </td>
+                            <td> 19,28 % </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
                 </div>
-              </div> -->
-              <!-- Fim Porcentagem -->
+              </div>
             </div>
 
           <!-- content-wrapper ends -->

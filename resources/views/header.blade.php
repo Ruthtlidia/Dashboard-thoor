@@ -44,7 +44,7 @@
   <body >
     <div class="container-scroller" >
       <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas dasds" id="sidebar" >
+      <nav class="sidebar sidebar-offcanvas dasds" id="sidebar" style="width: 200px;">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top  "  >
            <!-- <a class="sidebar-brand brand-logo " href="index.html" ><img src="assets/images/logo.png" alt="logo" style="width: 100%;" /></a> -->
           <!-- <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> -->

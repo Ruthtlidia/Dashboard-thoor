@@ -100,6 +100,7 @@ class Controller extends BaseController
         }
 
         //print_rpre($this->desempenhoAnoAnteriorAtual());exit;
+        Session::put('declinio', $this->desempenhoAnoAnteriorAtual());
 
         return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
     }
@@ -116,14 +117,20 @@ class Controller extends BaseController
         $mes = '01';
         $mes += 1;
 
-        for($i = 1; $i <= 9; $i++){
+        for($i = 1; $i <= 12; $i++){
 
             $dataAtualInicio = '"' . $anoAtual . '-' . ($i > 9 ? '' : '0') . $i . '-' .'01' . '"' ;
             $dataAtualFinal = '"' . $anoAtual . '-' . ($i > 9 ? '' : '0') . ($i + 1) . '-' . '01' . '"' ;
 
 
             $dataAnteriorInicio = '"' . $anoPassado . '-' . ($i > 9 ? '' : '0') . $i . '-' .'01' . '"' ;
-            $dataAnteriorFinal = '"' . $anoPassado . '-' . ($i > 9 ? '' : '0') . ($i + 1) . '-' . '01' . '"' ;
+            if($i == 12){
+                $indice = 11;
+                $dataAnteriorFinal = '"' . $anoPassado . '-' . ($i > 9 ? '' : '0') . ($indice + 1) . '-' . '01' . '"' ;
+            }else{
+                $dataAnteriorFinal = '"' . $anoPassado . '-' . ($i > 9 ? '' : '0') . ($i + 1) . '-' . '01' . '"' ;
+            }
+
 
             //$dataPassada = '"' . $anoPassado . '-' . '0' . $i . '-' . $inicialDia . '"' ;
 
@@ -137,7 +144,7 @@ class Controller extends BaseController
                                                             ->whereDate('data_emissao', '<=' ,json_decode($dataAnteriorFinal))
                                                             ->get();
 
-            // print_rpre($i);
+             //print_rpre($dataAnteriorFinal);
             // print_rpre($totalCarregamentoMesAnoPassado[0]->carregamento_mensal);
 
             $desempenho[$i]['mes_anterior'] = $this->retornoMesAno($i);
@@ -149,11 +156,37 @@ class Controller extends BaseController
 
             $desempenho[$i]['total_meses'] = $totalCarregamentoMesAnoPassado[0]->carregamento_mensal - $totalCarregamentoMesAnoAtual[0]->carregamento_mensal;
 
-            $desempenho[$i]['percentual'] =  ($totalCarregamentoMesAnoPassado[0]->carregamento_mensal - $totalCarregamentoMesAnoAtual[0]->carregamento_mensal) / $totalCarregamentoMesAnoPassado[0]->carregamento_mensal;
+            if($totalCarregamentoMesAnoPassado[0]->carregamento_mensal > 0){
+                $desempenho[$i]['percentual'] =  ($totalCarregamentoMesAnoPassado[0]->carregamento_mensal - $totalCarregamentoMesAnoAtual[0]->carregamento_mensal) / $totalCarregamentoMesAnoPassado[0]->carregamento_mensal;
+            }
+
         }
 
+        $totalMesAnoPassado = 0;
+        for($i = 1; $i < count($desempenho); $i++){
+            $totalMesAnoPassado += $desempenho[$i]['valor_mes_anterior'];
+        }
+        Session::put('totalMesAnoPassado', $totalMesAnoPassado);
 
+        $totalMesAnoAtual = 0;
+        for($i = 1; $i < count($desempenho); $i++){
+            $totalMesAnoAtual += $desempenho[$i]['valor_mes_atual'];
+        }
+        Session::put('totalMesAnoAtual', $totalMesAnoAtual);
 
+        $totalGeralCrescimentoDeclinio = 0;
+        for($i = 1; $i < count($desempenho); $i++){
+            $totalGeralCrescimentoDeclinio += $desempenho[$i]['total_meses'];
+        }
+        Session::put('totalGeralCrescimentoDeclinio', $totalGeralCrescimentoDeclinio);
+
+        $totalMediaPercentual = 0;
+        for($i = 1; $i < count($desempenho); $i++){
+            $totalMediaPercentual += $desempenho[$i]['percentual'];
+        }
+        $totalMediaPercentual = $totalMediaPercentual / 12;
+
+        Session::put('totalMediaPercentual', $totalMediaPercentual);
 
 
         return $desempenho;
