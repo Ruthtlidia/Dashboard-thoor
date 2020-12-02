@@ -65,6 +65,15 @@
             </a>
           </li>
 
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/usuarios">
+              <span class="menu-icon">
+                <i class="mdi mdi-account-plus"></i>
+              </span>
+              <span class="menu-title">Usuários</span>
+            </a>
+          </li>
+
         </ul>
       </nav>
 <!-- partial -->

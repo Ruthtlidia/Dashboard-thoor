@@ -110,19 +110,11 @@
                             <label>Placa</label>
                             <select class="js-example-basic-multiple" multiple="multiple" id="placa[]" name="placa[]" style="width:100%">
                                 @foreach ($arrayPlacas as $arrayPlaca)
-                                    @if(isset($placasFiltro))
-                                        @foreach($placasFiltro as $placaFiltrada)
 
-                                            @if($placaFiltrada == $arrayPlaca['placa'])
-                                                <option selected value="{{$arrayPlaca['placa']}}">{{$arrayPlaca['placa']}}</option>
-                                            @endif
 
-                                            @if($placaFiltrada <> $arrayPlaca['placa'])
-                                                <option value="{{$arrayPlaca['placa']}}">{{$arrayPlaca['placa']}}</option>
-                                            @endif
+                                    <option value="{{$arrayPlaca['placa']}}">{{$arrayPlaca['placa']}}</option>
 
-                                        @endforeach
-                                    @endif
+
                                 @endforeach
                             </select>
                           </div>
@@ -312,6 +304,8 @@
             </div>
 
             <!-- Mês-->
+            <?php $declinio = Session::get('declinio'); ?>
+            @if(isset($declinio))
             <div class="row ">
               <div class="col-4 grid-margin" >
                 <div class="card">
@@ -329,7 +323,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <?php $declinio = Session::get('declinio'); ?>
                         @foreach($declinio as $anoAnterior)
                           <tr>
                             <td>{{ $anoAnterior['mes_anterior'] }}</td>
@@ -406,14 +399,14 @@
                                 <tr style="color: red">
                                     <td style="padding: 5px" ><span class="mdi mdi-arrow-bottom-left icon-item" ></span></td>
                                     <td style="padding: 5px" >R$: {{ number_format($anoAnterior['total_meses'], 2, ',', '.') }} </td>
-                                    <td  >{{ number_format($anoAnterior['percentual'], 2, ',', '.') }}% </td>
+                                    <td  >{{ number_format(isset($anoAnterior['percentual']), 2, ',', '.') }}% </td>
                                 </tr>
                             @endif
                             @if($anoAnterior['total_meses'] > 0)
                                 <tr style="color: green">
                                     <td style="padding: 5px"><span class="mdi mdi-arrow-top-right icon-item" ></span></td>
                                     <td style="padding: 5px" >R$: {{ number_format($anoAnterior['total_meses'], 2, ',', '.') }} </td>
-                                    <td  >{{ number_format($anoAnterior['percentual'], 2, ',', '.') }}% </td>
+                                    <td  >{{ number_format(isset($anoAnterior['percentual']), 2, ',', '.') }}% </td>
                                 </tr>
                             @endif
                         @endforeach
@@ -432,85 +425,70 @@
               <!-- Fim Porcentagem -->
 
             </div>
+             @endif
 
+            <?php
+                $informacoesTabela = Session::get('informacoesTabela');
+                $totalFaturamentoMes = Session::get('totalFaturamentoMes');
+            ?>
+            @if(isset($informacoesTabela) && isset($totalFaturamentoMes))
+                <div class="row ">
+                <div class="col-12 grid-margin">
+                    <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">FATURAMENTO POR TOMADOR</h4>
+                        <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>
 
-            <div class="row ">
-              <div class="col-12 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Order Status</h4>
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>
+                                </th>
+                                <th> CLIENTE / TOMADOR </th>
+                                <th> VALOR FRETE </th>
+                                <th> VALOR % </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($informacoesTabela as $totalDistribuidoras)
+                                <tr>
+                                    <td>
+                                    <!-- <div class="form-check form-check-muted m-0">
+                                        <label class="form-check-label">
+                                        <img src="assets/images/faces/araguaia.jpeg" alt="image" />
+                                        </label>
+                                    </div> -->
+                                    </td>
+                                    <td>
+                                    <!-- <img src="assets/images/faces/face1.jpg" alt="image" /> -->
+                                    <span class="pl-2">{{ $totalDistribuidoras['tomador'] }}</span>
+                                    </td>
+                                    <td> R$: {{ $totalDistribuidoras['total_faturado_mes'] }} </td>
+                                    <td> {{ $totalDistribuidoras['percentual'] }} % </td>
+                                </tr>
+                            @endforeach
 
-                            </th>
-                            <th> CLIENTE / TOMADOR </th>
-                            <th> VALOR FRETE </th>
-                            <th> VALOR % </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <div class="form-check form-check-muted m-0">
-                                <label class="form-check-label">
-                                <img src="assets/images/faces/araguaia.jpeg" alt="image" />
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <img src="assets/images/faces/face1.jpg" alt="image" />
-                              <span class="pl-2">ARAGUAIA DISTRIB. DE COMBUSTIVEIS S/A</span>
-                            </td>
-                            <td> R$: 23.520,30 </td>
-                            <td> 2,69 % </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="form-check form-check-muted m-0">
-                                <label class="form-check-label">
-                                <img src="assets/images/faces/prata.png" alt="image" />
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <img src="assets/images/faces/face2.jpg" alt="image" />
-                              <span class="pl-2">ARAGUAIA DISTRIBUIDORA DE COMBUSTIVEIS S/A</span>
-                            </td>
-                            <td> R$: 682.354,54 </td>
-                            <td> 78,03 % </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="form-check form-check-muted m-0">
-                                <label class="form-check-label">
-                                <img src="assets/images/faces/bronze.png" alt="image" />
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                            <img src="assets/images/faces/face3.jpg" alt="image" />
-                              <span class="pl-2">DENUSA - DESTILARIA NOVA UNIAO S/A</span>
-                            </td>
-                            <td> R$: 168.548,70 </td>
-                            <td> 19,28 % </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                            <tr>
+                                <td>  </td>
+                                <td>TOTAL CONHECIMENTOS  </td>
+                                <td style="color: white;">R$: {{ $totalFaturamentoMes }}  </td>
+                                <td>  </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
                     </div>
-                  </div>
+                    </div>
                 </div>
-              </div>
-            </div>
+                </div>
+            @endif
 
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2019 <a href="https://www.bootstrapdash.com/" target="_blank">BootstrapDash</a>. All rights reserved.</span>
-              <span class="text-muted float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
+              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020. THOOR, TODOS OS DIREITOS RESERVADOS.</span>
+              <!-- <span class="text-muted float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span> -->
             </div>
           </footer>
           <!-- partial -->

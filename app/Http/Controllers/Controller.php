@@ -12,6 +12,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use function App\print_rpre;
+use function App\comecoMesAtual;
+use function App\finalMesAtual;
 use Illuminate\Support\Facades\Session;
 
 class Controller extends BaseController
@@ -82,25 +84,29 @@ class Controller extends BaseController
         $arrayPlacas = $conhecimento->montaArrayPlacas($placas);
 
 
-        /** Quando abrir busca filtro salvo no banco e mostra */
+        // /** Quando abrir busca filtro salvo no banco e mostra */
         $filtros = new Filtro();
         $filtros = Filtro::find(1);
 
-        if($filtros['tipo_filtro'] == 2){
-            Session::put('motoristas', unserialize($filtros['motorista']));
-            Session::put('total', unserialize($filtros['total']));
-            Session::put('faturamento_frota_motorista', unserialize($filtros['faturamento_frota']));
-            Session::put('total_receita_faturamento', unserialize($filtros['total_receita']));
-        }
-        if($filtros['tipo_filtro'] == 1){
-            Session::put('motoristas', unserialize($filtros['motorista']));
-            Session::put('total', unserialize($filtros['total']));
-            Session::put('total_receita_faturamento', unserialize($filtros['faturamento_frota']));
-            Session::put('faturamento_frota', unserialize($filtros['total_receita']));
+        if(Session::get('motoristas') == '' && Session::get('total') == ''){
+            if($filtros['tipo_filtro'] == 2){
+                Session::put('motoristas', unserialize($filtros['motorista']));
+                Session::put('total', unserialize($filtros['total']));
+                Session::put('faturamento_frota_motorista', unserialize($filtros['faturamento_frota']));
+                Session::put('total_receita_faturamento', unserialize($filtros['total_receita']));
+            }
+            if($filtros['tipo_filtro'] == 1){
+                Session::put('motoristas', unserialize($filtros['motorista']));
+                Session::put('total', unserialize($filtros['total']));
+                Session::put('total_receita_faturamento', unserialize($filtros['faturamento_frota']));
+                Session::put('faturamento_frota', unserialize($filtros['total_receita']));
+            }
         }
 
         //print_rpre($this->desempenhoAnoAnteriorAtual());exit;
         Session::put('declinio', $this->desempenhoAnoAnteriorAtual());
+
+       $this->resultadoDistribuidoras();
 
         return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
     }
@@ -182,7 +188,7 @@ class Controller extends BaseController
 
         $totalMediaPercentual = 0;
         for($i = 1; $i < count($desempenho); $i++){
-            $totalMediaPercentual += $desempenho[$i]['percentual'];
+            $totalMediaPercentual += isset($desempenho[$i]['percentual']);
         }
         $totalMediaPercentual = $totalMediaPercentual / 12;
 
@@ -191,6 +197,64 @@ class Controller extends BaseController
 
         return $desempenho;
     }
+
+    public function resultadoDistribuidoras(){
+
+        $tomadores = $this->tomadores();
+
+        $totalFaturamentoMes = $this->totalMesVenda();
+
+        $informacoesTabela = array();
+
+        for($i = 0; $i < count($tomadores); $i++){
+            $total = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))
+                                    ->where('tomador', '=', $tomadores[$i])
+                                    ->whereDate('data_emissao', '>=' , comecoMesAtual())
+                                    ->whereDate('data_emissao', '<=' , finalMesAtual())
+                                    ->get();
+
+            $informacoesTabela[$i]['tomador'] =  $tomadores[$i]['tomador'];
+            $informacoesTabela[$i]['total_faturado_mes'] =  number_format($total[0]['total'], 2, ',', '.');
+            $percentual = $total[0]['total'] / $totalFaturamentoMes * 100;
+            $informacoesTabela[$i]['percentual'] =  number_format($percentual, 2, ',', '.');
+
+
+        }
+        Session::put('informacoesTabela', $informacoesTabela);
+        Session::put('totalFaturamentoMes', number_format($totalFaturamentoMes, 2, ',', '.'));
+    }
+
+
+    public function totalMesVenda(){
+
+
+
+        $faturamentoTotal = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))
+                                                ->whereDate('data_emissao', '>=' ,comecoMesAtual())
+                                                ->whereDate('data_emissao', '<=' ,finalMesAtual())
+                                                ->get();
+        return $faturamentoTotal[0]['total'];
+    }
+
+    public function tomadores(){
+
+
+        $tomadores = Conhecimentos::select('tomador')
+                                        ->distinct()
+                                        ->whereDate('data_emissao', '>=' ,comecoMesAtual())
+                                        ->whereDate('data_emissao', '<=' ,finalMesAtual())
+                                        ->get('tomador');
+
+        $todosTomadores = array();
+        $i = 0;
+        foreach($tomadores as $value){
+            $todosTomadores[$i]['tomador'] = $value['tomador'];
+            $i++;
+        }
+
+        return $todosTomadores;
+    }
+
 
     public function retornoMesAno($i){
         switch($i){

@@ -104,12 +104,11 @@ class ControllerFiltro extends Controller
             /***
              * Seta na sessão os valores do filtro para o ajax do grafico acessar pela function teste ps mudar noma da function
              */
-            $request->session()->flush();
+            Session::flush();
             Session::put('motoristas', $arrayMotoristas);
             Session::put('total', $arrayMotora);
             Session::put('total_receita_faturamento', $totalReceitaFiltro);
             Session::put('faturamento_frota', $arrayFrota);
-
             if($salvarFiltro){
                 Session::put('placas_filtro', $request->placa);
                 $filtros = new Filtro();
@@ -220,7 +219,7 @@ class ControllerFiltro extends Controller
             }
 
 
-            $request->session()->flush();
+            Session::flush();
 
             Session::put('motoristas', $placasMotorista);
             Session::put('total', $totalParaGrafico);

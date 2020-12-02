@@ -28,3 +28,10 @@ Route::post('/filtrar', 'ControllerFiltro@filtrar');
 Route::post('/filtrar_graficos', 'ControllerFiltro@filtrar');
 Route::post('/filtrar_ajax', 'ControllerFiltro@teste');
 Route::get('/deletar', 'ControllerXml@deletarTudo');
+
+//Route::get('/usuarios', 'ControllerUsuario@deletarTudo');
+
+Route::get('/usuarios', function () {
+    return view('usuarios');
+});
+
