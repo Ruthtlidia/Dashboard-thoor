@@ -35,8 +35,8 @@ class ControllerXml extends Controller
                 $arquivoFormatado[$contador] = $linhaExplodida;
                 $contador++;
             }
-        }
 
+        }
         for($i = 0; $i < count($arquivoFormatado); $i++){
 
             $existeCte = Conhecimentos::where('numero_cte', '=', $arquivoFormatado[$i][0])->get();

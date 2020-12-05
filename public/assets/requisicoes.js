@@ -87,3 +87,147 @@ function filtrar(){
         }
     });
 }
+
+
+function cadastrarUsuario(){
+    event.preventDefault();
+
+    console.log($('#frmCadUsuario').serialize());
+
+    jQuery.ajax({
+        url: "cadastrar_usuario",
+        type: "POST",
+        data: $('#frmCadUsuario').serialize(),
+        success: function( data )
+        {
+            if(data.situacao == 'success'){
+
+                $('#frmCadUsuario input').val("");
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: data.msg,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    location.reload();
+            }
+            if(data.situacao == 'warning'){
+                Swal.fire({
+                    icon: 'warning',
+                    title: data.msg,
+                  })
+            }
+        }
+    });
+}
+
+
+
+function deletarUser(id){
+
+    Swal.fire({
+        title: 'Tem certeza que deseja excluir?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sim',
+        cancelButtonText: 'não'
+      }).then((result) => {
+        if (result.isConfirmed) {
+
+          jQuery.ajax({
+            url: "deletar_usuario",
+            type: "POST",
+            data: {'id':id},
+            success: function( data )
+            {
+                if(data.situacao == 'success'){
+
+                    $('#frmCadUsuario input').val("");
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: data.msg,
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+                        location.reload();
+                }
+                if(data.situacao == 'warning'){
+                    Swal.fire({
+                        icon: 'warning',
+                        title: data.msg,
+                      })
+                }
+            }
+        });
+        }
+      })
+
+}
+
+function alterarUser(id){
+
+    jQuery.ajax({
+    url: "show_editar_usuario",
+    type: "POST",
+    data: {'id':id},
+    success: function( data )
+        {
+            if(data.situacao == 'success'){
+
+                // $('#frmCadUsuario input').val("");
+                //     Swal.fire({
+                //         position: 'top-end',
+                //         icon: 'success',
+                //         title: data.msg,
+                //         showConfirmButton: false,
+                //         timer: 1500
+                //     })
+                location.reload();
+            }
+            if(data.situacao == 'warning'){
+                Swal.fire({
+                    icon: 'warning',
+                    title: data.msg,
+                    })
+            }
+        }
+    });
+}
+
+
+function editarUsuario(){
+    event.preventDefault();
+
+    console.log($('#frmCadUsuario').serialize());
+
+    jQuery.ajax({
+        url: "editar_usuario",
+        type: "POST",
+        data: $('#frmCadUsuario').serialize(),
+        success: function( data )
+        {
+            if(data.situacao == 'success'){
+
+                $('#frmCadUsuario input').val("");
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: data.msg,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    location.reload();
+            }
+            if(data.situacao == 'warning'){
+                Swal.fire({
+                    icon: 'warning',
+                    title: data.msg,
+                  })
+            }
+        }
+    });
+}

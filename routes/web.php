@@ -31,7 +31,12 @@ Route::get('/deletar', 'ControllerXml@deletarTudo');
 
 //Route::get('/usuarios', 'ControllerUsuario@deletarTudo');
 
-Route::get('/usuarios', function () {
-    return view('usuarios');
-});
+// Route::get('/usuarios', function () {
+//     return view('usuarios');
+// });
+Route::get('/usuarios', 'ControllerUsuarios@show');
+Route::post('/cadastrar_usuario', 'ControllerUsuarios@create');
+Route::post('/deletar_usuario', 'ControllerUsuarios@delete');
+Route::post('/show_editar_usuario', 'ControllerUsuarios@showEdit');
+Route::post('/editar_usuario', 'ControllerUsuarios@edit');
 
