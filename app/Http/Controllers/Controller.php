@@ -15,10 +15,17 @@ use function App\print_rpre;
 use function App\comecoMesAtual;
 use function App\finalMesAtual;
 use Illuminate\Support\Facades\Session;
+use App\Usuarios;
+use Illuminate\Support\Facades\Hash;
 
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    function showLogar(Request $request)
+    {
+        return view('login');
+    }
 
     function showHome(Request $request)
     {
@@ -108,7 +115,8 @@ class Controller extends BaseController
 
        $this->resultadoDistribuidoras();
 
-        return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
+
+       return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
     }
 
 
@@ -296,6 +304,57 @@ class Controller extends BaseController
             break;
 
         }
+    }
+
+
+    public function validate_login(Request $request)
+    {
+        $uteis = new Uteis();
+
+        $email = $request->email;
+        $password = $request->password;
+
+        $usuario = new Usuarios();
+        $usuario = Usuarios::where('email', '=', $email)->get();
+
+        if(isset($usuario[0]['email'])){
+
+            if(Hash::check($password, $usuario[0]['password'])){
+                Session::put('name_ususario_logado', $usuario[0]['name']);
+                Session::put('email_ususario_logado', $usuario[0]['email']);
+                Session::put('nivel_acesso_ususario_logado', $usuario[0]['nivel_acesso']);
+
+                $resposta = [
+                    'situacao' => 'success',
+                    'msg' => 'Logado com sucesso!'
+                ];
+                return $resposta;
+            }else{
+                $resposta = [
+                    'situacao' => 'warning',
+                    'msg' => 'Senha inválida!'
+                ];
+                return $resposta;
+            }
+
+        }else{
+            $resposta = [
+                'situacao' => 'warning',
+                'msg' => 'Não a conta para esse email!'
+            ];
+            return $resposta;
+        }
+
+    }
+
+    public function deslogar(Request $request)
+    {
+        Session::flush('name_ususario_logado');
+        Session::flush('email_ususario_logado');
+        Session::flush('nivel_acesso_ususario_logado');
+
+        return view('/login');
+
     }
 
 

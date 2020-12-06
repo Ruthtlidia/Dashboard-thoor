@@ -87,7 +87,7 @@
                         <thead>
                           <tr>
                             <th>Nome</th>
-                            <th>Email.</th>
+                            <th>Email</th>
                             <th>Nível Acesso</th>
                             <th>Data Cadastro</th>
                             <th>Editar</th>

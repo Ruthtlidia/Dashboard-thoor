@@ -65,14 +65,16 @@
             </a>
           </li>
 
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="/usuarios">
-              <span class="menu-icon">
-                <i class="mdi mdi-account-plus"></i>
-              </span>
-              <span class="menu-title">Usuários</span>
-            </a>
-          </li>
+        @if(session('nivel_acesso_ususario_logado') == 1)
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="/usuarios">
+                <span class="menu-icon">
+                    <i class="mdi mdi-account-plus"></i>
+                </span>
+                <span class="menu-title">Usuários</span>
+                </a>
+            </li>
+        @endif
 
         </ul>
       </nav>
@@ -133,16 +135,9 @@
               <p class="p-3 mb-0 text-center">See all projects</p>
             </div>
           </li>
-          <li class="nav-item nav-settings d-none d-lg-block">
-            <a class="nav-link" href="#">
-              <i class="mdi mdi-view-grid"></i>
-            </a>
-          </li>
+
           <li class="nav-item dropdown border-left">
-            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <i class="mdi mdi-email"></i>
-              <span class="count bg-success"></span>
-            </a>
+
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
               <h6 class="p-3 mb-0">Messages</h6>
               <div class="dropdown-divider"></div>
@@ -180,9 +175,9 @@
             </div>
           </li>
           <li class="nav-item dropdown border-left">
-            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="mdi mdi-bell"></i>
-              <span class="count bg-danger"></span>
+            <a class="nav-link count-indicator dropdown-toggle" href="/deslogar" >
+
+              <i class="mdi mdi-logout text-danger"  title="Sair"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
               <h6 class="p-3 mb-0">Notifications</h6>

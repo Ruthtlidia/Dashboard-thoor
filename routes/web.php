@@ -19,10 +19,15 @@ Route::get('/importar', function () {
 });
 
 
+
+Route::get('/home', 'Controller@showHome');
+Route::get('/', 'Controller@showLogar');
+Route::post('/logar', 'Controller@validate_login');
+Route::get('/deslogar', 'Controller@deslogar');
+
+
+
 Route::post('/xml', 'ControllerXml@salvarXml');
-Route::get('/', 'Controller@showHome');
-
-
 
 Route::post('/filtrar', 'ControllerFiltro@filtrar');
 Route::post('/filtrar_graficos', 'ControllerFiltro@filtrar');
@@ -39,4 +44,6 @@ Route::post('/cadastrar_usuario', 'ControllerUsuarios@create');
 Route::post('/deletar_usuario', 'ControllerUsuarios@delete');
 Route::post('/show_editar_usuario', 'ControllerUsuarios@showEdit');
 Route::post('/editar_usuario', 'ControllerUsuarios@edit');
+
+
 

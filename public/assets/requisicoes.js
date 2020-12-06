@@ -231,3 +231,37 @@ function editarUsuario(){
         }
     });
 }
+
+function logar(){
+    event.preventDefault();
+
+    jQuery.ajax({
+        url: "logar",
+        type: "POST",
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: $('#frmLogarUsuario').serialize(),
+        success: function( data )
+        {
+            if(data.situacao == 'success'){
+
+                $('#frmLogarUsuario input').val("");
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: data.msg,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    window.location = 'home';
+            }
+            if(data.situacao == 'warning'){
+                Swal.fire({
+                    icon: 'warning',
+                    title: data.msg,
+                  })
+            }
+        }
+    });
+}
