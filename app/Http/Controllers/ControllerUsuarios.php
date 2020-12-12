@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Usuarios;
+use App\User;
 use App\Uteis;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
@@ -25,7 +26,8 @@ class ControllerUsuarios extends Controller
 
     public function create(Request $request)
     {
-        $usuario = new Usuarios();
+        //$usuario = new Usuarios();
+        $usuario = new User();
 
         $name = $request->name;
         $email = $request->email;
@@ -71,7 +73,8 @@ class ControllerUsuarios extends Controller
 
     function buscaEmailExiste($email)
     {
-        $emailUsuario = new Usuarios();
+        //$emailUsuario = new Usuarios();
+        $usuario = new User();
         $emailUsuario = Usuarios::where('email', '=', $email)->get();
 
         return $emailUsuario;
@@ -88,7 +91,8 @@ class ControllerUsuarios extends Controller
 
     function delete(Request $request){
 
-        $deletarUsuario = new Usuarios();
+        //$deletarUsuario = new Usuarios();
+        $deletarUsuario = new User();
         $deletarUsuario = Usuarios::find($request->id);
 
         $deletarUsuario->delete();
@@ -102,7 +106,8 @@ class ControllerUsuarios extends Controller
 
     function showEdit(Request $request){
 
-        $editarUsuario = new Usuarios();
+        //$editarUsuario = new Usuarios();
+        $editarUsuario = new User();
         $editarUsuario = Usuarios::find($request->id);
 
         Session::put('id', $editarUsuario['id']);

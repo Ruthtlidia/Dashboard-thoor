@@ -25,6 +25,7 @@
                           <input type="text" class="form-control" id="name" name="name" placeholder="Nome" @if(!empty(session('name')))value="{{session('name')}}" @endif required>
                           <input type="text" id="id" name="id" style="display: none;" @if(!empty(session('id')))value="{{session('id')}}" @endif >
                         </div>
+
                       </div>
                       <div class="form-group row">
                         <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Email</label>

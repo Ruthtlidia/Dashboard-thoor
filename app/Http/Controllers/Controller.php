@@ -16,7 +16,9 @@ use function App\comecoMesAtual;
 use function App\finalMesAtual;
 use Illuminate\Support\Facades\Session;
 use App\Usuarios;
+use App\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class Controller extends BaseController
 {
@@ -113,10 +115,15 @@ class Controller extends BaseController
         //print_rpre($this->desempenhoAnoAnteriorAtual());exit;
         Session::put('declinio', $this->desempenhoAnoAnteriorAtual());
 
-       $this->resultadoDistribuidoras();
+        $this->resultadoDistribuidoras();
 
+        if(Auth::check() === true){
+            //dd(Auth::user());exit;
+            return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
+        }else{
+            return view('login');
+        }
 
-       return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
     }
 
 
@@ -314,8 +321,9 @@ class Controller extends BaseController
         $email = $request->email;
         $password = $request->password;
 
-        $usuario = new Usuarios();
-        $usuario = Usuarios::where('email', '=', $email)->get();
+        //$usuario = new Usuarios();
+        $usuario = new User();
+        $usuario = User::where('email', '=', $email)->get();
 
         if(isset($usuario[0]['email'])){
 
@@ -324,6 +332,12 @@ class Controller extends BaseController
                 Session::put('email_ususario_logado', $usuario[0]['email']);
                 Session::put('nivel_acesso_ususario_logado', $usuario[0]['nivel_acesso']);
 
+                $credentials = [
+                    'name' => $email,
+                    'password' => $password
+                ];
+
+                Auth::attempt($credentials);
                 $resposta = [
                     'situacao' => 'success',
                     'msg' => 'Logado com sucesso!'
@@ -349,9 +363,7 @@ class Controller extends BaseController
 
     public function deslogar(Request $request)
     {
-        Session::flush('name_ususario_logado');
-        Session::flush('email_ususario_logado');
-        Session::flush('nivel_acesso_ususario_logado');
+        Auth::logout();
 
         return view('/login');
 

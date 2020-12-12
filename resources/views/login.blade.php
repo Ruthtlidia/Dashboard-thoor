@@ -53,7 +53,7 @@
                   </div>
                   <div class="form-group">
                     <label>Senha</label>
-                    <input type="text" class="form-control p_input" name='password' id='password'>
+                    <input type="password" class="form-control p_input" name='password' id='password'>
                   </div>
                   <div class="form-group d-flex align-items-center justify-content-between">
                   </div>
