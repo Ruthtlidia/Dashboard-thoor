@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>THOOR</title>
+    <title>THOOR | DASHBOARD</title>
     <!-- plugins:css -->
     <script src="{{asset('assets/js/alert/package/dist/sweetalert2.min.js')}}"></script>
 <link rel="stylesheet" href="{{asset('assets/js/alert/package/dist/sweetalert2.min.css')}}">
@@ -86,9 +86,9 @@
         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
-        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+        <!-- <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
            <span class="mdi mdi-menu"></span>
-        </button>
+        </button> -->
         <ul class="navbar-nav w-100">
           <li class="nav-item w-100">
           </li>

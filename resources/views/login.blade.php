@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Corona Admin</title>
+    <title>THOOR | DASHBOARD</title>
     <!-- plugins:css -->
     <link href="{{asset('assets/vendors/mdi/css/materialdesignicons.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('assets/vendors/css/vendor.bundle.base.css')}}" rel="stylesheet" type="text/css">
@@ -35,7 +35,7 @@
     <link href="{{asset('assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css')}}" rel="stylesheet" type="text/css">
     <script src="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')}}"></script>
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" >
+    <link rel="shortcut icon" href="{{asset('assets/images/icon.png')}}" >
   </head>
   <body>
     <div class="container-scroller">

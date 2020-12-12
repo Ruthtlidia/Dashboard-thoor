@@ -9,6 +9,7 @@ use App\User;
 use App\Uteis;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 
 use function App\print_rpre;
 
@@ -16,17 +17,22 @@ class ControllerUsuarios extends Controller
 {
     public function show(Request $request)
     {
-        $listaUsuarios = new Usuarios();
-        $listaUsuarios = Usuarios::All();
+        $listaUsuarios = new User();
+        $listaUsuarios = User::All();
 
-        return view('usuarios', compact('listaUsuarios'));
+        if(Auth::check() === true){
+            return view('usuarios', compact('listaUsuarios'));
+        }else{
+            return view('login');
+        }
+
 
     }
 
 
     public function create(Request $request)
     {
-        //$usuario = new Usuarios();
+
         $usuario = new User();
 
         $name = $request->name;
@@ -73,9 +79,8 @@ class ControllerUsuarios extends Controller
 
     function buscaEmailExiste($email)
     {
-        //$emailUsuario = new Usuarios();
         $usuario = new User();
-        $emailUsuario = Usuarios::where('email', '=', $email)->get();
+        $emailUsuario = User::where('email', '=', $email)->get();
 
         return $emailUsuario;
     }
@@ -91,9 +96,9 @@ class ControllerUsuarios extends Controller
 
     function delete(Request $request){
 
-        //$deletarUsuario = new Usuarios();
+
         $deletarUsuario = new User();
-        $deletarUsuario = Usuarios::find($request->id);
+        $deletarUsuario = User::find($request->id);
 
         $deletarUsuario->delete();
 
@@ -106,9 +111,9 @@ class ControllerUsuarios extends Controller
 
     function showEdit(Request $request){
 
-        //$editarUsuario = new Usuarios();
+
         $editarUsuario = new User();
-        $editarUsuario = Usuarios::find($request->id);
+        $editarUsuario = User::find($request->id);
 
         Session::put('id', $editarUsuario['id']);
         Session::put('name', $editarUsuario['name']);
@@ -124,8 +129,8 @@ class ControllerUsuarios extends Controller
 
     function edit(Request $request){
 
-        $editarUsuario = new Usuarios();
-        $editarUsuario = Usuarios::find($request->id);
+        $editarUsuario = new User();
+        $editarUsuario = User::find($request->id);
 
 
         if($this->verificaPasswords($request->password, $request->second_password) == true){

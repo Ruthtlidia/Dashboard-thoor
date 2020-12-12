@@ -112,13 +112,11 @@ class Controller extends BaseController
             }
         }
 
-        //print_rpre($this->desempenhoAnoAnteriorAtual());exit;
         Session::put('declinio', $this->desempenhoAnoAnteriorAtual());
 
         $this->resultadoDistribuidoras();
 
         if(Auth::check() === true){
-            //dd(Auth::user());exit;
             return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
         }else{
             return view('login');
@@ -152,9 +150,6 @@ class Controller extends BaseController
                 $dataAnteriorFinal = '"' . $anoPassado . '-' . ($i > 9 ? '' : '0') . ($i + 1) . '-' . '01' . '"' ;
             }
 
-
-            //$dataPassada = '"' . $anoPassado . '-' . '0' . $i . '-' . $inicialDia . '"' ;
-
             $totalCarregamentoMesAnoAtual = Conhecimentos::select(DB::raw("SUM(valor_frete) as carregamento_mensal"))
                                                             ->whereDate('data_emissao', '>=' ,json_decode($dataAtualInicio))
                                                             ->whereDate('data_emissao', '<=' ,json_decode($dataAtualFinal))
@@ -165,8 +160,6 @@ class Controller extends BaseController
                                                             ->whereDate('data_emissao', '<=' ,json_decode($dataAnteriorFinal))
                                                             ->get();
 
-             //print_rpre($dataAnteriorFinal);
-            // print_rpre($totalCarregamentoMesAnoPassado[0]->carregamento_mensal);
 
             $desempenho[$i]['mes_anterior'] = $this->retornoMesAno($i);
             $desempenho[$i]['valor_mes_anterior'] = $totalCarregamentoMesAnoPassado[0]->carregamento_mensal;
@@ -321,7 +314,7 @@ class Controller extends BaseController
         $email = $request->email;
         $password = $request->password;
 
-        //$usuario = new Usuarios();
+
         $usuario = new User();
         $usuario = User::where('email', '=', $email)->get();
 
@@ -333,7 +326,7 @@ class Controller extends BaseController
                 Session::put('nivel_acesso_ususario_logado', $usuario[0]['nivel_acesso']);
 
                 $credentials = [
-                    'name' => $email,
+                    'email' => $email,
                     'password' => $password
                 ];
 

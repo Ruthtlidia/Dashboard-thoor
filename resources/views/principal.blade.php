@@ -460,7 +460,10 @@
                                     </div> -->
                                     </td>
                                     <td>
-                                    <!-- <img src="assets/images/faces/face1.jpg" alt="image" /> -->
+
+                                    @if('ADENUSA - DESTILARIA NOVA UNIAO S/A')
+                                        <img src="assets/images/faces/logos/FAN.png" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                    @endif
                                     <span class="pl-2">{{ $totalDistribuidoras['tomador'] }}</span>
                                     </td>
                                     <td> R$: {{ $totalDistribuidoras['total_faturado_mes'] }} </td>

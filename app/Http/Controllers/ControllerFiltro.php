@@ -26,7 +26,7 @@ class ControllerFiltro extends Controller
         $salvarFiltro = $request->salvar_filtro;
 
         if($placas){
-            //DB::enableQueryLog(); // Enable query log
+            // Enable query log
             /**
              * Monta array com os valores dos carregamentos
              */
@@ -53,12 +53,6 @@ class ControllerFiltro extends Controller
                 return $resposta;
                 exit;
             }
-            //$quries = DB::getQueryLog();
-
-            // Your Eloquent query executed by using get()
-
-
-            //dd($quries); exit;
 
             /**
              * Monta array com os momes motoristas
@@ -252,28 +246,11 @@ class ControllerFiltro extends Controller
             ];
             return $resposta;
             exit;
-
-
-        //     $motoristas = $conhecimento->buscaMotoristas();
-        //     $arrayMotoristas = $conhecimento->montaArrayMotoristas($motoristas);
-
-        //     $placas = $conhecimento->buscaPlacas();
-        //     $arrayPlacas = $conhecimento->montaArrayPlacas($placas);
-
-
-        //     return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
-
          }
-
-
     }
 
     function teste()
     {
-        //$teste = 'entro e vvoltrou';
-
-        // $teste = array("Daniel Gomes", "João Pereira", "Lucas Dornelas", "Samara Albernaz", "Israel Tome", "Teste Albernaz", "Beluga");
-        // $valores = array(1000.50, 100.00, 2000, 300.00, 400.00, 500.00, 600.00);
         $teste = Session::get('motoristas');
         $valores = Session::get('total');
 
