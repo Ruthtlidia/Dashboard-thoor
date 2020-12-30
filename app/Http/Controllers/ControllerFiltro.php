@@ -25,6 +25,16 @@ class ControllerFiltro extends Controller
         $dataFinal = $request->dataFinal;
         $salvarFiltro = $request->salvar_filtro;
 
+        if($motoristas && $placas){
+            if(empty($arrayPlacasResult)){
+                $resposta = [
+                    'situacao' => 'erro',
+                ];
+                return $resposta;
+                exit;
+            }
+        }
+
         if($placas){
             // Enable query log
             /**
@@ -99,12 +109,13 @@ class ControllerFiltro extends Controller
              * Seta na sessão os valores do filtro para o ajax do grafico acessar pela function teste ps mudar noma da function
              */
 
-            Session::flush('motoristas');
-            Session::flush('total');
-            Session::flush('faturamento_frota_motorista');
-            Session::flush('total_receita_faturamento');
+            Session::forget('motoristas');
+            Session::forget('total');
+            Session::forget('faturamento_frota_motorista');
+            Session::forget('total_receita_faturamento');
 
             Session::put('motoristas', $arrayMotoristas);
+            Session::put('motoristasComparar', $arrayMotoristas);
             Session::put('total', $arrayMotora);
             Session::put('total_receita_faturamento', $totalReceitaFiltro);
             Session::put('faturamento_frota', $arrayFrota);
@@ -218,10 +229,12 @@ class ControllerFiltro extends Controller
             }
 
 
-            Session::flush('motoristas');
-            Session::flush('total');
-            Session::flush('total_receita_faturamento');
-            Session::flush('faturamento_frota');
+            Session::forget('motoristas');
+            Session::forget('motoristasComparar');
+            Session::forget('total');
+            Session::forget('total_receita_faturamento');
+            Session::forget('faturamento_frota');
+
 
             Session::put('motoristas', $placasMotorista);
             Session::put('total', $totalParaGrafico);

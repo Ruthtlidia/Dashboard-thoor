@@ -116,11 +116,11 @@ class Controller extends BaseController
 
         $this->resultadoDistribuidoras();
 
-        if(Auth::check() === true){
+        //if(Auth::check() === true){
             return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
-        }else{
-            return view('login');
-        }
+        // }else{
+        //     return view('login');
+        // }
 
     }
 

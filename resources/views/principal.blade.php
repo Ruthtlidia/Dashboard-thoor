@@ -8,7 +8,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-12">
+                      <div class="col-13">
                         <div class="d-flex align-items-center align-self-start">
                         <?php $faturamento_mensal = Session::get('faturamento_mensal'); ?>
                           <h3 class="mb-0">{{ $faturamento_mensal }}</h3>
@@ -24,7 +24,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-12">
+                      <div class="col-13">
                         <div class="d-flex align-items-center align-self-start">
                         <?php $receita_total_grafico = Session::get('total_receita_faturamento');
                               $receita_total_grafico = 'R$ ' . number_format($receita_total_grafico, 2, ',', '.')
@@ -41,7 +41,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-12">
+                      <div class="col-13">
                         <div class="d-flex align-items-center align-self-start">
                         <?php $faturamento_anual = Session::get('faturamento_anual'); ?>
                           <h3 class="mb-0">{{ ltrim($faturamento_anual) }}</h3>
@@ -56,7 +56,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-12">
+                      <div class="col-13">
                         <div class="d-flex align-items-center align-self-start">
                         <?php $carregamento_anual = Session::get('carregamento_mensal'); ?>
                           <h3 class="mb-0">{{ $carregamento_anual }}</h3>
@@ -69,6 +69,28 @@
               </div>
             </div>
             <div class="row">
+
+                <?php
+                if(Session::get('faturamento_frota_motorista')){
+                    $motora = Session::get('faturamento_frota_motorista');
+                }else{
+                    $motora[0]['motorista'][0] = 'vazio';
+
+                }
+
+                if(Session::get('motoristasComparar')){
+                    $placas = Session::get('motoristasComparar');
+                }else{
+                    $placas[0][0] = 'vazio';
+
+                }
+
+
+
+                     //print_r($placas);exit;
+                    // print_r(count($motora));
+
+                ?>
 
 
               <div class="col-lg-12 grid-margin ">
@@ -99,9 +121,17 @@
                         <div class="form-group hover"  id="blocoMotorista"  onblur="mostrarPlaca();" >
                             <label>Motorista</label>
                             <select class="js-example-basic-multiple" multiple="multiple" id="motorista[]" name="motorista[]" style="width:100%">
-                                @foreach ($arrayMotoristas as $arrayMotorista)
-                                    <option value="{{$arrayMotorista['motorista']}}">{{$arrayMotorista['motorista']}}</option>
-                                 @endforeach
+
+                                    @for($i = 0; $i < count($motora); $i++)
+                                        @foreach ($arrayMotoristas as $arrayMotorista)
+                                            <?php if($motora[$i]['motorista'][0] == $arrayMotorista['motorista']){ ?>
+                                                <option selected value="<?=$motora[$i]['motorista'][0]?>"><?=$motora[$i]['motorista'][0]?></option>
+                                            <?php }else{?>
+                                                <option value="<?=$arrayMotorista['motorista']?>"><?=$arrayMotorista['motorista']?></option>
+                                            <?php }?>
+                                        @endforeach
+                                    @endfor
+
                             </select>
                           </div>
 
@@ -109,13 +139,15 @@
                           <div class="form-group" id="blocoPlaca">
                             <label>Placa</label>
                             <select class="js-example-basic-multiple" multiple="multiple" id="placa[]" name="placa[]" style="width:100%">
-                                @foreach ($arrayPlacas as $arrayPlaca)
-
-
-                                    <option value="{{$arrayPlaca['placa']}}">{{$arrayPlaca['placa']}}</option>
-
-
-                                @endforeach
+                                @for($i = 0; $i < count($placas); $i++)
+                                    @foreach ($arrayPlacas as $arrayPlaca)
+                                        <?php if($placas[$i][0] == $arrayPlaca['placa']){ ?>
+                                            <option selected value="<?=$placas[$i][0]?>"><?=$placas[$i][0]?></option>
+                                        <?php }else{?>
+                                            <option value="<?=$arrayPlaca['placa']?>"><?=$arrayPlaca['placa']?></option>
+                                        <?php }?>
+                                    @endforeach
+                                @endfor
                             </select>
                           </div>
 

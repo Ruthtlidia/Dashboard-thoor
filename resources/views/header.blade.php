@@ -48,13 +48,29 @@
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top  "  >
            <!-- <a class="sidebar-brand brand-logo " href="index.html" ><img src="assets/images/logo.png" alt="logo" style="width: 100%;" /></a> -->
           <!-- <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> -->
-          <a style="text-decoration: none; " href="/"><h1>THOOR</h1></a>
+          <a style="text-decoration: none; " href="/home"><h1>THOOR</h1></a>
 
         </div>
         <ul class="nav">
 
           <li class="nav-item nav-category">
-            <span class="nav-link">Navigation</span>
+            <li class="nav-item profile">
+                <div class="profile-desc">
+                  <div class="profile-pic">
+                    <div class="profile-name">
+                      <h5 class="mb-0 font-weight-normal">
+                        @isset(auth()->user()->name)
+                            {{ 'Bem Vindo! ' . auth()->user()->name }}
+                        @endisset
+                      </h5>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+            <span  class="nav-link">Navegação</span>
+
           </li>
           <li class="nav-item menu-items">
             <a class="nav-link" href="/home">

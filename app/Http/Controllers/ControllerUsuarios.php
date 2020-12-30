@@ -149,9 +149,9 @@ class ControllerUsuarios extends Controller
                 $editarUsuario->nivel_acesso = $request->nivel_acesso;
                 $editarUsuario->save();
 
-                Session::flush('name');
-                Session::flush('email');
-                Session::flush('nivel_acesso');
+                Session::forget('name');
+                Session::forget('email');
+                Session::forget('nivel_acesso');
 
                 $resposta = [
                     'situacao' => 'success',

@@ -80,6 +80,12 @@ function filtrar(){
                     title: 'Oops...  Nenhum resultado foi encontrado nesse período de tempo!',
                   })
             }
+            if(data.situacao == 'erro'){
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Oops...  Selecione Motorista ou Placa!',
+                  })
+            }
             if(data.situacao == 'errorUsuario'){
                 $('#errorUsuario').show();
                 $('#errorUsuario').fadeOut(6000);
