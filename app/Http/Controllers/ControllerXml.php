@@ -62,7 +62,13 @@ class ControllerXml extends Controller
                 $conhecimentos->situacao = (isset($arquivoFormatado[$i][14]) ? trim($arquivoFormatado[$i][14]) : '');
                 $conhecimentos->tipo_cte = (isset($arquivoFormatado[$i][15]) ? trim($arquivoFormatado[$i][15]) : '');
                 $conhecimentos->mercadoria = (isset($arquivoFormatado[$i][16]) ? trim($arquivoFormatado[$i][16]) : '');
-                $conhecimentos->placa = (isset($arquivoFormatado[$i][17]) ? trim($arquivoFormatado[$i][17]) : '');
+                if(isset($arquivoFormatado[$i][17])){
+                    $arquivoFormatado[$i][17] = str_replace(' ', '', $arquivoFormatado[$i][17]);
+                    $conhecimentos->placa = $arquivoFormatado[$i][17];
+                }else{
+                    $conhecimentos->placa = '';
+                }
+
                 $conhecimentos->save();
             }
         }

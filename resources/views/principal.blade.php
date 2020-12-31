@@ -492,9 +492,49 @@
                                     </div> -->
                                     </td>
                                     <td>
+                                    <?php
+                                        $tomadorSemEspacos = str_replace(' ', '',  $totalDistribuidoras['tomador']);
+                                        $araguaia = 'ARAGUAIADISTRIBUIDORADECOMBUSTIVEISS/A';
+                                        $fam = 'FANDISTRIBUIDORADEPETROLEOLTDA';
+                                        $phenix = 'PHOENIXDISTDECOMBUSTIVEISS/A';
+                                        $tabocao = 'DISTRIBUIDORATABOCAOLTDA';
+                                        $larco = 'LARCOCOMERCIALDEPRODUTOSDEPETROLEOLTDA.';
+                                        $federal = 'FEDERALDISTRIBUIDORADEPETROLEOLTDA';
+                                        $petro = 'PetroballDistribuidoradePetroleoLtda';
+                                        $tdc = 'TDCDISTRIBUIDORADECOMBUSTIVEISS/A';
+                                        $denusa = 'DENUSA-DESTILARIANOVAUNIAOS/A';
+                                        $rio = 'DISTRIBUIDORARIOBRANCODEPETROLEOLTD';
 
-                                    @if('ADENUSA - DESTILARIA NOVA UNIAO S/A')
+                                    ?>
+                                    @if($araguaia == $tomadorSemEspacos)
+                                        <img src="assets/images/faces/logos/ARAGUAIA.jpeg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                    @endif
+                                    @if($fam == $tomadorSemEspacos)
                                         <img src="assets/images/faces/logos/FAN.png" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                    @endif
+                                    @if($phenix == $tomadorSemEspacos)
+                                        <img src="assets/images/faces/logos/das.jpeg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                    @endif
+                                    @if($tabocao == $tomadorSemEspacos)
+                                        <img src="assets/images/faces/logos/TABOCAO.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                    @endif
+                                    @if($larco == $tomadorSemEspacos)
+                                        <img src="assets/images/faces/logos/LARCO.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                    @endif
+                                    @if($federal == $tomadorSemEspacos)
+                                        <img src="assets/images/faces/logos/FEDERAL.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                    @endif
+                                    @if($petro == $tomadorSemEspacos)
+                                        <img src="assets/images/faces/logos/PETROBALL.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                    @endif
+                                    @if($tdc == $tomadorSemEspacos)
+                                        <img src="assets/images/faces/logos/sem-foto.gif" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                    @endif
+                                    @if($denusa == $tomadorSemEspacos)
+                                        <img src="assets/images/faces/logos/DENUSA.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                    @endif
+                                    @if($rio == $tomadorSemEspacos)
+                                        <img src="assets/images/faces/logos/RIO-BRANCO.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
                                     @endif
                                     <span class="pl-2">{{ $totalDistribuidoras['tomador'] }}</span>
                                     </td>

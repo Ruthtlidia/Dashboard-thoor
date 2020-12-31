@@ -60,7 +60,7 @@
                     <div class="profile-name">
                       <h5 class="mb-0 font-weight-normal">
                         @isset(auth()->user()->name)
-                            {{ 'Bem Vindo! ' . auth()->user()->name }}
+                            {{ 'Olá ' . auth()->user()->name }}
                         @endisset
                       </h5>
                     </div>
