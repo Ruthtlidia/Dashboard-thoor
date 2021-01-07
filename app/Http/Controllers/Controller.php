@@ -116,11 +116,11 @@ class Controller extends BaseController
 
         $this->resultadoDistribuidoras();
 
-        //if(Auth::check() === true){
+        if(Auth::check() === true){
             return view('principal', compact('arrayMotoristas', 'arrayPlacas'));
-        // }else{
-        //     return view('login');
-        // }
+        }else{
+            return view('login');
+        }
 
     }
 
@@ -252,7 +252,6 @@ class Controller extends BaseController
                                         ->whereDate('data_emissao', '>=' ,comecoMesAtual())
                                         ->whereDate('data_emissao', '<=' ,finalMesAtual())
                                         ->get('tomador');
-
         $todosTomadores = array();
         $i = 0;
         foreach($tomadores as $value){
