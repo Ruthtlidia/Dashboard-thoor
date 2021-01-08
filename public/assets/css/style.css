@@ -20150,10 +20150,20 @@ div.tagsinput {
 /*-------------------------------------------------------------------*/
 /* === Landing screens === */
 /* Auth */
-/*Teste*/
+/*Ta vendo a imagem que vc tirou refletiu
+pra você logar se precisar é 
+daniel@daniel.com.br
+ta sem o banco kk
+mas ja da pra mexer na imagem do login
+esse e o caminho da imagem da tela de logim ne
+isso só que achei o erro kk  <---- tava com 2 jpe
+*/
 .auth.login-bg {
   background: url("../images/auth/caminhao.jpg");
-  background-size: cover; }
+  background-size: cover;
+  height: 935px;
+  width: 1280px;
+}
 
 .auth .login-half-bg {
   background: url("../images/auth/login-bg.jpg");
