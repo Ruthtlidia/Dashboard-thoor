@@ -20150,8 +20150,9 @@ div.tagsinput {
 /*-------------------------------------------------------------------*/
 /* === Landing screens === */
 /* Auth */
+/*Teste*/
 .auth.login-bg {
-  background: url("../images/auth/Login_bg.jpg");
+  background: url("../images/auth/caminhao.jpg");
   background-size: cover; }
 
 .auth .login-half-bg {
