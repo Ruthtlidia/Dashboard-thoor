@@ -267,6 +267,11 @@ class ControllerFiltro extends Controller
         $teste = Session::get('motoristas');
         $valores = Session::get('total');
 
+        uasort($teste, function ($a, $b) {
+            return $a[3] < $b[3];
+            //Se quiser inverter a ordem basta trocar por return $a['qtd'] > $b['qtd'];
+        });
+        print_rpre($teste);exit;
         $retorno = [
                 'teste' => $teste,
                 'valores' =>$valores,
