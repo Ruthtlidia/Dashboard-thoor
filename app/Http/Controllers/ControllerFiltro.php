@@ -36,6 +36,7 @@ class ControllerFiltro extends Controller
         }
 
         if($placas){
+
             // Enable query log
             /**
              * Monta array com os valores dos carregamentos
@@ -72,18 +73,49 @@ class ControllerFiltro extends Controller
             $cont = 0;
             $totalReceitaFiltro = 0;
             $contFrota = 0;
+            $j = 0;
             for($i = 0; $i <= count($arrayPlacasResult) -1; $i++){
                 $motoristas = Conhecimentos::select('motorista', 'placa')->distinct()->where('placa', '=', $arrayPlacasResult[$i])->whereDate('data_emissao', '>=' ,$dataInicial)->whereDate('data_emissao', '<=' ,$dataFinal)->get('motorista', 'placa');
 
                 $tabelaFrota = Conhecimentos::select('motorista', 'placa')->distinct()->where('placa', '=', $arrayPlacasResult[$i])->whereDate('data_emissao', '>=' ,$dataInicial)->whereDate('data_emissao', '<=' ,$dataFinal)->get('motorista', 'placa');
 
+
+                //nome
+                //placa
                 for($f = 0; $f < count($tabelaFrota); $f++){
                     $total = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))->where('placa', '=', $arrayPlacasResult[$i])->where('motorista', '=', $tabelaFrota[$f]['motorista'])->whereDate('data_emissao', '>=' ,$dataInicial )->whereDate('data_emissao', '<=' ,$dataFinal)->get();
-                    $arrayFrota[$i]['motorista'][$f] = $tabelaFrota[$f]['motorista'];
-                    $arrayFrota[$i]['faturamento'][$f] = number_format($total[0]['total'], 2, ',', '.');
-                    $arrayFrota[$i]['placa'] = $arrayPlacasResult[$i];
-                    $contFrota++;
+                    $arrayFrota[$j]['motorista'][0] =  $tabelaFrota[$f]['motorista'];
+                    $arrayFrota[$j]['placa'][0] = $arrayPlacasResult[$i];
+                    $arrayFrota[$j]['valor_placas'][0] = number_format($total[0]['total'], 2, ',', '.');
+                    $arrayFrota[$j]['valor_total'][0] = 'R$ ' . number_format($total[0]['total'], 2, ',', '.');
+                    $j++;
                 }
+
+
+                // $totalFaturamentoPlaca = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))
+                //                                 ->where('placa', '=', $placasDosMotoristas[0]->placa)
+                //                                 ->where('motorista', '=', $motoristas[$p])
+                //                                 ->whereDate('data_emissao', '>=' ,$dataInicial)
+                //                                 ->whereDate('data_emissao', '<=' ,$dataFinal)
+                //                                 ->get();
+
+
+                // for($f = 0; $f < count($tabelaFrota); $f++){
+                //     $total = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))->where('placa', '=', $arrayPlacasResult[$i])->where('motorista', '=', $tabelaFrota[$f]['motorista'])->whereDate('data_emissao', '>=' ,$dataInicial )->whereDate('data_emissao', '<=' ,$dataFinal)->get();
+                //     $arrayFrota[$i]['motorista'][$f] = $tabelaFrota[$f]['motorista'];
+                //     $arrayFrota[$i]['faturamento'][$f] = number_format($total[0]['total'], 2, ',', '.');
+                //     $arrayFrota[$i]['placa'] = $arrayPlacasResult[$i];
+                //     $contFrota++;
+                //     $j++;
+                // }
+
+                //  /** arrray que monta pra tabela do grafico (qunado ouver mais de uma placa pro mesmo motorista)*/
+                //         $arrayMotoristaFrota[$p]['motorista'][0] = $motoristas[$p] ;
+                //         $arrayMotoristaFrota[$p]['placa'][$i] = $placasDosMotoristas[$i]->placa;
+                //         $arrayMotoristaFrota[$p]['valor_placas'][$i] = 'R$ ' . number_format($totalFaturamentoPlaca[0]->total, 2, ',', '.');
+                //         $somatorio = $somatorio + $totalFaturamentoPlaca[0]->total;
+                //         $totalReceitaFiltro = $totalReceitaFiltro + $totalFaturamentoPlaca[0]->total;
+                //         $arrayMotoristaFrota[$p]['valor_total'][0] = 'R$ ' . number_format($somatorio, 2, ',', '.') ;
 
                 if(count($motoristas) > 1){
                     for($a = 0; $a <= count($motoristas)-1; $a++){
@@ -118,7 +150,9 @@ class ControllerFiltro extends Controller
             Session::put('motoristasComparar', $arrayMotoristas);
             Session::put('total', $arrayMotora);
             Session::put('total_receita_faturamento', $totalReceitaFiltro);
-            Session::put('faturamento_frota', $arrayFrota);
+
+            Session::put('faturamento_frota_motorista', $arrayFrota);
+            //print_rpre($arrayFrota);exit;
             if($salvarFiltro){
                 Session::put('placas_filtro', $request->placa);
                 $filtros = new Filtro();
@@ -239,6 +273,7 @@ class ControllerFiltro extends Controller
             Session::put('motoristas', $placasMotorista);
             Session::put('total', $totalParaGrafico);
             Session::put('faturamento_frota_motorista', $arrayMotoristaFrota);
+            print_rpre($arrayMotoristaFrota);exit;
             Session::put('total_receita_faturamento', $totalReceitaFiltro);
 
             if($salvarFiltro){
@@ -267,11 +302,7 @@ class ControllerFiltro extends Controller
         $teste = Session::get('motoristas');
         $valores = Session::get('total');
 
-        uasort($teste, function ($a, $b) {
-            return $a[3] < $b[3];
-            //Se quiser inverter a ordem basta trocar por return $a['qtd'] > $b['qtd'];
-        });
-        print_rpre($teste);exit;
+
         $retorno = [
                 'teste' => $teste,
                 'valores' =>$valores,
