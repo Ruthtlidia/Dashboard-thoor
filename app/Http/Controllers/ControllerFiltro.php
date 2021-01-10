@@ -74,16 +74,20 @@ class ControllerFiltro extends Controller
             $totalReceitaFiltro = 0;
             $contFrota = 0;
             $j = 0;
+            $arrayTeste = array();
             for($i = 0; $i <= count($arrayPlacasResult) -1; $i++){
                 $motoristas = Conhecimentos::select('motorista', 'placa')->distinct()->where('placa', '=', $arrayPlacasResult[$i])->whereDate('data_emissao', '>=' ,$dataInicial)->whereDate('data_emissao', '<=' ,$dataFinal)->get('motorista', 'placa');
 
                 $tabelaFrota = Conhecimentos::select('motorista', 'placa')->distinct()->where('placa', '=', $arrayPlacasResult[$i])->whereDate('data_emissao', '>=' ,$dataInicial)->whereDate('data_emissao', '<=' ,$dataFinal)->get('motorista', 'placa');
 
 
+
                 //nome
                 //placa
                 for($f = 0; $f < count($tabelaFrota); $f++){
                     $total = Conhecimentos::select(DB::raw("SUM(valor_frete) as total"))->where('placa', '=', $arrayPlacasResult[$i])->where('motorista', '=', $tabelaFrota[$f]['motorista'])->whereDate('data_emissao', '>=' ,$dataInicial )->whereDate('data_emissao', '<=' ,$dataFinal)->get();
+
+
                     $arrayFrota[$j]['motorista'][0] =  $tabelaFrota[$f]['motorista'];
                     $arrayFrota[$j]['placa'][0] = $arrayPlacasResult[$i];
                     $arrayFrota[$j]['valor_placas'][0] = number_format($total[0]['total'], 2, ',', '.');
@@ -135,8 +139,6 @@ class ControllerFiltro extends Controller
                 }
                 $totalReceitaFiltro = $totalReceitaFiltro + $arrayMotora[$i];
             }
-
-
             /***
              * Seta na sessão os valores do filtro para o ajax do grafico acessar pela function teste ps mudar noma da function
              */
@@ -144,6 +146,7 @@ class ControllerFiltro extends Controller
             Session::forget('motoristas');
             Session::forget('total');
             Session::forget('faturamento_frota_motorista');
+            Session::forget('faturamento_frota');
             Session::forget('total_receita_faturamento');
 
             Session::put('motoristas', $arrayMotoristas);
