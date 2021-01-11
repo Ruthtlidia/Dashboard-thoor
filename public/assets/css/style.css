@@ -20159,13 +20159,11 @@ esse e o caminho da imagem da tela de logim ne
 isso só que achei o erro kk  <---- tava com 2 jpe
 */
 .auth.login-bg {
-  background-color: white ;
-  background-image: url("../images/auth/thoor.jpeg");
-  background-repeat: no-repeat;
-  background-position: left-top;
-  background-size:  auto 65% ;
-
- 
+  background-color: white  ;
+  background-image: url("../images/auth/thoor.jpeg"), url("..//images/auth/forza.jpeg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 35%, auto 37%;
+  background-position: left 3% top 25%, right 0% top 23%;
 }
 
 .auth .login-half-bg {
