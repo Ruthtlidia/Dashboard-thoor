@@ -20166,8 +20166,8 @@ isso só que achei o erro kk  <---- tava com 2 jpe
   background-image: url("../images/auth/thoor.png"), url("..//images/auth/forza.png"), url("../images/auth/estrada.jpeg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: auto 35%, auto 37%, contain;
-  background-position: left 1% top 15%, right 1% top 12%, 0% 0%;
-  -webkit-background-size: 30% 45% ,30% 45%, 100% 100%;
+  background-position: left 3% top 15%, right 1% top 13%, 0% 0%;
+  -webkit-background-size: 27% 45% , 32% 45%, 100% 100%;
   -o-background-size:100% 100%,100% 100%, 100% 100%;
   -khtml-background-size:5% 5% ,5% 5%, 100% 100%;
   -moz-background-size: 5% 5% ,5% 5%,100% 100%; 
