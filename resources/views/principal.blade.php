@@ -156,12 +156,12 @@
 
                             <label for="example-date-input" class="col-2 col-form-label" >Data Inicial</label>
                             <div class="col-3" >
-                                <input class="form-control" type="date" id="dataInicial" name="dataInicial" value="{{date('Y-m-d')}}" id="example-date-input">
+                                <input class="form-control" type="date" id="dataInicial" name="dataInicial" value="{{date("Y-m-01")}}" id="example-date-input">
                             </div>
 
                             <label for="example-date-input" class="col-2 col-form-label">Data Final (opicional)</label>
                             <div class="col-3" >
-                                <input class="form-control" type="date" id="dataFinal" name="dataFinal" value="{{date('Y-m-d')}}" id="example-date-input">
+                                <input class="form-control" type="date" id="dataFinal" name="dataFinal" value="{{date("Y-m-d")}}" id="example-date-input">
                             </div>
                             <div class="form-check form-check-flat form-check-primary">
                                 <label class="form-check-label">
@@ -171,6 +171,7 @@
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-warning" onclick="limparFiltro();">Limpar filtros</button>
                             <button type="button" class="btn btn-primary" onclick="filtrar();">Aplicar filtros</button>
                           </div>
                       </form>
@@ -507,35 +508,41 @@
 
                                     ?>
                                     @if($araguaia == $tomadorSemEspacos)
-                                        <img src="assets/images/faces/logos/ARAGUAIA.jpeg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                        <img src="assets/images/faces/logos/ARAGUAIA.jpeg" alt="image" />
                                     @endif
                                     @if($fam == $tomadorSemEspacos)
-                                        <img src="assets/images/faces/logos/FAN.png" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                        <img src="assets/images/faces/logos/FAN.png"  alt="image" />
                                     @endif
                                     @if($phenix == $tomadorSemEspacos)
-                                        <img src="assets/images/faces/logos/das.jpeg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                        <img src="assets/images/faces/logos/das.jpeg"  alt="image" />
                                     @endif
                                     @if($tabocao == $tomadorSemEspacos)
-                                        <img src="assets/images/faces/logos/TABOCAO.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                        <img src="assets/images/faces/logos/TABOCAO.jpg"  alt="image" />
                                     @endif
                                     @if($larco == $tomadorSemEspacos)
-                                        <img src="assets/images/faces/logos/LARCO.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                        <img src="assets/images/faces/logos/LARCO.jpg"  alt="image" />
                                     @endif
                                     @if($federal == $tomadorSemEspacos)
-                                        <img src="assets/images/faces/logos/FEDERAL.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                        <img src="assets/images/faces/logos/FEDERAL.jpg"  alt="image" />
                                     @endif
                                     @if($petro == $tomadorSemEspacos)
-                                        <img src="assets/images/faces/logos/PETROBALL.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                        <img src="assets/images/faces/logos/PETROBALL.jpg"  alt="image" />
                                     @endif
                                     @if($tdc == $tomadorSemEspacos)
-                                        <img src="assets/images/faces/logos/sem-foto.gif" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                        <img src="assets/images/faces/logos/sem-foto.gif"  alt="image" />
                                     @endif
                                     @if($denusa == $tomadorSemEspacos)
-                                        <img src="assets/images/faces/logos/DENUSA.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                        <img src="assets/images/faces/logos/DENUSA.jpg"  alt="image" />
                                     @endif
                                     @if($rio == $tomadorSemEspacos)
-                                        <img src="assets/images/faces/logos/RIO-BRANCO.jpg" style="border-radius: 28%; width: 100px; height: 66px;" alt="image" />
+                                        <img src="assets/images/faces/logos/RIO-BRANCO.jpg"  alt="image" />
                                     @endif
+
+                                    @if($tomadorSemEspacos != $rio && $tomadorSemEspacos != $denusa && $tomadorSemEspacos != $tdc && $tomadorSemEspacos !=$petro && $tomadorSemEspacos != $federal && $tomadorSemEspacos !=$larco && $tomadorSemEspacos != $tabocao && $tomadorSemEspacos != $phenix && $tomadorSemEspacos !=$fam && $tomadorSemEspacos !=$araguaia)
+                                        <img src="assets/images/faces/logos/sem-foto.gif"  alt="image" />
+                                    @endif
+
+
                                     <span class="pl-2">{{ $totalDistribuidoras['tomador'] }}</span>
                                     </td>
                                     <td> R$: {{ $totalDistribuidoras['total_faturado_mes'] }} </td>
