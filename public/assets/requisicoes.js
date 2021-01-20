@@ -94,6 +94,22 @@ function filtrar(){
     });
 }
 
+// function limparFiltro(){
+//     //document.getElementById('#blocoPlaca > span > span.selection > span > ul > li:nth-child(1)').empty
+//    // removeOptions(document.getElementById('select2-selection__rendered').empty);
+//    console.log();
+//    console.log($('#blocoPlaca > span > span.selection > span > ul > li:nth-child(1)').remove());
+//    console.log($('#blocoMotorista > span > span.selection > span > ul > li:nth-child(1)').remove());
+// }
+
+// function removeOptions(selectElement) {
+//     console.log(selectElement.empty());
+//     var i, L = selectElement.options.length - 1;
+//     for(i = L; i >= 0; i--) {
+//        selectElement.remove(i);
+//     }
+//  }
+
 
 function cadastrarUsuario(){
     event.preventDefault();

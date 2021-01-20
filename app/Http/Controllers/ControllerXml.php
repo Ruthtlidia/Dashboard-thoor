@@ -64,7 +64,7 @@ class ControllerXml extends Controller
                 $conhecimentos->mercadoria = (isset($arquivoFormatado[$i][16]) ? trim($arquivoFormatado[$i][16]) : '');
                 if(isset($arquivoFormatado[$i][17])){
                     $arquivoFormatado[$i][17] = str_replace(' ', '', $arquivoFormatado[$i][17]);
-                    $conhecimentos->placa = $arquivoFormatado[$i][17];
+                    $conhecimentos->placa = trim($arquivoFormatado[$i][17]);
                 }else{
                     $conhecimentos->placa = '';
                 }
