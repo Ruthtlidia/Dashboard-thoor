@@ -7601,8 +7601,16 @@ figure {
   margin: 0 0 1rem; }
 
 img {
-  vertical-align: middle;
-  border-style: none; }
+  vertical-align: top;
+  border-style: none; 
+  width: 204px;
+  height: 138px;
+  position: relative;
+  top: 0px; 
+  left: 0px; 
+ 
+  
+}
 
 svg {
   overflow: hidden;

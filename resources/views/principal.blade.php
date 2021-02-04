@@ -509,6 +509,7 @@
                                     ?>
                                     @if($araguaia == $tomadorSemEspacos)
                                         <img  id="imagem-Fotos" src="assets/images/faces/logos/ARAGUAIA.png" alt="image" />
+                                        
                                     @endif
                                     @if($fam == $tomadorSemEspacos)
                                         <img id="imagem-Fotos" src="assets/images/faces/logos/FAN.png" alt="image" />
